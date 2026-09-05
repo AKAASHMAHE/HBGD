@@ -1,0 +1,3758 @@
+{
+  "zip_file": "D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA.zip",
+  "zip_size_gb": 4.341839229688048,
+  "total_entries": 365,
+  "files": 342,
+  "directories": 23,
+  "extensions": {
+    ".py": 35,
+    ".csv": 85,
+    ".nii.gz": 160,
+    ".txt": 1,
+    ".md": 1,
+    ".json": 60
+  },
+  "image_files": [
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "size_mb": 0.007846832275390625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "size_mb": 0.00220489501953125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "size_mb": 0.0024585723876953125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "size_mb": 0.0034246444702148438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "size_mb": 0.004136085510253906
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "size_mb": 0.0072650909423828125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0020694732666015625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "size_mb": 0.005873680114746094
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0014743804931640625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "size_mb": 0.0010623931884765625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0013208389282226562
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "size_mb": 0.0010347366333007812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0027256011962890625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "size_mb": 0.0012483596801757812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "size_mb": 0.0017480850219726562
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "size_mb": 0.0019273757934570312
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "size_mb": 0.0030431747436523438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "size_mb": 0.062713623046875
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "size_mb": 0.05824470520019531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "size_mb": 0.05688285827636719
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "size_mb": 0.018425941467285156
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "size_mb": 0.015522956848144531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "size_mb": 0.013805389404296875
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "size_mb": 0.037240028381347656
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "size_mb": 0.012360572814941406
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "size_mb": 0.0843210220336914
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "size_mb": 0.008978843688964844
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "size_mb": 0.031232833862304688
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "size_mb": 0.007875442504882812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "size_mb": 0.012373924255371094
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "size_mb": 0.012101173400878906
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "size_mb": 0.012501716613769531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "size_mb": 0.012034416198730469
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "size_mb": 0.017126083374023438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "size_mb": 0.011729240417480469
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "size_mb": 0.07016468048095703
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0034246444702148438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "size_mb": 0.0020389556884765625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "size_mb": 0.0048828125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "size_mb": 0.003482818603515625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0016679763793945312
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "size_mb": 0.0016241073608398438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "size_mb": 0.0033750534057617188
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0012750625610351562
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "size_mb": 47.66872024536133
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "size_mb": 49.36194038391113
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "size_mb": 49.77350044250488
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "size_mb": 57.21654987335205
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "size_mb": 51.76543140411377
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "size_mb": 50.42018127441406
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "size_mb": 52.47640609741211
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "size_mb": 54.969265937805176
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "size_mb": 53.12495994567871
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "size_mb": 60.280160903930664
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "size_mb": 45.38344192504883
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "size_mb": 49.067481994628906
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "size_mb": 48.13696002960205
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "size_mb": 46.188355445861816
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "size_mb": 0.09841728210449219
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "size_mb": 0.0944223403930664
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "size_mb": 0.09640884399414062
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "size_mb": 0.11703300476074219
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "size_mb": 0.10281085968017578
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "size_mb": 0.09755802154541016
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "size_mb": 0.09370136260986328
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "size_mb": 0.09730243682861328
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "size_mb": 0.09389877319335938
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "size_mb": 0.1099233627319336
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "size_mb": 0.13681983947753906
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "size_mb": 0.1651449203491211
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "size_mb": 0.09183788299560547
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "size_mb": 0.09332275390625
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "size_mb": 52.9648551940918
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "size_mb": 47.718037605285645
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "size_mb": 50.3500337600708
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "size_mb": 55.78014659881592
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "size_mb": 59.30979537963867
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "size_mb": 54.495482444763184
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "size_mb": 43.349599838256836
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "size_mb": 42.4569673538208
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "size_mb": 46.95298767089844
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "size_mb": 47.64130783081055
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "size_mb": 55.41073417663574
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "size_mb": 61.094571113586426
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "size_mb": 56.33771324157715
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "size_mb": 45.90672492980957
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "size_mb": 45.526004791259766
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "size_mb": 47.82676029205322
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "size_mb": 48.48837471008301
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "size_mb": 56.025179862976074
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "size_mb": 48.21755123138428
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "size_mb": 54.49735450744629
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "size_mb": 60.896668434143066
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "size_mb": 44.96011924743652
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "size_mb": 0.09659862518310547
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "size_mb": 0.08845901489257812
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "size_mb": 0.0887155532836914
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "size_mb": 0.09943485260009766
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "size_mb": 0.11006546020507812
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "size_mb": 0.10088729858398438
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "size_mb": 0.08412933349609375
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "size_mb": 0.07996177673339844
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "size_mb": 0.0868692398071289
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "size_mb": 0.0980215072631836
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "size_mb": 0.10622310638427734
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "size_mb": 0.11593437194824219
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "size_mb": 0.11120891571044922
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "size_mb": 0.086395263671875
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "size_mb": 0.08695793151855469
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "size_mb": 0.09215164184570312
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "size_mb": 0.1092844009399414
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "size_mb": 0.10765647888183594
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "size_mb": 0.10101699829101562
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "size_mb": 0.10592365264892578
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "size_mb": 0.10630607604980469
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "size_mb": 0.08692741394042969
+    },
+    {
+      "path": "DATA/images/thorax/test/images/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "size_mb": 118.41809558868408
+    },
+    {
+      "path": "DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "size_mb": 111.28807926177979
+    },
+    {
+      "path": "DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "size_mb": 94.13099098205566
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "size_mb": 126.15915489196777
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "size_mb": 136.29986572265625
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "size_mb": 135.1273431777954
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "size_mb": 0.16641712188720703
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "size_mb": 0.2751131057739258
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "size_mb": 0.26282310485839844
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "size_mb": 0.18072795867919922
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "size_mb": 0.1955575942993164
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "size_mb": 0.1928873062133789
+    },
+    {
+      "path": "DATA/images/thorax/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz",
+      "size_mb": 116.79984092712402
+    },
+    {
+      "path": "DATA/images/thorax/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz",
+      "size_mb": 111.75687026977539
+    },
+    {
+      "path": "DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz",
+      "size_mb": 131.44923973083496
+    },
+    {
+      "path": "DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz",
+      "size_mb": 124.63065147399902
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz",
+      "size_mb": 110.47315883636475
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz",
+      "size_mb": 110.33891487121582
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz",
+      "size_mb": 100.67948913574219
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz",
+      "size_mb": 134.23885822296143
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz",
+      "size_mb": 116.45626068115234
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz",
+      "size_mb": 122.48144149780273
+    },
+    {
+      "path": "DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz",
+      "size_mb": 125.6394271850586
+    },
+    {
+      "path": "DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz",
+      "size_mb": 120.01884746551514
+    },
+    {
+      "path": "DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz",
+      "size_mb": 112.03631019592285
+    },
+    {
+      "path": "DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz",
+      "size_mb": 110.83759307861328
+    },
+    {
+      "path": "DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz",
+      "size_mb": 103.21531772613525
+    },
+    {
+      "path": "DATA/images/thorax/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz",
+      "size_mb": 128.34293174743652
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz",
+      "size_mb": 0.18447399139404297
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz",
+      "size_mb": 0.15772342681884766
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz",
+      "size_mb": 0.1845531463623047
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz",
+      "size_mb": 0.17449283599853516
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz",
+      "size_mb": 0.21530914306640625
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz",
+      "size_mb": 0.2198629379272461
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz",
+      "size_mb": 0.20191192626953125
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz",
+      "size_mb": 0.22191619873046875
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz",
+      "size_mb": 0.20251846313476562
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz",
+      "size_mb": 0.1961841583251953
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz",
+      "size_mb": 0.17333602905273438
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz",
+      "size_mb": 0.1663646697998047
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz",
+      "size_mb": 0.15605831146240234
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz",
+      "size_mb": 0.16034507751464844
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz",
+      "size_mb": 0.14852142333984375
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz",
+      "size_mb": 0.17624473571777344
+    }
+  ],
+  "segmentation_files": [
+    {
+      "path": "DATA/14_hbgd_lesion_behaviors.csv",
+      "size_mb": 0.0026397705078125
+    },
+    {
+      "path": "DATA/15_hbgd_lesion_transition_summary.csv",
+      "size_mb": 0.00040721893310546875
+    },
+    {
+      "path": "DATA/18_hbgd_forward_lesion_performance.csv",
+      "size_mb": 0.0008516311645507812
+    },
+    {
+      "path": "DATA/24_map_recist_to_ct_lesions.py",
+      "size_mb": 0.01598072052001953
+    },
+    {
+      "path": "DATA/24_recist_lesion_mapping.csv",
+      "size_mb": 0.013617515563964844
+    },
+    {
+      "path": "DATA/25_extract_lesion_ct_crops.py",
+      "size_mb": 0.02156543731689453
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "size_mb": 0.007846832275390625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "size_mb": 0.00220489501953125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "size_mb": 0.0024585723876953125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "size_mb": 0.0034246444702148438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "size_mb": 0.004136085510253906
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "size_mb": 0.0072650909423828125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0020694732666015625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "size_mb": 0.005873680114746094
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0014743804931640625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "size_mb": 0.0010623931884765625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0013208389282226562
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "size_mb": 0.0010347366333007812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "size_mb": 0.0027256011962890625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "size_mb": 0.0012483596801757812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "size_mb": 0.0017480850219726562
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "size_mb": 0.0019273757934570312
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "size_mb": 0.0030431747436523438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "size_mb": 0.062713623046875
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "size_mb": 0.05824470520019531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "size_mb": 0.05688285827636719
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "size_mb": 0.018425941467285156
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "size_mb": 0.015522956848144531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "size_mb": 0.013805389404296875
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "size_mb": 0.037240028381347656
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "size_mb": 0.012360572814941406
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "size_mb": 0.0843210220336914
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "size_mb": 0.008978843688964844
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "size_mb": 0.031232833862304688
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "size_mb": 0.007875442504882812
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "size_mb": 0.012373924255371094
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "size_mb": 0.012101173400878906
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "size_mb": 0.012501716613769531
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "size_mb": 0.012034416198730469
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "size_mb": 0.017126083374023438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "size_mb": 0.011729240417480469
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "size_mb": 0.07016468048095703
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0034246444702148438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "size_mb": 0.0020389556884765625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "size_mb": 0.0048828125
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "size_mb": 0.003482818603515625
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0016679763793945312
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "size_mb": 0.0016241073608398438
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "size_mb": 0.0033750534057617188
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "size_mb": 0.0012750625610351562
+    },
+    {
+      "path": "DATA/3_analyze_tumor_change.py",
+      "size_mb": 0.010959625244140625
+    },
+    {
+      "path": "DATA/3_tumor_change_summary.csv",
+      "size_mb": 0.003924369812011719
+    },
+    {
+      "path": "DATA/5_ct_mask_verification.csv",
+      "size_mb": 0.015421867370605469
+    },
+    {
+      "path": "DATA/5_recist_mask_measurements.csv",
+      "size_mb": 0.010580062866210938
+    },
+    {
+      "path": "DATA/5_recist_mask_verification.csv",
+      "size_mb": 0.0076732635498046875
+    },
+    {
+      "path": "DATA/5_verify_ct_masks.py",
+      "size_mb": 0.019194602966308594
+    },
+    {
+      "path": "DATA/6_analyze_longitudinal_lesions.py",
+      "size_mb": 0.017091751098632812
+    },
+    {
+      "path": "DATA/6_lesion_alias_summary.csv",
+      "size_mb": 0.0008649826049804688
+    },
+    {
+      "path": "DATA/7_analyze_lesion_correspondence.py",
+      "size_mb": 0.023975372314453125
+    },
+    {
+      "path": "DATA/7_lesion_correspondence.csv",
+      "size_mb": 0.07234668731689453
+    },
+    {
+      "path": "DATA/7_lesion_geometry.csv",
+      "size_mb": 0.30927276611328125
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json",
+      "size_mb": 6.4849853515625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json",
+      "size_mb": 6.4849853515625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json",
+      "size_mb": 6.4849853515625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json",
+      "size_mb": 4.00543212890625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json",
+      "size_mb": 4.00543212890625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json",
+      "size_mb": 4.00543212890625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json",
+      "size_mb": 6.198883056640625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json",
+      "size_mb": 6.198883056640625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json",
+      "size_mb": 6.198883056640625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json",
+      "size_mb": 0.000148773193359375
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json",
+      "size_mb": 0.0010271072387695312
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json",
+      "size_mb": 0.0009012222290039062
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json",
+      "size_mb": 6.771087646484375e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json",
+      "size_mb": 6.771087646484375e-05
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "size_mb": 0.09841728210449219
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "size_mb": 0.0944223403930664
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "size_mb": 0.09640884399414062
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "size_mb": 0.11703300476074219
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "size_mb": 0.10281085968017578
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "size_mb": 0.09755802154541016
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "size_mb": 0.09370136260986328
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "size_mb": 0.09730243682861328
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "size_mb": 0.09389877319335938
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "size_mb": 0.1099233627319336
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "size_mb": 0.13681983947753906
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "size_mb": 0.1651449203491211
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "size_mb": 0.09183788299560547
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "size_mb": 0.09332275390625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json",
+      "size_mb": 2.193450927734375e-05
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json",
+      "size_mb": 4.00543212890625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json",
+      "size_mb": 2.09808349609375e-05
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json",
+      "size_mb": 0.0001163482666015625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json",
+      "size_mb": 0.0001544952392578125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json",
+      "size_mb": 0.000156402587890625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json",
+      "size_mb": 0.00022125244140625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json",
+      "size_mb": 0.0001010894775390625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json",
+      "size_mb": 0.0001010894775390625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json",
+      "size_mb": 0.00027942657470703125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json",
+      "size_mb": 0.0001544952392578125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json",
+      "size_mb": 0.00031757354736328125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json",
+      "size_mb": 0.0002593994140625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json",
+      "size_mb": 0.00022602081298828125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json",
+      "size_mb": 0.0002918243408203125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json",
+      "size_mb": 0.00026798248291015625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json",
+      "size_mb": 0.00033473968505859375
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json",
+      "size_mb": 0.00010395050048828125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json",
+      "size_mb": 9.918212890625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json",
+      "size_mb": 0.000152587890625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json",
+      "size_mb": 7.05718994140625e-05
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json",
+      "size_mb": 0.0001735687255859375
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "size_mb": 0.09659862518310547
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "size_mb": 0.08845901489257812
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "size_mb": 0.0887155532836914
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "size_mb": 0.09943485260009766
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "size_mb": 0.11006546020507812
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "size_mb": 0.10088729858398438
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "size_mb": 0.08412933349609375
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "size_mb": 0.07996177673339844
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "size_mb": 0.0868692398071289
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "size_mb": 0.0980215072631836
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "size_mb": 0.10622310638427734
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "size_mb": 0.11593437194824219
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "size_mb": 0.11120891571044922
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "size_mb": 0.086395263671875
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "size_mb": 0.08695793151855469
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "size_mb": 0.09215164184570312
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "size_mb": 0.1092844009399414
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "size_mb": 0.10765647888183594
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "size_mb": 0.10101699829101562
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "size_mb": 0.10592365264892578
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "size_mb": 0.10630607604980469
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "size_mb": 0.08692741394042969
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json",
+      "size_mb": 6.771087646484375e-05
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json",
+      "size_mb": 0.0043354034423828125
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json",
+      "size_mb": 0.005255699157714844
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json",
+      "size_mb": 0.00024127960205078125
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json",
+      "size_mb": 0.0002231597900390625
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json",
+      "size_mb": 0.00026035308837890625
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "size_mb": 0.16641712188720703
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "size_mb": 0.2751131057739258
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "size_mb": 0.26282310485839844
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "size_mb": 0.18072795867919922
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "size_mb": 0.1955575942993164
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "size_mb": 0.1928873062133789
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json",
+      "size_mb": 4.482269287109375e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json",
+      "size_mb": 2.002716064453125e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json",
+      "size_mb": 5.626678466796875e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json",
+      "size_mb": 0.00016498565673828125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json",
+      "size_mb": 0.0026264190673828125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json",
+      "size_mb": 0.0017290115356445312
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json",
+      "size_mb": 0.0014066696166992188
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json",
+      "size_mb": 0.0005083084106445312
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json",
+      "size_mb": 0.00054931640625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json",
+      "size_mb": 0.0003604888916015625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json",
+      "size_mb": 3.814697265625e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json",
+      "size_mb": 7.43865966796875e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json",
+      "size_mb": 5.626678466796875e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json",
+      "size_mb": 0.00012874603271484375
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.json",
+      "size_mb": 5.7220458984375e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.json",
+      "size_mb": 7.43865966796875e-05
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz",
+      "size_mb": 0.18447399139404297
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz",
+      "size_mb": 0.15772342681884766
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz",
+      "size_mb": 0.1845531463623047
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz",
+      "size_mb": 0.17449283599853516
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz",
+      "size_mb": 0.21530914306640625
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz",
+      "size_mb": 0.2198629379272461
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz",
+      "size_mb": 0.20191192626953125
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz",
+      "size_mb": 0.22191619873046875
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz",
+      "size_mb": 0.20251846313476562
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz",
+      "size_mb": 0.1961841583251953
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz",
+      "size_mb": 0.17333602905273438
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz",
+      "size_mb": 0.1663646697998047
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz",
+      "size_mb": 0.15605831146240234
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz",
+      "size_mb": 0.16034507751464844
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz",
+      "size_mb": 0.14852142333984375
+    },
+    {
+      "path": "DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz",
+      "size_mb": 0.17624473571777344
+    }
+  ],
+  "metadata_files": [
+    {
+      "path": "DATA/10_growth_model_holdout.csv",
+      "size_kb": 2.1806640625
+    },
+    {
+      "path": "DATA/10_growth_model_transitions.csv",
+      "size_kb": 6.3779296875
+    },
+    {
+      "path": "DATA/10_patient_growth_rates.csv",
+      "size_kb": 1.0234375
+    },
+    {
+      "path": "DATA/11_growth_rate_stability.csv",
+      "size_kb": 6.556640625
+    },
+    {
+      "path": "DATA/11_patient_growth_statistics.csv",
+      "size_kb": 0.86328125
+    },
+    {
+      "path": "DATA/11_volume_longitudinal_analysis.csv",
+      "size_kb": 13.8837890625
+    },
+    {
+      "path": "DATA/12_dynamic_model_patient_performance.csv",
+      "size_kb": 0.701171875
+    },
+    {
+      "path": "DATA/12_dynamic_model_performance.csv",
+      "size_kb": 0.328125
+    },
+    {
+      "path": "DATA/12_dynamic_model_predictions.csv",
+      "size_kb": 6.5595703125
+    },
+    {
+      "path": "DATA/13_hbgd_feature_patient_performance.csv",
+      "size_kb": 0.4033203125
+    },
+    {
+      "path": "DATA/13_hbgd_feature_performance.csv",
+      "size_kb": 0.3896484375
+    },
+    {
+      "path": "DATA/13_hbgd_feature_predictions.csv",
+      "size_kb": 2.0986328125
+    },
+    {
+      "path": "DATA/14_hbgd_dynamic_states.csv",
+      "size_kb": 10.37890625
+    },
+    {
+      "path": "DATA/14_hbgd_lesion_behaviors.csv",
+      "size_kb": 2.703125
+    },
+    {
+      "path": "DATA/14_hbgd_patient_states.csv",
+      "size_kb": 0.6787109375
+    },
+    {
+      "path": "DATA/14_hbgd_state_summary.csv",
+      "size_kb": 0.3330078125
+    },
+    {
+      "path": "DATA/14_hbgd_state_transitions.csv",
+      "size_kb": 1.1201171875
+    },
+    {
+      "path": "DATA/15_hbgd_lesion_transition_summary.csv",
+      "size_kb": 0.4169921875
+    },
+    {
+      "path": "DATA/15_hbgd_patient_transition_summary.csv",
+      "size_kb": 0.2255859375
+    },
+    {
+      "path": "DATA/15_hbgd_transition_entropy.csv",
+      "size_kb": 0.1064453125
+    },
+    {
+      "path": "DATA/15_hbgd_transition_matrix.csv",
+      "size_kb": 0.0830078125
+    },
+    {
+      "path": "DATA/15_hbgd_transition_probabilities.csv",
+      "size_kb": 0.134765625
+    },
+    {
+      "path": "DATA/15_hbgd_volume_state_agreement.csv",
+      "size_kb": 0.1044921875
+    },
+    {
+      "path": "DATA/16_hbgd_state_patient_performance.csv",
+      "size_kb": 0.140625
+    },
+    {
+      "path": "DATA/16_hbgd_state_predictions.csv",
+      "size_kb": 0.326171875
+    },
+    {
+      "path": "DATA/16_hbgd_state_prediction_performance.csv",
+      "size_kb": 0.181640625
+    },
+    {
+      "path": "DATA/16_hbgd_training_transition_probabilities.csv",
+      "size_kb": 0.1005859375
+    },
+    {
+      "path": "DATA/17_hbgd_diameter_trajectories.csv",
+      "size_kb": 6.923828125
+    },
+    {
+      "path": "DATA/17_hbgd_growth_parameters.csv",
+      "size_kb": 1.4833984375
+    },
+    {
+      "path": "DATA/17_hbgd_mathematical_features.csv",
+      "size_kb": 19.78515625
+    },
+    {
+      "path": "DATA/17_hbgd_state_parameters.csv",
+      "size_kb": 2.6123046875
+    },
+    {
+      "path": "DATA/17_hbgd_volume_parameters.csv",
+      "size_kb": 1.5615234375
+    },
+    {
+      "path": "DATA/18_hbgd_forecast_horizon_analysis.csv",
+      "size_kb": 0.822265625
+    },
+    {
+      "path": "DATA/18_hbgd_forward_lesion_performance.csv",
+      "size_kb": 0.8720703125
+    },
+    {
+      "path": "DATA/18_hbgd_forward_predictions.csv",
+      "size_kb": 8.1083984375
+    },
+    {
+      "path": "DATA/18_hbgd_forward_state_performance.csv",
+      "size_kb": 0.2041015625
+    },
+    {
+      "path": "DATA/19_patient_independent_patient_performance.csv",
+      "size_kb": 0.5263671875
+    },
+    {
+      "path": "DATA/19_patient_independent_performance.csv",
+      "size_kb": 0.1796875
+    },
+    {
+      "path": "DATA/19_patient_independent_predictions.csv",
+      "size_kb": 4.203125
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_parameters.csv",
+      "size_kb": 0.1689453125
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_performance.csv",
+      "size_kb": 0.1259765625
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_predictions.csv",
+      "size_kb": 0.6298828125
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_patient_performance.csv",
+      "size_kb": 0.2744140625
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_performance.csv",
+      "size_kb": 0.2353515625
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_predictions.csv",
+      "size_kb": 1.1103515625
+    },
+    {
+      "path": "DATA/22_rate_patient_performance.csv",
+      "size_kb": 0.2880859375
+    },
+    {
+      "path": "DATA/22_rate_performance.csv",
+      "size_kb": 0.212890625
+    },
+    {
+      "path": "DATA/22_rate_predictions.csv",
+      "size_kb": 1.296875
+    },
+    {
+      "path": "DATA/24_recist_lesion_mapping.csv",
+      "size_kb": 13.9443359375
+    },
+    {
+      "path": "DATA/25_ct_crop_quality.csv",
+      "size_kb": 22.44140625
+    },
+    {
+      "path": "DATA/26_ct_crop_audit.csv",
+      "size_kb": 24.20703125
+    },
+    {
+      "path": "DATA/28_ct_rate_coverage_audit.csv",
+      "size_kb": 3.9892578125
+    },
+    {
+      "path": "DATA/28_ct_rate_coverage_summary.csv",
+      "size_kb": 0.26171875
+    },
+    {
+      "path": "DATA/29_ct_crop_repair_audit.csv",
+      "size_kb": 4.1533203125
+    },
+    {
+      "path": "DATA/2_longitudinal_patient_summary.csv",
+      "size_kb": 1.3125
+    },
+    {
+      "path": "DATA/30_ct_rate_coverage.csv",
+      "size_kb": 2.4794921875
+    },
+    {
+      "path": "DATA/31_ct_rate_linkage_reconciliation.csv",
+      "size_kb": 2.7548828125
+    },
+    {
+      "path": "DATA/32_ct_rate_repaired_coverage.csv",
+      "size_kb": 4.1962890625
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_hbgd_forward_predictions.csv",
+      "size_kb": 0.28515625
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_hbgd_performance.csv",
+      "size_kb": 0.2001953125
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_rate_predictions.csv",
+      "size_kb": 0.4052734375
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_training_history.csv",
+      "size_kb": 0.7451171875
+    },
+    {
+      "path": "DATA/34_ct_trajectory_recovery_audit.csv",
+      "size_kb": 2.216796875
+    },
+    {
+      "path": "DATA/35_HBGD_VALIDATION_REPORT.txt",
+      "size_kb": 5.0654296875
+    },
+    {
+      "path": "DATA/3_patient_trajectories.csv",
+      "size_kb": 0.9365234375
+    },
+    {
+      "path": "DATA/3_tumor_change_summary.csv",
+      "size_kb": 4.0185546875
+    },
+    {
+      "path": "DATA/4_ct_verification_summary.csv",
+      "size_kb": 0.8115234375
+    },
+    {
+      "path": "DATA/5_ct_mask_verification.csv",
+      "size_kb": 15.7919921875
+    },
+    {
+      "path": "DATA/5_recist_mask_measurements.csv",
+      "size_kb": 10.833984375
+    },
+    {
+      "path": "DATA/5_recist_mask_verification.csv",
+      "size_kb": 7.857421875
+    },
+    {
+      "path": "DATA/6_lesion_alias_summary.csv",
+      "size_kb": 0.8857421875
+    },
+    {
+      "path": "DATA/6_patient_longitudinal_summary.csv",
+      "size_kb": 1.0244140625
+    },
+    {
+      "path": "DATA/6_recist_growth_analysis.csv",
+      "size_kb": 2.0419921875
+    },
+    {
+      "path": "DATA/6_recist_patient_summary.csv",
+      "size_kb": 0.294921875
+    },
+    {
+      "path": "DATA/6_study_order_consistency.csv",
+      "size_kb": 0.6484375
+    },
+    {
+      "path": "DATA/7_lesion_correspondence.csv",
+      "size_kb": 74.0830078125
+    },
+    {
+      "path": "DATA/7_lesion_geometry.csv",
+      "size_kb": 316.6953125
+    },
+    {
+      "path": "DATA/7_recist_geometry.csv",
+      "size_kb": 33.2138671875
+    },
+    {
+      "path": "DATA/8_longitudinal_patient_ranking.csv",
+      "size_kb": 0.265625
+    },
+    {
+      "path": "DATA/8_recist_pairwise_changes.csv",
+      "size_kb": 4.9150390625
+    },
+    {
+      "path": "DATA/8_recist_trajectory_summary.csv",
+      "size_kb": 1.6787109375
+    },
+    {
+      "path": "DATA/9_hbgd_features.csv",
+      "size_kb": 16.7822265625
+    },
+    {
+      "path": "DATA/9_hbgd_log_growth_features.csv",
+      "size_kb": 9.4189453125
+    },
+    {
+      "path": "DATA/9_hbgd_longitudinal_features.csv",
+      "size_kb": 9.736328125
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json",
+      "size_kb": 0.06640625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json",
+      "size_kb": 0.06640625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json",
+      "size_kb": 0.06640625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json",
+      "size_kb": 0.041015625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json",
+      "size_kb": 0.041015625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json",
+      "size_kb": 0.041015625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json",
+      "size_kb": 0.0634765625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json",
+      "size_kb": 0.0634765625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json",
+      "size_kb": 0.0634765625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json",
+      "size_kb": 0.15234375
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json",
+      "size_kb": 1.0517578125
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json",
+      "size_kb": 0.9228515625
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json",
+      "size_kb": 0.0693359375
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json",
+      "size_kb": 0.0693359375
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json",
+      "size_kb": 0.0224609375
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json",
+      "size_kb": 0.041015625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json",
+      "size_kb": 0.021484375
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json",
+      "size_kb": 0.119140625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json",
+      "size_kb": 0.158203125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json",
+      "size_kb": 0.16015625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json",
+      "size_kb": 0.2265625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json",
+      "size_kb": 0.103515625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json",
+      "size_kb": 0.103515625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json",
+      "size_kb": 0.2861328125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json",
+      "size_kb": 0.158203125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json",
+      "size_kb": 0.3251953125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json",
+      "size_kb": 0.265625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json",
+      "size_kb": 0.2314453125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json",
+      "size_kb": 0.298828125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json",
+      "size_kb": 0.2744140625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json",
+      "size_kb": 0.3427734375
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json",
+      "size_kb": 0.1064453125
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json",
+      "size_kb": 0.1015625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json",
+      "size_kb": 0.15625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json",
+      "size_kb": 0.072265625
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json",
+      "size_kb": 0.177734375
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json",
+      "size_kb": 0.0693359375
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json",
+      "size_kb": 4.439453125
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json",
+      "size_kb": 5.3818359375
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json",
+      "size_kb": 0.2470703125
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json",
+      "size_kb": 0.228515625
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json",
+      "size_kb": 0.2666015625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json",
+      "size_kb": 0.0458984375
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json",
+      "size_kb": 0.0205078125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json",
+      "size_kb": 0.0576171875
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json",
+      "size_kb": 0.1689453125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json",
+      "size_kb": 2.689453125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json",
+      "size_kb": 1.7705078125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json",
+      "size_kb": 1.4404296875
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json",
+      "size_kb": 0.5205078125
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json",
+      "size_kb": 0.5625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json",
+      "size_kb": 0.369140625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json",
+      "size_kb": 0.0390625
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json",
+      "size_kb": 0.076171875
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json",
+      "size_kb": 0.0576171875
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json",
+      "size_kb": 0.1318359375
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.json",
+      "size_kb": 0.05859375
+    },
+    {
+      "path": "DATA/images/thorax/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.json",
+      "size_kb": 0.076171875
+    },
+    {
+      "path": "DATA/patients.csv",
+      "size_kb": 1.47265625
+    },
+    {
+      "path": "DATA/recist_measurements.csv",
+      "size_kb": 16.990234375
+    },
+    {
+      "path": "DATA/series.json",
+      "size_kb": 26.25390625
+    },
+    {
+      "path": "DATA/windows_mapping.json",
+      "size_kb": 4.751953125
+    }
+  ],
+  "possible_patient_ids": {},
+  "possible_timepoints": {},
+  "top_level_directories": [
+    {
+      "name": "DATA",
+      "entries": 365
+    }
+  ],
+  "sample_files": [
+    {
+      "path": "DATA/10_fit_growth_models.py",
+      "size_bytes": 22616,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/10_growth_model_holdout.csv",
+      "size_bytes": 2233,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/10_growth_model_transitions.csv",
+      "size_bytes": 6531,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/10_patient_growth_rates.csv",
+      "size_bytes": 1048,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/11_growth_rate_stability.csv",
+      "size_bytes": 6714,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/11_patient_growth_statistics.csv",
+      "size_bytes": 884,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/11_validate_growth_dynamics.py",
+      "size_bytes": 22742,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/11_volume_longitudinal_analysis.csv",
+      "size_bytes": 14217,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/12_dynamic_model_patient_performance.csv",
+      "size_bytes": 718,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/12_dynamic_model_performance.csv",
+      "size_bytes": 336,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/12_dynamic_model_predictions.csv",
+      "size_bytes": 6717,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/12_test_dynamic_growth_models.py",
+      "size_bytes": 22374,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/13_hbgd_feature_patient_performance.csv",
+      "size_bytes": 413,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/13_hbgd_feature_performance.csv",
+      "size_bytes": 399,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/13_hbgd_feature_predictions.csv",
+      "size_bytes": 2149,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/13_test_hbgd_feature_value.py",
+      "size_bytes": 23443,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/14_characterize_hbgd_states.py",
+      "size_bytes": 24756,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/14_hbgd_dynamic_states.csv",
+      "size_bytes": 10628,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/14_hbgd_lesion_behaviors.csv",
+      "size_bytes": 2768,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/14_hbgd_patient_states.csv",
+      "size_bytes": 695,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/14_hbgd_state_summary.csv",
+      "size_bytes": 341,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/14_hbgd_state_transitions.csv",
+      "size_bytes": 1147,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_analyze_hbgd_state_transitions.py",
+      "size_bytes": 19442,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/15_hbgd_lesion_transition_summary.csv",
+      "size_bytes": 427,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_hbgd_patient_transition_summary.csv",
+      "size_bytes": 231,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_hbgd_transition_entropy.csv",
+      "size_bytes": 109,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_hbgd_transition_matrix.csv",
+      "size_bytes": 85,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_hbgd_transition_probabilities.csv",
+      "size_bytes": 138,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/15_hbgd_volume_state_agreement.csv",
+      "size_bytes": 107,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/16_hbgd_state_patient_performance.csv",
+      "size_bytes": 144,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/16_hbgd_state_predictions.csv",
+      "size_bytes": 334,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/16_hbgd_state_prediction_performance.csv",
+      "size_bytes": 186,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/16_hbgd_training_transition_probabilities.csv",
+      "size_bytes": 103,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/16_test_state_transition_prediction.py",
+      "size_bytes": 23485,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/17_build_hbgd_mathematical_model.py",
+      "size_bytes": 19335,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/17_hbgd_diameter_trajectories.csv",
+      "size_bytes": 7090,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/17_hbgd_growth_parameters.csv",
+      "size_bytes": 1519,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/17_hbgd_mathematical_features.csv",
+      "size_bytes": 20260,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/17_hbgd_state_parameters.csv",
+      "size_bytes": 2675,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/17_hbgd_volume_parameters.csv",
+      "size_bytes": 1599,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/18_hbgd_forecast_horizon_analysis.csv",
+      "size_bytes": 842,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/18_hbgd_forward_lesion_performance.csv",
+      "size_bytes": 893,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/18_hbgd_forward_predictions.csv",
+      "size_bytes": 8303,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/18_hbgd_forward_state_performance.csv",
+      "size_bytes": 209,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/18_test_hbgd_forward_prediction.py",
+      "size_bytes": 16119,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/19_patient_independent_hbgd_validation.py",
+      "size_bytes": 20768,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/19_patient_independent_patient_performance.csv",
+      "size_bytes": 539,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/19_patient_independent_performance.csv",
+      "size_bytes": 184,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/19_patient_independent_predictions.csv",
+      "size_bytes": 4304,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/1_inspect_dataset.py",
+      "size_bytes": 11858,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/20_build_hbgd_prototype.py",
+      "size_bytes": 17363,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_parameters.csv",
+      "size_bytes": 173,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_performance.csv",
+      "size_bytes": 129,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/20_hbgd_prototype_predictions.csv",
+      "size_bytes": 645,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_patient_performance.csv",
+      "size_bytes": 281,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_performance.csv",
+      "size_bytes": 241,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/21_individualized_hbgd_predictions.csv",
+      "size_bytes": 1137,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/21_test_individualized_hbgd.py",
+      "size_bytes": 20015,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/22_predict_individualized_hbgd_rate.py",
+      "size_bytes": 22385,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/22_rate_patient_performance.csv",
+      "size_bytes": 295,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/22_rate_performance.csv",
+      "size_bytes": 218,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/22_rate_predictions.csv",
+      "size_bytes": 1328,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/23_ct_to_hbgd_rate.py",
+      "size_bytes": 29307,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/24_map_recist_to_ct_lesions.py",
+      "size_bytes": 16757,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/24_recist_lesion_mapping.csv",
+      "size_bytes": 14279,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/25_ct_crop_quality.csv",
+      "size_bytes": 22980,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/25_extract_lesion_ct_crops.py",
+      "size_bytes": 22613,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "size_bytes": 8228,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "size_bytes": 2312,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "size_bytes": 2578,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "size_bytes": 3591,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "size_bytes": 4337,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "size_bytes": 7618,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "size_bytes": 2170,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "size_bytes": 6159,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "size_bytes": 1546,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "size_bytes": 1114,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "size_bytes": 1385,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "size_bytes": 1085,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "size_bytes": 2858,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "size_bytes": 1309,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "size_bytes": 1833,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "size_bytes": 2021,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "size_bytes": 3191,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "size_bytes": 65760,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "size_bytes": 61074,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "size_bytes": 59646,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "size_bytes": 19321,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "size_bytes": 16277,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "size_bytes": 14476,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "size_bytes": 39049,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "size_bytes": 12961,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "size_bytes": 88417,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "size_bytes": 9415,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "size_bytes": 32750,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "size_bytes": 8258,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "size_bytes": 12975,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "size_bytes": 12689,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "size_bytes": 13109,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "size_bytes": 12619,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "size_bytes": 17958,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "size_bytes": 12299,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "size_bytes": 73573,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "size_bytes": 3591,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "size_bytes": 2138,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "size_bytes": 5120,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "size_bytes": 3652,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "size_bytes": 1749,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "size_bytes": 1703,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "size_bytes": 3539,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "size_bytes": 1337,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/26_audit_ct_crops.py",
+      "size_bytes": 14984,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/26_ct_crop_audit.csv",
+      "size_bytes": 24788,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/27_train_ct_to_hbgd_rate.py",
+      "size_bytes": 20549,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/28_audit_ct_rate_coverage.py",
+      "size_bytes": 19702,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/28_ct_rate_coverage_audit.csv",
+      "size_bytes": 4085,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/28_ct_rate_coverage_summary.csv",
+      "size_bytes": 268,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/29_ct_crop_repair_audit.csv",
+      "size_bytes": 4253,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/29_repair_failed_ct_crops.py",
+      "size_bytes": 25081,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/2_longitudinal_patient_analysis.py",
+      "size_bytes": 13156,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/2_longitudinal_patient_summary.csv",
+      "size_bytes": 1344,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/30_audit_ct_rate_coverage.py",
+      "size_bytes": 16681,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/30_ct_rate_coverage.csv",
+      "size_bytes": 2539,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/31_ct_rate_linkage_reconciliation.csv",
+      "size_bytes": 2821,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/31_reconcile_ct_rate_linkage.py",
+      "size_bytes": 13935,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/32_ct_rate_repaired_coverage.csv",
+      "size_bytes": 4297,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/32_repair_ct_rate_dates.py",
+      "size_bytes": 16169,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_hbgd_forward_predictions.csv",
+      "size_bytes": 292,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_hbgd_performance.csv",
+      "size_bytes": 205,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_cnn_rate_predictions.csv",
+      "size_bytes": 415,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/33_ct_rate_cnn_results/33_training_history.csv",
+      "size_bytes": 763,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/33_train_ct_to_hbgd_rate.py",
+      "size_bytes": 20301,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/34_audit_ct_trajectory_recovery.py",
+      "size_bytes": 16664,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/34_ct_trajectory_recovery_audit.csv",
+      "size_bytes": 2270,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/35_build_hbgd_validation_report.py",
+      "size_bytes": 17380,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/35_HBGD_VALIDATION_REPORT.txt",
+      "size_bytes": 5187,
+      "extension": ".txt"
+    },
+    {
+      "path": "DATA/3_analyze_tumor_change.py",
+      "size_bytes": 11492,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/3_patient_trajectories.csv",
+      "size_bytes": 959,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/3_tumor_change_summary.csv",
+      "size_bytes": 4115,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/4_ct_verification_summary.csv",
+      "size_bytes": 831,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/4_verify_ct_files.py",
+      "size_bytes": 12580,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/5_ct_mask_verification.csv",
+      "size_bytes": 16171,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/5_recist_mask_measurements.csv",
+      "size_bytes": 11094,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/5_recist_mask_verification.csv",
+      "size_bytes": 8046,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/5_verify_ct_masks.py",
+      "size_bytes": 20127,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/6_analyze_longitudinal_lesions.py",
+      "size_bytes": 17922,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/6_lesion_alias_summary.csv",
+      "size_bytes": 907,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/6_patient_longitudinal_summary.csv",
+      "size_bytes": 1049,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/6_recist_growth_analysis.csv",
+      "size_bytes": 2091,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/6_recist_patient_summary.csv",
+      "size_bytes": 302,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/6_study_order_consistency.csv",
+      "size_bytes": 664,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/7_analyze_lesion_correspondence.py",
+      "size_bytes": 25140,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/7_lesion_correspondence.csv",
+      "size_bytes": 75861,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/7_lesion_geometry.csv",
+      "size_bytes": 324296,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/7_recist_geometry.csv",
+      "size_bytes": 34011,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/8_longitudinal_patient_ranking.csv",
+      "size_bytes": 272,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/8_recist_pairwise_changes.csv",
+      "size_bytes": 5033,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/8_recist_trajectory_summary.csv",
+      "size_bytes": 1719,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/8_validate_recist_trajectories.py",
+      "size_bytes": 21071,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/9_extract_hbgd_features.py",
+      "size_bytes": 19808,
+      "extension": ".py"
+    },
+    {
+      "path": "DATA/9_hbgd_features.csv",
+      "size_bytes": 17185,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/9_hbgd_log_growth_features.csv",
+      "size_bytes": 9645,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/9_hbgd_longitudinal_features.csv",
+      "size_bytes": 9970,
+      "extension": ".csv"
+    },
+    {
+      "path": "DATA/HBGD_COMPLETE_PROJECT_ANALYSIS.md",
+      "size_bytes": 135257,
+      "extension": ".md"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "size_bytes": 49984276,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "size_bytes": 51759746,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "size_bytes": 52191298,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "size_bytes": 59995901,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "size_bytes": 54279989,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "size_bytes": 52869392,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "size_bytes": 55025500,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "size_bytes": 57639453,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "size_bytes": 55705558,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "size_bytes": 63208330,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "size_bytes": 47587988,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "size_bytes": 51450984,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "size_bytes": 50475261,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "size_bytes": 48432001,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json",
+      "size_bytes": 68,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json",
+      "size_bytes": 68,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json",
+      "size_bytes": 68,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json",
+      "size_bytes": 42,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json",
+      "size_bytes": 42,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json",
+      "size_bytes": 42,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json",
+      "size_bytes": 65,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json",
+      "size_bytes": 65,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json",
+      "size_bytes": 65,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json",
+      "size_bytes": 156,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json",
+      "size_bytes": 1077,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json",
+      "size_bytes": 945,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json",
+      "size_bytes": 71,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json",
+      "size_bytes": 71,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "size_bytes": 103198,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "size_bytes": 99009,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "size_bytes": 101092,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "size_bytes": 122718,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "size_bytes": 107805,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "size_bytes": 102297,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "size_bytes": 98253,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "size_bytes": 102029,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "size_bytes": 98460,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "size_bytes": 115263,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "size_bytes": 143466,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "size_bytes": 173167,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "size_bytes": 96299,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "size_bytes": 97856,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "size_bytes": 55537676,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "size_bytes": 50035989,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "size_bytes": 52795837,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "size_bytes": 58489723,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "size_bytes": 62190828,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "size_bytes": 57142655,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "size_bytes": 45455350,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "size_bytes": 44519357,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "size_bytes": 49233776,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "size_bytes": 49955532,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "size_bytes": 58102366,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "size_bytes": 64062301,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "size_bytes": 59074374,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "size_bytes": 48136690,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "size_bytes": 47737476,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "size_bytes": 50149993,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "size_bytes": 50843746,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "size_bytes": 58746659,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "size_bytes": 50559767,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "size_bytes": 57144618,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "size_bytes": 63854785,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/images/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "size_bytes": 47144102,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json",
+      "size_bytes": 23,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json",
+      "size_bytes": 42,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json",
+      "size_bytes": 22,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json",
+      "size_bytes": 122,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json",
+      "size_bytes": 162,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json",
+      "size_bytes": 164,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json",
+      "size_bytes": 232,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json",
+      "size_bytes": 106,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json",
+      "size_bytes": 106,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json",
+      "size_bytes": 293,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json",
+      "size_bytes": 162,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json",
+      "size_bytes": 333,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json",
+      "size_bytes": 272,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json",
+      "size_bytes": 237,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json",
+      "size_bytes": 306,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json",
+      "size_bytes": 281,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json",
+      "size_bytes": 351,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json",
+      "size_bytes": 109,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json",
+      "size_bytes": 104,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json",
+      "size_bytes": 160,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json",
+      "size_bytes": 74,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json",
+      "size_bytes": 182,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "size_bytes": 101291,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "size_bytes": 92756,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "size_bytes": 93025,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "size_bytes": 104265,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "size_bytes": 115412,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "size_bytes": 105788,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "size_bytes": 88216,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "size_bytes": 83846,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "size_bytes": 91089,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "size_bytes": 102783,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "size_bytes": 111383,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "size_bytes": 121566,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "size_bytes": 116611,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "size_bytes": 90592,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "size_bytes": 91182,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "size_bytes": 96628,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "size_bytes": 114593,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "size_bytes": 112886,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "size_bytes": 105924,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "size_bytes": 111069,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "size_bytes": 111470,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "size_bytes": 91150,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "size_bytes": 124170373,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "size_bytes": 116694009,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "size_bytes": 98703498,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "size_bytes": 132287462,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "size_bytes": 142920768,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "size_bytes": 141691289,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json",
+      "size_bytes": 71,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json",
+      "size_bytes": 4546,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json",
+      "size_bytes": 5511,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json",
+      "size_bytes": 253,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json",
+      "size_bytes": 234,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json",
+      "size_bytes": 273,
+      "extension": ".json"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "size_bytes": 174501,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "size_bytes": 288477,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "size_bytes": 275590,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "size_bytes": 189507,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "size_bytes": 205057,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "size_bytes": 202257,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz",
+      "size_bytes": 122473510,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz",
+      "size_bytes": 117185572,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz",
+      "size_bytes": 137834518,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz",
+      "size_bytes": 130684710,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz",
+      "size_bytes": 115839503,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz",
+      "size_bytes": 115698738,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz",
+      "size_bytes": 105570096,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz",
+      "size_bytes": 140759645,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz",
+      "size_bytes": 122113240,
+      "extension": ".nii.gz"
+    },
+    {
+      "path": "DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz",
+      "size_bytes": 128431100,
+      "extension": ".nii.gz"
+    }
+  ],
+  "keyword_hits": {
+    "patient": [
+      "DATA/10_patient_growth_rates.csv",
+      "DATA/11_patient_growth_statistics.csv",
+      "DATA/12_dynamic_model_patient_performance.csv",
+      "DATA/13_hbgd_feature_patient_performance.csv",
+      "DATA/14_hbgd_patient_states.csv",
+      "DATA/15_hbgd_patient_transition_summary.csv",
+      "DATA/16_hbgd_state_patient_performance.csv",
+      "DATA/19_patient_independent_hbgd_validation.py",
+      "DATA/19_patient_independent_patient_performance.csv",
+      "DATA/19_patient_independent_performance.csv",
+      "DATA/19_patient_independent_predictions.csv",
+      "DATA/21_individualized_hbgd_patient_performance.csv",
+      "DATA/22_rate_patient_performance.csv",
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "DATA/2_longitudinal_patient_analysis.py",
+      "DATA/2_longitudinal_patient_summary.csv",
+      "DATA/3_patient_trajectories.csv",
+      "DATA/6_patient_longitudinal_summary.csv",
+      "DATA/6_recist_patient_summary.csv",
+      "DATA/8_longitudinal_patient_ranking.csv",
+      "DATA/patients.csv"
+    ],
+    "lesion": [
+      "DATA/14_hbgd_lesion_behaviors.csv",
+      "DATA/15_hbgd_lesion_transition_summary.csv",
+      "DATA/18_hbgd_forward_lesion_performance.csv",
+      "DATA/24_map_recist_to_ct_lesions.py",
+      "DATA/24_recist_lesion_mapping.csv",
+      "DATA/25_extract_lesion_ct_crops.py",
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "DATA/6_analyze_longitudinal_lesions.py",
+      "DATA/6_lesion_alias_summary.csv",
+      "DATA/7_analyze_lesion_correspondence.py",
+      "DATA/7_lesion_correspondence.csv",
+      "DATA/7_lesion_geometry.csv"
+    ],
+    "label": [
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz",
+      "DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz",
+      "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json",
+      "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json",
+      "DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json",
+      "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json",
+      "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json",
+      "DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json",
+      "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json",
+      "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json",
+      "DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json",
+      "DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json",
+      "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json",
+      "DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json",
+      "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json",
+      "DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json",
+      "DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json",
+      "DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json",
+      "DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json",
+      "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json",
+      "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json",
+      "DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json",
+      "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json",
+      "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json",
+      "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json",
+      "DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json",
+      "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json",
+      "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json",
+      "DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json",
+      "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json",
+      "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json",
+      "DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json",
+      "DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json",
+      "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json",
+      "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json",
+      "DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json",
+      "DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json",
+      "DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json",
+      "DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json",
+      "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json",
+      "DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json",
+      "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json",
+      "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json",
+      "DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json",
+      "DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json",
+      "DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json",
+      "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json",
+      "DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json",
+      "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json",
+      "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json",
+      "DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json",
+      "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json",
+      "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json",
+      "DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json",
+      "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json",
+      "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json",
+      "DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json",
+      "DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json"
+    ],
+    "tumor": [
+      "DATA/3_analyze_tumor_change.py",
+      "DATA/3_tumor_change_summary.csv"
+    ],
+    "mask": [
+      "DATA/5_ct_mask_verification.csv",
+      "DATA/5_recist_mask_measurements.csv",
+      "DATA/5_recist_mask_verification.csv",
+      "DATA/5_verify_ct_masks.py",
+      "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz",
+      "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz",
+      "DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz",
+      "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz",
+      "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz",
+      "DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz",
+      "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz",
+      "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz",
+      "DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz",
+      "DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz",
+      "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz",
+      "DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz",
+      "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz",
+      "DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz",
+      "DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz",
+      "DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz",
+      "DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz",
+      "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz",
+      "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz",
+      "DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz",
+      "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz",
+      "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz",
+      "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz",
+      "DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz",
+      "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz",
+      "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz",
+      "DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz",
+      "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz",
+      "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz",
+      "DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz",
+      "DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz",
+      "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz",
+      "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz",
+      "DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz",
+      "DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz",
+      "DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz",
+      "DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz",
+      "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz",
+      "DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz",
+      "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz",
+      "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz",
+      "DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz",
+      "DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz",
+      "DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz",
+      "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz",
+      "DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz",
+      "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz",
+      "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz",
+      "DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz",
+      "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz",
+      "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz",
+      "DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz",
+      "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz",
+      "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz",
+      "DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz",
+      "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz",
+      "DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz",
+      "DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+parameter,value
+growth_threshold,0.0
+shrinkage_threshold,-0.002453813242841323
+growth_rate,0.0
+stable_rate,-0.0018278989926523894
+shrinkage_rate,-0.004456214590856648

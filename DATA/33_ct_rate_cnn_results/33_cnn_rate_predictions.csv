@@ -1,0 +1,2 @@
+patient_id,alias,baseline_date,second_date,individualized_rate,baseline_ct_file,second_ct_file,cnn_predicted_rate,absolute_rate_error
+30,B,2023-03-21,2023-05-22,0.0009778164809102,d:\VIT\PROJECT\NLP\PATENT\CODES\..\DATA\25_lesion_ct_crops\patient_030_20230321_lesion_B_label_8.nii.gz,d:\VIT\PROJECT\NLP\PATENT\CODES\..\DATA\25_lesion_ct_crops\patient_030_20230522_lesion_B_label_9.nii.gz,-0.002068355679512024,0.003046172160422224

@@ -1,0 +1,4 @@
+previous_state,growth,stable,shrinkage
+growth,0.0,1.0,0.0
+stable,0.5,0.5,0.0
+shrinkage,0.0,0.4,0.6

@@ -1,0 +1,867 @@
+LUMIERE DATASET ZIP INSPECTION REPORT
+====================================================================================================
+
+ZIP FILE: D:\VIT\PROJECT\NLP\PATENT\DATA.zip
+ZIP SIZE: 4.34 GB
+
+BASIC INFORMATION
+--------------------------------------------------------------------------------
+Total entries : 365
+Files         : 342
+Directories   : 23
+
+FILE EXTENSIONS
+--------------------------------------------------------------------------------
+.nii.gz : 160
+.csv : 85
+.json : 60
+.py : 35
+.txt : 1
+.md : 1
+
+TOP LEVEL DIRECTORIES
+--------------------------------------------------------------------------------
+DATA : 365 entries
+
+MEDICAL IMAGE FILES
+--------------------------------------------------------------------------------
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz | 0.04 MB
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz | 0.08 MB
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz | 0.03 MB
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz | 0.07 MB
+DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz | 47.67 MB
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz | 49.36 MB
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz | 49.77 MB
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz | 57.22 MB
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz | 51.77 MB
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz | 50.42 MB
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz | 52.48 MB
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz | 54.97 MB
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz | 53.12 MB
+DATA/images/abdomen/test/images/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz | 60.28 MB
+DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz | 45.38 MB
+DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz | 49.07 MB
+DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz | 48.14 MB
+DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz | 46.19 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz | 0.12 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz | 0.11 MB
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz | 0.14 MB
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz | 0.17 MB
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz | 0.09 MB
+DATA/images/abdomen/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz | 52.96 MB
+DATA/images/abdomen/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz | 47.72 MB
+DATA/images/abdomen/train/images/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz | 50.35 MB
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz | 55.78 MB
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz | 59.31 MB
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz | 54.50 MB
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz | 43.35 MB
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz | 42.46 MB
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz | 46.95 MB
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz | 47.64 MB
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz | 55.41 MB
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz | 61.09 MB
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz | 56.34 MB
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz | 45.91 MB
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz | 45.53 MB
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz | 47.83 MB
+DATA/images/abdomen/train/images/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz | 48.49 MB
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz | 56.03 MB
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz | 48.22 MB
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz | 54.50 MB
+DATA/images/abdomen/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz | 60.90 MB
+DATA/images/abdomen/train/images/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz | 44.96 MB
+DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz | 0.08 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz | 0.08 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz | 0.12 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz | 0.09 MB
+DATA/images/thorax/test/images/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz | 118.42 MB
+DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz | 111.29 MB
+DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz | 94.13 MB
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz | 126.16 MB
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz | 136.30 MB
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz | 135.13 MB
+DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz | 0.17 MB
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz | 0.28 MB
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz | 0.26 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz | 0.18 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz | 0.20 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz | 0.19 MB
+DATA/images/thorax/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz | 116.80 MB
+DATA/images/thorax/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz | 111.76 MB
+DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz | 131.45 MB
+DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz | 124.63 MB
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz | 110.47 MB
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz | 110.34 MB
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz | 100.68 MB
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz | 134.24 MB
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz | 116.46 MB
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz | 122.48 MB
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz | 125.64 MB
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz | 120.02 MB
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz | 112.04 MB
+DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz | 110.84 MB
+DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz | 103.22 MB
+DATA/images/thorax/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz | 128.34 MB
+DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz | 0.18 MB
+DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz | 0.18 MB
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz | 0.15 MB
+DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz | 0.18 MB
+
+SEGMENTATION / MASK FILES
+--------------------------------------------------------------------------------
+DATA/14_hbgd_lesion_behaviors.csv | 0.00 MB
+DATA/15_hbgd_lesion_transition_summary.csv | 0.00 MB
+DATA/18_hbgd_forward_lesion_performance.csv | 0.00 MB
+DATA/24_map_recist_to_ct_lesions.py | 0.02 MB
+DATA/24_recist_lesion_mapping.csv | 0.01 MB
+DATA/25_extract_lesion_ct_crops.py | 0.02 MB
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz | 0.06 MB
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz | 0.04 MB
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz | 0.08 MB
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz | 0.03 MB
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz | 0.02 MB
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz | 0.01 MB
+DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz | 0.07 MB
+DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz | 0.00 MB
+DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz | 0.00 MB
+DATA/3_analyze_tumor_change.py | 0.01 MB
+DATA/3_tumor_change_summary.csv | 0.00 MB
+DATA/5_ct_mask_verification.csv | 0.02 MB
+DATA/5_recist_mask_measurements.csv | 0.01 MB
+DATA/5_recist_mask_verification.csv | 0.01 MB
+DATA/5_verify_ct_masks.py | 0.02 MB
+DATA/6_analyze_longitudinal_lesions.py | 0.02 MB
+DATA/6_lesion_alias_summary.csv | 0.00 MB
+DATA/7_analyze_lesion_correspondence.py | 0.02 MB
+DATA/7_lesion_correspondence.csv | 0.07 MB
+DATA/7_lesion_geometry.csv | 0.31 MB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json | 0.00 MB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json | 0.00 MB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json | 0.00 MB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json | 0.00 MB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json | 0.00 MB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json | 0.00 MB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json | 0.00 MB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json | 0.00 MB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json | 0.00 MB
+DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json | 0.00 MB
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json | 0.00 MB
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json | 0.00 MB
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json | 0.00 MB
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json | 0.00 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz | 0.12 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz | 0.10 MB
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz | 0.11 MB
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz | 0.14 MB
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz | 0.17 MB
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz | 0.09 MB
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz | 0.09 MB
+DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json | 0.00 MB
+DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json | 0.00 MB
+DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json | 0.00 MB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json | 0.00 MB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json | 0.00 MB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json | 0.00 MB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json | 0.00 MB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json | 0.00 MB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json | 0.00 MB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json | 0.00 MB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json | 0.00 MB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json | 0.00 MB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json | 0.00 MB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json | 0.00 MB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json | 0.00 MB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json | 0.00 MB
+DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json | 0.00 MB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json | 0.00 MB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json | 0.00 MB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json | 0.00 MB
+DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json | 0.00 MB
+DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json | 0.00 MB
+DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz | 0.08 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz | 0.08 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz | 0.12 MB
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz | 0.09 MB
+DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz | 0.10 MB
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz | 0.11 MB
+DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz | 0.09 MB
+DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json | 0.00 MB
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json | 0.00 MB
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json | 0.01 MB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json | 0.00 MB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json | 0.00 MB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json | 0.00 MB
+DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz | 0.17 MB
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz | 0.28 MB
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz | 0.26 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz | 0.18 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz | 0.20 MB
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz | 0.19 MB
+DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json | 0.00 MB
+DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json | 0.00 MB
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json | 0.00 MB
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json | 0.00 MB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json | 0.00 MB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json | 0.00 MB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json | 0.00 MB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json | 0.00 MB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json | 0.00 MB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json | 0.00 MB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json | 0.00 MB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json | 0.00 MB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json | 0.00 MB
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json | 0.00 MB
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.json | 0.00 MB
+DATA/images/thorax/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.json | 0.00 MB
+DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz | 0.18 MB
+DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz | 0.18 MB
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz | 0.22 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz | 0.20 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz | 0.17 MB
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz | 0.16 MB
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz | 0.15 MB
+DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz | 0.18 MB
+
+METADATA FILES
+--------------------------------------------------------------------------------
+DATA/10_growth_model_holdout.csv | 2.18 KB
+DATA/10_growth_model_transitions.csv | 6.38 KB
+DATA/10_patient_growth_rates.csv | 1.02 KB
+DATA/11_growth_rate_stability.csv | 6.56 KB
+DATA/11_patient_growth_statistics.csv | 0.86 KB
+DATA/11_volume_longitudinal_analysis.csv | 13.88 KB
+DATA/12_dynamic_model_patient_performance.csv | 0.70 KB
+DATA/12_dynamic_model_performance.csv | 0.33 KB
+DATA/12_dynamic_model_predictions.csv | 6.56 KB
+DATA/13_hbgd_feature_patient_performance.csv | 0.40 KB
+DATA/13_hbgd_feature_performance.csv | 0.39 KB
+DATA/13_hbgd_feature_predictions.csv | 2.10 KB
+DATA/14_hbgd_dynamic_states.csv | 10.38 KB
+DATA/14_hbgd_lesion_behaviors.csv | 2.70 KB
+DATA/14_hbgd_patient_states.csv | 0.68 KB
+DATA/14_hbgd_state_summary.csv | 0.33 KB
+DATA/14_hbgd_state_transitions.csv | 1.12 KB
+DATA/15_hbgd_lesion_transition_summary.csv | 0.42 KB
+DATA/15_hbgd_patient_transition_summary.csv | 0.23 KB
+DATA/15_hbgd_transition_entropy.csv | 0.11 KB
+DATA/15_hbgd_transition_matrix.csv | 0.08 KB
+DATA/15_hbgd_transition_probabilities.csv | 0.13 KB
+DATA/15_hbgd_volume_state_agreement.csv | 0.10 KB
+DATA/16_hbgd_state_patient_performance.csv | 0.14 KB
+DATA/16_hbgd_state_predictions.csv | 0.33 KB
+DATA/16_hbgd_state_prediction_performance.csv | 0.18 KB
+DATA/16_hbgd_training_transition_probabilities.csv | 0.10 KB
+DATA/17_hbgd_diameter_trajectories.csv | 6.92 KB
+DATA/17_hbgd_growth_parameters.csv | 1.48 KB
+DATA/17_hbgd_mathematical_features.csv | 19.79 KB
+DATA/17_hbgd_state_parameters.csv | 2.61 KB
+DATA/17_hbgd_volume_parameters.csv | 1.56 KB
+DATA/18_hbgd_forecast_horizon_analysis.csv | 0.82 KB
+DATA/18_hbgd_forward_lesion_performance.csv | 0.87 KB
+DATA/18_hbgd_forward_predictions.csv | 8.11 KB
+DATA/18_hbgd_forward_state_performance.csv | 0.20 KB
+DATA/19_patient_independent_patient_performance.csv | 0.53 KB
+DATA/19_patient_independent_performance.csv | 0.18 KB
+DATA/19_patient_independent_predictions.csv | 4.20 KB
+DATA/20_hbgd_prototype_parameters.csv | 0.17 KB
+DATA/20_hbgd_prototype_performance.csv | 0.13 KB
+DATA/20_hbgd_prototype_predictions.csv | 0.63 KB
+DATA/21_individualized_hbgd_patient_performance.csv | 0.27 KB
+DATA/21_individualized_hbgd_performance.csv | 0.24 KB
+DATA/21_individualized_hbgd_predictions.csv | 1.11 KB
+DATA/22_rate_patient_performance.csv | 0.29 KB
+DATA/22_rate_performance.csv | 0.21 KB
+DATA/22_rate_predictions.csv | 1.30 KB
+DATA/24_recist_lesion_mapping.csv | 13.94 KB
+DATA/25_ct_crop_quality.csv | 22.44 KB
+DATA/26_ct_crop_audit.csv | 24.21 KB
+DATA/28_ct_rate_coverage_audit.csv | 3.99 KB
+DATA/28_ct_rate_coverage_summary.csv | 0.26 KB
+DATA/29_ct_crop_repair_audit.csv | 4.15 KB
+DATA/2_longitudinal_patient_summary.csv | 1.31 KB
+DATA/30_ct_rate_coverage.csv | 2.48 KB
+DATA/31_ct_rate_linkage_reconciliation.csv | 2.75 KB
+DATA/32_ct_rate_repaired_coverage.csv | 4.20 KB
+DATA/33_ct_rate_cnn_results/33_cnn_hbgd_forward_predictions.csv | 0.29 KB
+DATA/33_ct_rate_cnn_results/33_cnn_hbgd_performance.csv | 0.20 KB
+DATA/33_ct_rate_cnn_results/33_cnn_rate_predictions.csv | 0.41 KB
+DATA/33_ct_rate_cnn_results/33_training_history.csv | 0.75 KB
+DATA/34_ct_trajectory_recovery_audit.csv | 2.22 KB
+DATA/35_HBGD_VALIDATION_REPORT.txt | 5.07 KB
+DATA/3_patient_trajectories.csv | 0.94 KB
+DATA/3_tumor_change_summary.csv | 4.02 KB
+DATA/4_ct_verification_summary.csv | 0.81 KB
+DATA/5_ct_mask_verification.csv | 15.79 KB
+DATA/5_recist_mask_measurements.csv | 10.83 KB
+DATA/5_recist_mask_verification.csv | 7.86 KB
+DATA/6_lesion_alias_summary.csv | 0.89 KB
+DATA/6_patient_longitudinal_summary.csv | 1.02 KB
+DATA/6_recist_growth_analysis.csv | 2.04 KB
+DATA/6_recist_patient_summary.csv | 0.29 KB
+DATA/6_study_order_consistency.csv | 0.65 KB
+DATA/7_lesion_correspondence.csv | 74.08 KB
+DATA/7_lesion_geometry.csv | 316.70 KB
+DATA/7_recist_geometry.csv | 33.21 KB
+DATA/8_longitudinal_patient_ranking.csv | 0.27 KB
+DATA/8_recist_pairwise_changes.csv | 4.92 KB
+DATA/8_recist_trajectory_summary.csv | 1.68 KB
+DATA/9_hbgd_features.csv | 16.78 KB
+DATA/9_hbgd_log_growth_features.csv | 9.42 KB
+DATA/9_hbgd_longitudinal_features.csv | 9.74 KB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json | 0.07 KB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json | 0.07 KB
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json | 0.07 KB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json | 0.04 KB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json | 0.04 KB
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json | 0.04 KB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json | 0.06 KB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json | 0.06 KB
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json | 0.06 KB
+DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json | 0.15 KB
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json | 1.05 KB
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json | 0.92 KB
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json | 0.07 KB
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json | 0.07 KB
+DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json | 0.02 KB
+DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json | 0.04 KB
+DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json | 0.02 KB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json | 0.12 KB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json | 0.16 KB
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json | 0.16 KB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json | 0.23 KB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json | 0.10 KB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json | 0.10 KB
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json | 0.29 KB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json | 0.16 KB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json | 0.33 KB
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json | 0.27 KB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json | 0.23 KB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json | 0.30 KB
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json | 0.27 KB
+DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json | 0.34 KB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json | 0.11 KB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json | 0.10 KB
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json | 0.16 KB
+DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json | 0.07 KB
+DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json | 0.18 KB
+DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json | 0.07 KB
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json | 4.44 KB
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json | 5.38 KB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json | 0.25 KB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json | 0.23 KB
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json | 0.27 KB
+DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json | 0.05 KB
+DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json | 0.02 KB
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json | 0.06 KB
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json | 0.17 KB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json | 2.69 KB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json | 1.77 KB
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json | 1.44 KB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json | 0.52 KB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json | 0.56 KB
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json | 0.37 KB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json | 0.04 KB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json | 0.08 KB
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json | 0.06 KB
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json | 0.13 KB
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.json | 0.06 KB
+DATA/images/thorax/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.json | 0.08 KB
+DATA/patients.csv | 1.47 KB
+DATA/recist_measurements.csv | 16.99 KB
+DATA/series.json | 26.25 KB
+DATA/windows_mapping.json | 4.75 KB
+
+POSSIBLE PATIENT IDS
+--------------------------------------------------------------------------------
+
+POSSIBLE TIMEPOINTS
+--------------------------------------------------------------------------------
+
+SAMPLE ZIP CONTENTS
+--------------------------------------------------------------------------------
+DATA/10_fit_growth_models.py
+DATA/10_growth_model_holdout.csv
+DATA/10_growth_model_transitions.csv
+DATA/10_patient_growth_rates.csv
+DATA/11_growth_rate_stability.csv
+DATA/11_patient_growth_statistics.csv
+DATA/11_validate_growth_dynamics.py
+DATA/11_volume_longitudinal_analysis.csv
+DATA/12_dynamic_model_patient_performance.csv
+DATA/12_dynamic_model_performance.csv
+DATA/12_dynamic_model_predictions.csv
+DATA/12_test_dynamic_growth_models.py
+DATA/13_hbgd_feature_patient_performance.csv
+DATA/13_hbgd_feature_performance.csv
+DATA/13_hbgd_feature_predictions.csv
+DATA/13_test_hbgd_feature_value.py
+DATA/14_characterize_hbgd_states.py
+DATA/14_hbgd_dynamic_states.csv
+DATA/14_hbgd_lesion_behaviors.csv
+DATA/14_hbgd_patient_states.csv
+DATA/14_hbgd_state_summary.csv
+DATA/14_hbgd_state_transitions.csv
+DATA/15_analyze_hbgd_state_transitions.py
+DATA/15_hbgd_lesion_transition_summary.csv
+DATA/15_hbgd_patient_transition_summary.csv
+DATA/15_hbgd_transition_entropy.csv
+DATA/15_hbgd_transition_matrix.csv
+DATA/15_hbgd_transition_probabilities.csv
+DATA/15_hbgd_volume_state_agreement.csv
+DATA/16_hbgd_state_patient_performance.csv
+DATA/16_hbgd_state_predictions.csv
+DATA/16_hbgd_state_prediction_performance.csv
+DATA/16_hbgd_training_transition_probabilities.csv
+DATA/16_test_state_transition_prediction.py
+DATA/17_build_hbgd_mathematical_model.py
+DATA/17_hbgd_diameter_trajectories.csv
+DATA/17_hbgd_growth_parameters.csv
+DATA/17_hbgd_mathematical_features.csv
+DATA/17_hbgd_state_parameters.csv
+DATA/17_hbgd_volume_parameters.csv
+DATA/18_hbgd_forecast_horizon_analysis.csv
+DATA/18_hbgd_forward_lesion_performance.csv
+DATA/18_hbgd_forward_predictions.csv
+DATA/18_hbgd_forward_state_performance.csv
+DATA/18_test_hbgd_forward_prediction.py
+DATA/19_patient_independent_hbgd_validation.py
+DATA/19_patient_independent_patient_performance.csv
+DATA/19_patient_independent_performance.csv
+DATA/19_patient_independent_predictions.csv
+DATA/1_inspect_dataset.py
+DATA/20_build_hbgd_prototype.py
+DATA/20_hbgd_prototype_parameters.csv
+DATA/20_hbgd_prototype_performance.csv
+DATA/20_hbgd_prototype_predictions.csv
+DATA/21_individualized_hbgd_patient_performance.csv
+DATA/21_individualized_hbgd_performance.csv
+DATA/21_individualized_hbgd_predictions.csv
+DATA/21_test_individualized_hbgd.py
+DATA/22_predict_individualized_hbgd_rate.py
+DATA/22_rate_patient_performance.csv
+DATA/22_rate_performance.csv
+DATA/22_rate_predictions.csv
+DATA/23_ct_to_hbgd_rate.py
+DATA/24_map_recist_to_ct_lesions.py
+DATA/24_recist_lesion_mapping.csv
+DATA/25_ct_crop_quality.csv
+DATA/25_extract_lesion_ct_crops.py
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_A_label_1.nii.gz
+DATA/25_lesion_ct_crops/patient_001_20230426_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_005_20210527_lesion_A_label_1.nii.gz
+DATA/25_lesion_ct_crops/patient_007_20210526_lesion_A_label_5.nii.gz
+DATA/25_lesion_ct_crops/patient_007_20210802_lesion_A_label_6.nii.gz
+DATA/25_lesion_ct_crops/patient_007_20211007_lesion_A_label_10.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20220825_lesion_C_label_8.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20221012_lesion_C_label_9.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20221129_lesion_C_label_5.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_008_20230117_lesion_C_label_5.nii.gz
+DATA/25_lesion_ct_crops/patient_012_20190415_lesion_B_label_122.nii.gz
+DATA/25_lesion_ct_crops/patient_012_20190703_lesion_B_label_65.nii.gz
+DATA/25_lesion_ct_crops/patient_012_20191030_lesion_B_label_58.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_A_label_1.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20210610_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_A_label_1.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20210819_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_A_label_1.nii.gz
+DATA/25_lesion_ct_crops/patient_013_20211021_lesion_B_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_A_label_4.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230612_lesion_B_label_3.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_A_label_5.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230808_lesion_B_label_3.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_A_label_7.nii.gz
+DATA/25_lesion_ct_crops/patient_016_20230914_lesion_B_label_5.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_A_label_4.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20201029_lesion_B_label_7.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_A_label_9.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20210112_lesion_B_label_15.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_A_label_7.nii.gz
+DATA/25_lesion_ct_crops/patient_022_20210317_lesion_B_label_18.nii.gz
+DATA/25_lesion_ct_crops/patient_024_20201216_lesion_A_label_13.nii.gz
+DATA/25_lesion_ct_crops/patient_025_20230206_lesion_A_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_030_20230321_lesion_B_label_8.nii.gz
+DATA/25_lesion_ct_crops/patient_030_20230522_lesion_B_label_9.nii.gz
+DATA/25_lesion_ct_crops/patient_030_20230720_lesion_B_label_9.nii.gz
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_A_label_2.nii.gz
+DATA/25_lesion_ct_crops/patient_035_20210707_lesion_C_label_7.nii.gz
+DATA/25_lesion_ct_crops/patient_035_20210913_lesion_C_label_3.nii.gz
+DATA/25_lesion_ct_crops/patient_037_20230221_lesion_A_label_2.nii.gz
+DATA/26_audit_ct_crops.py
+DATA/26_ct_crop_audit.csv
+DATA/27_train_ct_to_hbgd_rate.py
+DATA/28_audit_ct_rate_coverage.py
+DATA/28_ct_rate_coverage_audit.csv
+DATA/28_ct_rate_coverage_summary.csv
+DATA/29_ct_crop_repair_audit.csv
+DATA/29_repair_failed_ct_crops.py
+DATA/2_longitudinal_patient_analysis.py
+DATA/2_longitudinal_patient_summary.csv
+DATA/30_audit_ct_rate_coverage.py
+DATA/30_ct_rate_coverage.csv
+DATA/31_ct_rate_linkage_reconciliation.csv
+DATA/31_reconcile_ct_rate_linkage.py
+DATA/32_ct_rate_repaired_coverage.csv
+DATA/32_repair_ct_rate_dates.py
+DATA/33_ct_rate_cnn_results/33_cnn_hbgd_forward_predictions.csv
+DATA/33_ct_rate_cnn_results/33_cnn_hbgd_performance.csv
+DATA/33_ct_rate_cnn_results/33_cnn_rate_predictions.csv
+DATA/33_ct_rate_cnn_results/33_training_history.csv
+DATA/33_train_ct_to_hbgd_rate.py
+DATA/34_audit_ct_trajectory_recovery.py
+DATA/34_ct_trajectory_recovery_audit.csv
+DATA/35_build_hbgd_validation_report.py
+DATA/35_HBGD_VALIDATION_REPORT.txt
+DATA/3_analyze_tumor_change.py
+DATA/3_patient_trajectories.csv
+DATA/3_tumor_change_summary.csv
+DATA/4_ct_verification_summary.csv
+DATA/4_verify_ct_files.py
+DATA/5_ct_mask_verification.csv
+DATA/5_recist_mask_measurements.csv
+DATA/5_recist_mask_verification.csv
+DATA/5_verify_ct_masks.py
+DATA/6_analyze_longitudinal_lesions.py
+DATA/6_lesion_alias_summary.csv
+DATA/6_patient_longitudinal_summary.csv
+DATA/6_recist_growth_analysis.csv
+DATA/6_recist_patient_summary.csv
+DATA/6_study_order_consistency.csv
+DATA/7_analyze_lesion_correspondence.py
+DATA/7_lesion_correspondence.csv
+DATA/7_lesion_geometry.csv
+DATA/7_recist_geometry.csv
+DATA/8_longitudinal_patient_ranking.csv
+DATA/8_recist_pairwise_changes.csv
+DATA/8_recist_trajectory_summary.csv
+DATA/8_validate_recist_trajectories.py
+DATA/9_extract_hbgd_features.py
+DATA/9_hbgd_features.csv
+DATA/9_hbgd_log_growth_features.csv
+DATA/9_hbgd_longitudinal_features.csv
+DATA/HBGD_COMPLETE_PROJECT_ANALYSIS.md
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz
+DATA/images/abdomen/test/images/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz
+DATA/images/abdomen/test/images/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz
+DATA/images/abdomen/test/images/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz
+DATA/images/abdomen/test/images/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz
+DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz
+DATA/images/abdomen/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz
+DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz
+DATA/images/abdomen/test/images/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.json
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.json
+DATA/images/abdomen/test/labels/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.json
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.json
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.json
+DATA/images/abdomen/test/labels/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.json
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.json
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.json
+DATA/images/abdomen/test/labels/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.json
+DATA/images/abdomen/test/labels/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.json
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.json
+DATA/images/abdomen/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.json
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.json
+DATA/images/abdomen/test/labels/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.json
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021061509140333600009084.nii.gz
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021082509324422300004131.nii.gz
+DATA/images/abdomen/test/masks/003_1.3.12.2.1107.5.1.4.83504.30000021102712332815800004663.nii.gz
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021061014315422700023041.nii.gz
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021081905213109000029485.nii.gz
+DATA/images/abdomen/test/masks/013_1.3.12.2.1107.5.1.4.83504.30000021102112360685900001538.nii.gz
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020011313523232500004258.nii.gz
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020021012090131800013364.nii.gz
+DATA/images/abdomen/test/masks/015_1.3.12.2.1107.5.1.4.83504.30000020040114181387500000788.nii.gz
+DATA/images/abdomen/test/masks/018_1.3.12.2.1107.5.1.4.83504.30000021051211124165500072243.nii.gz
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001857.nii.gz
+DATA/images/abdomen/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800020299.nii.gz
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021070712131706800023856.nii.gz
+DATA/images/abdomen/test/masks/035_1.3.12.2.1107.5.1.4.83504.30000021091312134713400002616.nii.gz
+DATA/images/abdomen/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz
+DATA/images/abdomen/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz
+DATA/images/abdomen/train/images/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz
+DATA/images/abdomen/train/images/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz
+DATA/images/abdomen/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz
+DATA/images/abdomen/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz
+DATA/images/abdomen/train/images/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz
+DATA/images/abdomen/train/images/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz
+DATA/images/abdomen/train/images/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz
+DATA/images/abdomen/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz
+DATA/images/abdomen/train/images/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz
+DATA/images/abdomen/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.json
+DATA/images/abdomen/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.json
+DATA/images/abdomen/train/labels/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.json
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.json
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.json
+DATA/images/abdomen/train/labels/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.json
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.json
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.json
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.json
+DATA/images/abdomen/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.json
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.json
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.json
+DATA/images/abdomen/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.json
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.json
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.json
+DATA/images/abdomen/train/labels/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.json
+DATA/images/abdomen/train/labels/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.json
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.json
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.json
+DATA/images/abdomen/train/labels/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.json
+DATA/images/abdomen/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.json
+DATA/images/abdomen/train/labels/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.json
+DATA/images/abdomen/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041810.nii.gz
+DATA/images/abdomen/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029635.nii.gz
+DATA/images/abdomen/train/masks/005_1.3.12.2.1107.5.1.4.83504.30000021052716090067300023414.nii.gz
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021052612201586400049605.nii.gz
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021080212120090000010256.nii.gz
+DATA/images/abdomen/train/masks/007_1.3.12.2.1107.5.1.4.83504.30000021100712273932400016978.nii.gz
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022101213201190600003679.nii.gz
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900009091.nii.gz
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000023011707404892200015805.nii.gz
+DATA/images/abdomen/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400011687.nii.gz
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900016665.nii.gz
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900017615.nii.gz
+DATA/images/abdomen/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009696.nii.gz
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021072912214330400005557.nii.gz
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021110312383749400012020.nii.gz
+DATA/images/abdomen/train/masks/023_1.3.12.2.1107.5.1.4.83504.30000021120712090076800023840.nii.gz
+DATA/images/abdomen/train/masks/024_1.3.12.2.1107.5.1.4.83504.30000020121611411612500007509.nii.gz
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023020613190381900014787.nii.gz
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83504.30000023031713195745100038136.nii.gz
+DATA/images/abdomen/train/masks/025_1.3.12.2.1107.5.1.4.83885.30000022122012381826100005264.nii.gz
+DATA/images/abdomen/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006777.nii.gz
+DATA/images/abdomen/train/masks/044_1.3.12.2.1107.5.1.4.83504.30000023011617535917400004407.nii.gz
+DATA/images/thorax/test/images/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz
+DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz
+DATA/images/thorax/test/images/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz
+DATA/images/thorax/test/images/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz
+DATA/images/thorax/test/labels/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.json
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.json
+DATA/images/thorax/test/labels/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.json
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.json
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.json
+DATA/images/thorax/test/labels/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.json
+DATA/images/thorax/test/masks/010_1.3.12.2.1107.5.1.4.83504.30000017121507082014000029608.nii.gz
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021051412400662100001523.nii.gz
+DATA/images/thorax/test/masks/028_1.3.12.2.1107.5.1.4.83504.30000021071911510369800019660.nii.gz
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023032112314560600032721.nii.gz
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83504.30000023072011471461300015769.nii.gz
+DATA/images/thorax/test/masks/030_1.3.12.2.1107.5.1.4.83885.30000023052212224943100007846.nii.gz
+DATA/images/thorax/train/images/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz
+DATA/images/thorax/train/images/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz
+DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz
+DATA/images/thorax/train/images/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz
+DATA/images/thorax/train/images/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz
+DATA/images/thorax/train/images/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz
+DATA/images/thorax/train/images/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz
+DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz
+DATA/images/thorax/train/images/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz
+DATA/images/thorax/train/images/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz
+DATA/images/thorax/train/labels/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.json
+DATA/images/thorax/train/labels/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.json
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.json
+DATA/images/thorax/train/labels/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.json
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.json
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.json
+DATA/images/thorax/train/labels/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.json
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.json
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.json
+DATA/images/thorax/train/labels/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.json
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.json
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.json
+DATA/images/thorax/train/labels/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.json
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.json
+DATA/images/thorax/train/labels/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.json
+DATA/images/thorax/train/labels/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.json
+DATA/images/thorax/train/masks/001_1.3.12.2.1107.5.1.4.83504.30000023042612315883400041138.nii.gz
+DATA/images/thorax/train/masks/002_1.3.12.2.1107.5.1.4.83504.30000022071212080050700029044.nii.gz
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83504.30000022112912564272900008711.nii.gz
+DATA/images/thorax/train/masks/008_1.3.12.2.1107.5.1.4.83885.30000022082507483231400010975.nii.gz
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019041511214045100000719.nii.gz
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019070312170000200010324.nii.gz
+DATA/images/thorax/train/masks/012_1.3.12.2.1107.5.1.4.83504.30000019103012204275800008668.nii.gz
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023061213202681200026419.nii.gz
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023080813283914000023245.nii.gz
+DATA/images/thorax/train/masks/016_1.3.12.2.1107.5.1.4.83504.30000023091403342212000028940.nii.gz
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000020102916421550900015953.nii.gz
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021011202081810900016917.nii.gz
+DATA/images/thorax/train/masks/022_1.3.12.2.1107.5.1.4.83504.30000021031714114711900009018.nii.gz
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023081013180867800028236.nii.gz
+DATA/images/thorax/train/masks/031_1.3.12.2.1107.5.1.4.83504.30000023101713284842500006429.nii.gz
+DATA/images/thorax/train/masks/037_1.3.12.2.1107.5.1.4.83885.30000023022112155417000006049.nii.gz
+DATA/patients.csv
+DATA/recist_measurements.csv
+DATA/series.json
+DATA/windows_mapping.json

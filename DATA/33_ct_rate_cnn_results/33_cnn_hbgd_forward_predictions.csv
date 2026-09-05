@@ -1,0 +1,2 @@
+patient_id,alias,baseline_date,second_date,days_ahead,baseline_diameter_mm,actual_diameter_mm,true_rate,cnn_predicted_rate,predicted_diameter_mm,diameter_absolute_error_mm
+30,B,2023-03-21,2023-05-22,62,16.0,17.0,0.0009778164809102,-0.002068355679512024,14.074303249632342,2.925696750367658

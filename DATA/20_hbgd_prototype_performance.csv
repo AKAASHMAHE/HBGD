@@ -1,0 +1,3 @@
+model,observations,MAE_mm,RMSE_mm
+no_change,5,1.2,1.6733200530681511
+HBGD_state_aware,5,2.1222811645207376,3.1455821952726146

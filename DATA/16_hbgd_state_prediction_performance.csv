@@ -1,0 +1,4 @@
+model,observations,accuracy,balanced_accuracy,macro_f1
+previous_state,5,0.6,0.375,0.25
+most_common_state,5,0.8,0.5,0.4444444444444444
+transition_matrix,5,0.2,0.5,0.13333333333333333

@@ -1,0 +1,2 @@
+test_trajectories,rate_mae,rate_rmse,forward_observations,cnn_hbgd_diameter_mae,cnn_hbgd_diameter_rmse,no_change_mae
+1,0.003046172160422224,0.003046172160422224,1,2.925696750367658,2.925696750367658,1.0

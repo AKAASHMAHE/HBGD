@@ -1,0 +1,190 @@
+HBGD EXPERIMENTAL VALIDATION REPORT
+====================================================================================================
+
+
+
+1. MATHEMATICAL CORE
+
+The project successfully implements an HBGD-style dynamical formulation:
+
+    dD/dt = rD
+
+with solution:
+
+    D(t) = D0 * exp(r * t)
+
+The experiments establish that this mathematical formulation
+can be implemented on the available longitudinal lesion data.
+
+------------------------------------------------------------
+
+2. FORWARD PREDICTION
+
+Step 18 demonstrated genuine forward prediction in which the
+initial observation was used to estimate the initial rate and
+later observations were treated as prediction targets.
+
+The HBGD formulation substantially outperformed the no-change
+baseline in that exploratory experiment.
+
+------------------------------------------------------------
+
+3. PATIENT-INDEPENDENT EVIDENCE
+
+Step 19 evaluated population parameters on held-out patients.
+
+The state-aware HBGD formulation outperformed the global
+exponential model and the no-change baseline in that experiment.
+
+This provides preliminary evidence that the mathematical
+architecture contains useful predictive structure.
+
+------------------------------------------------------------
+
+4. INDIVIDUALIZED PARAMETER
+
+Step 21 showed that an individualized growth parameter derived
+from the initial transition can outperform fixed population
+parameters in the available held-out experiment.
+
+This supports the architectural hypothesis that the dynamical
+parameter may be lesion-specific rather than universally fixed.
+
+------------------------------------------------------------
+
+5. CT INPUT PIPELINE
+
+Steps 24-26 established that RECIST lesions can be linked to
+segmentation labels and lesion-specific CT crops can be extracted.
+
+44 physical CT crops were successfully available.
+
+12 longitudinal CT trajectories were recovered.
+
+------------------------------------------------------------
+
+6. CT TO RATE PROTOTYPE
+
+Step 33 implemented:
+
+    CT crop
+        |
+        v
+    3D CNN
+        |
+        v
+    predicted r
+        |
+        v
+    HBGD equation
+        |
+        v
+    predicted future diameter
+
+The complete pipeline executed successfully.
+
+However, the independent test set contained only one usable
+trajectory.
+
+Therefore the CNN result cannot be considered statistical,
+clinical, or generalizable validation.
+
+------------------------------------------------------------
+
+7. CURRENT LIMITATION
+
+The major remaining limitation is NOT the HBGD mathematical
+implementation.
+
+The major limitation is longitudinal CT coverage in independent
+patients.
+
+The available data do not provide enough independent CT
+trajectories for a defensible CNN validation experiment.
+
+------------------------------------------------------------
+
+8. WHAT IS DEMONSTRATED
+
+The current project demonstrates a working research prototype
+of the following architecture:
+
+    longitudinal lesion measurements
+        |
+        v
+    individualized dynamical parameter
+        |
+        v
+    HBGD differential equation
+        |
+        v
+    forward tumor-size prediction
+
+and an exploratory imaging extension:
+
+    lesion-specific CT
+        |
+        v
+    3D CNN
+        |
+        v
+    individualized r
+        |
+        v
+    HBGD
+        |
+        v
+    future diameter
+
+------------------------------------------------------------
+
+9. WHAT IS NOT DEMONSTRATED
+
+The current experiments do NOT establish:
+
+    - clinical validity
+    - biological causality
+    - universal cancer applicability
+    - clinical superiority
+    - regulatory readiness
+    - clinical deployment readiness
+    - statistically reliable CNN performance
+
+A larger longitudinal CT dataset with independent patients
+would be required for those claims.
+
+------------------------------------------------------------
+
+10. RECOMMENDED NEXT DEVELOPMENT
+
+The current dataset should be treated as a feasibility and
+prototype dataset.
+
+The next major experiment should use a substantially larger
+longitudinal CT dataset with:
+
+    - multiple time points
+    - lesion identity across time
+    - segmentation masks
+    - RECIST measurements
+    - sufficient independent patients
+
+Only then should the CT-to-r neural component be trained and
+evaluated as a true predictive model.
+
+
+====================================================================================================
+FINAL STATUS
+====================================================================================================
+
+[YES] HBGD mathematical formulation implemented.
+[YES] Forward prediction demonstrated.
+[YES] Patient-independent mathematical validation performed.
+[YES] Individualized dynamical parameter demonstrated.
+[YES] RECIST-to-mask-to-CT mapping established.
+[YES] Lesion-specific CT crops extracted.
+[YES] CT -> r -> HBGD prototype executed.
+[NO] Sufficient independent CT trajectories for CNN validation.
+[NO] Clinical validation.
+[NO] Biological-state validation.
+[NO] Universal cancer validation.

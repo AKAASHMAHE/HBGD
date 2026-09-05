@@ -1,0 +1,4 @@
+dynamic_state,volume_growth,volume_shrinkage,volume_stable
+growth,6,1,0
+shrinkage,1,20,0
+stable,13,6,2

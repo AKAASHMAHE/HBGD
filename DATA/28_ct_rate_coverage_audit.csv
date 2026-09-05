@@ -1,0 +1,26 @@
+patient_id,lesion_alias,baseline_date,second_date,interval_days,baseline_diameter_mm,second_diameter_mm,individualized_rate,quality_records_found,crop_available,crop_file,status,coverage_reason
+3,A,2021-06-15,2021-08-25,71,61.0,61.0,0.0,1,False,,failed,Baseline crop extraction failed
+3,B,2021-06-15,2021-08-25,71,23.0,17.0,-0.0042574770686328684,1,False,,failed,Baseline crop extraction failed
+3,C,2021-06-15,2021-08-25,71,17.0,15.0,-0.0017628611683662824,1,False,,failed,Baseline crop extraction failed
+7,A,2021-05-26,2021-08-02,68,24.0,24.0,0.0,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_007_20210526_lesion_A_label_5.nii.gz,valid,Valid baseline CT crop available
+7,B,2021-05-26,2021-08-02,68,33.0,33.0,0.0,1,False,,failed,Baseline crop extraction failed
+8,A,2022-08-25,2022-10-12,48,20.0,14.0,-0.007430727998723592,1,False,,failed,Baseline crop extraction failed
+8,B,2022-08-25,2022-10-12,48,36.0,32.0,-0.002453813242841323,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_008_20220825_lesion_B_label_2.nii.gz,valid,Valid baseline CT crop available
+8,C,2022-08-25,2022-10-12,48,33.0,17.0,-0.013818629529380504,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_008_20220825_lesion_C_label_8.nii.gz,valid,Valid baseline CT crop available
+12,A,2019-04-15,2019-07-03,79,21.0,21.0,0.0,1,False,,failed,Baseline crop extraction failed
+12,B,2019-04-15,2019-07-03,79,15.0,17.0,0.0015843435816962784,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_012_20190415_lesion_B_label_122.nii.gz,valid,Valid baseline CT crop available
+13,A,2021-06-10,2021-08-19,70,96.0,71.0,-0.004309547348950296,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_013_20210610_lesion_A_label_1.nii.gz,valid,Valid baseline CT crop available
+13,B,2021-06-10,2021-08-19,70,71.0,60.0,-0.0024047902117030682,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_013_20210610_lesion_B_label_2.nii.gz,valid,Valid baseline CT crop available
+16,A,2023-06-12,2023-08-08,57,40.0,37.0,-0.0013677463415738913,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_016_20230612_lesion_A_label_4.nii.gz,valid,Valid baseline CT crop available
+16,B,2023-06-12,2023-08-08,57,39.0,30.0,-0.004602881832763,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_016_20230612_lesion_B_label_3.nii.gz,valid,Valid baseline CT crop available
+22,A,2020-10-29,2021-01-12,75,55.0,57.0,0.0004762411013610566,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_022_20201029_lesion_A_label_4.nii.gz,valid,Valid baseline CT crop available
+22,B,2020-10-29,2021-01-12,75,68.0,59.0,-0.0018929368169384965,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_022_20201029_lesion_B_label_7.nii.gz,valid,Valid baseline CT crop available
+23,A,2021-07-29,2021-11-03,97,16.0,17.0,0.0006249961012003591,1,False,,failed,Baseline crop extraction failed
+23,B,2021-07-29,2021-11-03,97,16.0,13.0,-0.002140612008023139,1,False,,failed,Baseline crop extraction failed
+25,A,2022-12-20,2023-02-06,48,49.0,48.0,-0.00042956848339032713,1,False,,failed,Baseline crop extraction failed
+30,A,2023-03-21,2023-05-22,62,19.0,19.0,0.0,1,False,,failed,Baseline crop extraction failed
+30,B,2023-03-21,2023-05-22,62,16.0,17.0,0.0009778164809102394,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_030_20230321_lesion_B_label_8.nii.gz,valid,Valid baseline CT crop available
+31,A,2023-08-10,2023-10-17,68,28.0,23.0,-0.0028927984447949156,1,False,,failed,Baseline crop extraction failed
+35,A,2021-07-07,2021-09-13,68,52.0,73.0,0.004988466508337701,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_035_20210707_lesion_A_label_2.nii.gz,valid,Valid baseline CT crop available
+35,B,2021-07-07,2021-09-13,68,39.0,46.0,0.00242764338763895,1,False,,failed,Baseline crop extraction failed
+35,C,2021-07-07,2021-09-13,68,16.0,17.0,0.0008915385561240418,1,True,d:\VIT\PROJECT\NLP\PATENT\DATA\25_lesion_ct_crops\patient_035_20210707_lesion_C_label_7.nii.gz,valid,Valid baseline CT crop available

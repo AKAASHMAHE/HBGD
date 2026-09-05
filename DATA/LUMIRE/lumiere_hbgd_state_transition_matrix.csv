@@ -1,0 +1,4 @@
+current_state,future_growth_count,future_stable_count,future_shrinkage_count,future_growth_percent,future_stable_percent,future_shrinkage_percent
+GROWTH,13,11,9,39.39393939393939,33.33333333333333,27.27272727272727
+STABLE,10,10,1,47.61904761904761,47.61904761904761,4.761904761904762
+SHRINKAGE,11,4,6,52.38095238095239,19.047619047619047,28.57142857142857

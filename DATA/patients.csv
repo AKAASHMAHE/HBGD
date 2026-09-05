@@ -1,0 +1,23 @@
+patient_id,subset,first_study_date,sex,age,diagnosis,histology,health_insurance
+1,train,20230426,M,70,lung cancer,,public
+2,train,20220712,F,62,gastric cancer,,uninsured
+3,test,20210615,F,61,gallbladder cancer,Poorly Differentiated Adenocarcinoma with Signet Ring Cell and Mucinous Features,uninsured
+5,train,20210527,F,59,colon cancer,Moderately Differentiated Adenocarcinoma,uninsured
+7,train,20210526,M,53,rectal cancer,Well Differentiated Adenocarcinoma,uninsured
+8,train,20220825,M,59,gastric cancer,,public
+10,test,20171215,M,67,melanoma,,public
+12,train,20190415,F,56,breast cancer,Invasive Ductal Breast Carcinoma,uninsured
+13,test,20210610,M,58,gastric cancer,Papillary Adenocarcinoma,uninsured
+15,test,20200113,M,64,bladder cancer,Plasmacytoid Urothelial Carcinoma,uninsured
+16,train,20230612,F,70,lung cancer,,public
+18,test,20210513,M,65,colon cancer,Tubular Adenocarcinoma,uninsured
+22,train,20201029,M,64,colon cancer,Adenocarcinoma,uninsured
+23,train,20210729,F,74,colon cancer,Tubular Adenocarcinoma,uninsured
+24,train,20201216,F,75,gastric cancer,Poorly Differentiated Adenocarcinoma,uninsured
+25,train,20221220,F,65,gallbladder cancer,,uninsured
+28,test,20210514,F,37,colon cancer,Adenocarcinoma,uninsured
+30,test,20230321,M,57,rectal cancer,Tubular Adenocarcinoma,private
+31,train,20230810,M,68,lung cancer,,public
+35,test,20210707,F,53,gastric cancer,Signet Ring Cell Adenocarcinoma,uninsured
+37,train,20230221,M,64,lung cancer,,uninsured
+44,train,20230116,F,70,ovarian cancer,,uninsured

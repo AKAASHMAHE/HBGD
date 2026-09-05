@@ -1,0 +1,4 @@
+model,observations,MAE_mm,RMSE_mm
+global_exponential,5,4.192668792975328,4.569968443654936
+ridge_imaging_rate,5,5.430268367601339,5.589626706974382
+random_forest_imaging_rate,5,3.281383188213263,3.6498621988539037

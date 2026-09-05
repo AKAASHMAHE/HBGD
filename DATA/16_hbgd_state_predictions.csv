@@ -1,0 +1,6 @@
+patient_id,lesion_alias,previous_state,current_state,pred_previous_state,pred_most_common_state,pred_transition_matrix
+23,A,stable,stable,stable,stable,growth
+23,B,shrinkage,stable,shrinkage,stable,shrinkage
+25,A,stable,stable,stable,stable,growth
+30,A,stable,stable,stable,stable,growth
+30,B,stable,growth,stable,stable,growth
