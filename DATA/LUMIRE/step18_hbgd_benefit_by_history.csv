@@ -1,0 +1,3 @@
+history_group,n,median_timepoints,mean_improvement_mm,median_improvement_mm,improved,worsened
+Shorter_History,17,6.0,0.12889823492470556,0.11212340273633714,12,5
+Longer_History,15,6.0,0.09724379335721368,0.04592083640679334,8,7

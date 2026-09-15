@@ -1,0 +1,2 @@
+metric,observed_mean,bootstrap_mean,bootstrap_median,bootstrap_std,ci_lower_2_5,ci_upper_97_5
+patient_level_mae_improvement,0.7684603957158301,0.7500108793412612,0.7123373575491523,0.5688860866538187,-0.24963685329700439,1.962920831008753

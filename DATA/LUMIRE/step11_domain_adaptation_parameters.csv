@@ -1,0 +1,5 @@
+parameter,value
+mean_validation_correction_mm,3.0152025975677414
+std_validation_correction_mm,7.7711268459849645
+mean_test_correction_mm,2.1548969976573735
+std_test_correction_mm,8.894920534422335

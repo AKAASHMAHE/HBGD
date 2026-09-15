@@ -1,0 +1,16 @@
+metric,value
+test_patients,13
+improved_patients,8
+worsened_patients,5
+unchanged_patients,0
+geometry_test_mae_mm,7.4912379856284455
+geometry_hbgd_test_mae_mm,7.186171253550103
+mean_patient_improvement_mm,0.7684603957158301
+median_patient_improvement_mm,0.07971635294010149
+patient_improvement_sd_mm,2.166498939061023
+paired_effect_size,0.35470148720630656
+bootstrap_ci_lower_mm,-0.24963685329700439
+bootstrap_ci_upper_mm,1.962920831008753
+paired_permutation_p,0.27474505098980206
+wilcoxon_statistic,29.0
+wilcoxon_p,0.2734375

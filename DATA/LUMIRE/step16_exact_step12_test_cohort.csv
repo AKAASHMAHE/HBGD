@@ -1,0 +1,14 @@
+patient_id,prediction_cases,prediction_rows
+Patient-010,2,10
+Patient-012,4,20
+Patient-019,12,60
+Patient-022,5,25
+Patient-033,9,45
+Patient-037,4,20
+Patient-038,2,10
+Patient-042,9,45
+Patient-059,10,50
+Patient-064,5,25
+Patient-065,5,25
+Patient-073,17,85
+Patient-085,4,20
