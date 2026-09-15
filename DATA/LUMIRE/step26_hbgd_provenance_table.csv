@@ -1,0 +1,5 @@
+artifact,file,role,count,patients
+Source HBGD,17_hbgd_state_parameters.csv,Validated source growth intervals,49,12
+LUMIERE trajectories,lumiere_longitudinal_trajectories.csv,Target longitudinal tumor trajectories,476,67
+Step 25 predictions,step25_hbgd_temporal_predictions.csv,Strict temporal held-out predictions,276,59
+Step 25 performance,step25_hbgd_temporal_performance.csv,Temporal model comparison,4,59

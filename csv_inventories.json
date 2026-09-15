@@ -1,0 +1,3203 @@
+{
+  "orig_csv": [
+    {
+      "filename": "10_growth_model_holdout.csv",
+      "path": "DATA\\10_growth_model_holdout.csv",
+      "size_bytes": 2233,
+      "rows": 24,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "training_rate_per_day",
+        "test_interval_days",
+        "test_initial_diameter_mm",
+        "observed_diameter_mm",
+        "predicted_diameter_mm",
+        "prediction_error_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "10_growth_model_transitions.csv",
+      "path": "DATA\\10_growth_model_transitions.csv",
+      "size_bytes": 6531,
+      "rows": 49,
+      "cols": 16,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "observed_diameter_mm",
+        "initial_diameter_mm",
+        "linear_rate_mm_per_day",
+        "linear_prediction_mm",
+        "exponential_rate_per_day",
+        "exponential_prediction_mm",
+        "logistic_prediction_mm",
+        "carrying_capacity_assumption_mm",
+        "linear_error_mm",
+        "exponential_error_mm",
+        "logistic_error_mm"
+      ]
+    },
+    {
+      "filename": "10_patient_growth_rates.csv",
+      "path": "DATA\\10_patient_growth_rates.csv",
+      "size_bytes": 1048,
+      "rows": 12,
+      "cols": 8,
+      "col_names": [
+        "patient_id",
+        "transitions",
+        "positive_growth",
+        "negative_growth",
+        "stable",
+        "mean_log_growth_rate",
+        "median_log_growth_rate",
+        "growth_rate_std"
+      ]
+    },
+    {
+      "filename": "11_growth_rate_stability.csv",
+      "path": "DATA\\11_growth_rate_stability.csv",
+      "size_bytes": 6714,
+      "rows": 49,
+      "cols": 16,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_mask_label",
+        "current_mask_label",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "diameter_change_mm",
+        "percent_change",
+        "rate_mm_per_day",
+        "previous_study_order",
+        "current_study_order",
+        "linear_rate_mm_per_day",
+        "log_growth_rate_per_day"
+      ]
+    },
+    {
+      "filename": "11_patient_growth_statistics.csv",
+      "path": "DATA\\11_patient_growth_statistics.csv",
+      "size_bytes": 884,
+      "rows": 12,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "count",
+        "mean",
+        "median",
+        "std"
+      ]
+    },
+    {
+      "filename": "11_volume_longitudinal_analysis.csv",
+      "path": "DATA\\11_volume_longitudinal_analysis.csv",
+      "size_bytes": 14217,
+      "rows": 50,
+      "cols": 23,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "study_date_string",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "diameter_mm",
+        "volume_cm3",
+        "volume_mm3",
+        "equivalent_diameter_mm",
+        "equivalent_to_recist_ratio",
+        "equivalent_minus_recist_mm",
+        "baseline_diameter_mm",
+        "baseline_volume_cm3",
+        "diameter_normalized",
+        "volume_normalized",
+        "diameter_percent_from_baseline",
+        "volume_percent_from_baseline",
+        "days_from_baseline",
+        "months_from_baseline",
+        "previous_volume_cm3",
+        "previous_diameter_mm",
+        "volume_change_cm3",
+        "diameter_change_mm"
+      ]
+    },
+    {
+      "filename": "12_dynamic_model_patient_performance.csv",
+      "path": "DATA\\12_dynamic_model_patient_performance.csv",
+      "size_bytes": 718,
+      "rows": 10,
+      "cols": 6,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "no_change_MAE_mm",
+        "linear_MAE_mm",
+        "constant_exponential_MAE_mm",
+        "adaptive_exponential_MAE_mm"
+      ]
+    },
+    {
+      "filename": "12_dynamic_model_performance.csv",
+      "path": "DATA\\12_dynamic_model_performance.csv",
+      "size_bytes": 336,
+      "rows": 4,
+      "cols": 5,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm",
+        "R2"
+      ]
+    },
+    {
+      "filename": "12_dynamic_model_predictions.csv",
+      "path": "DATA\\12_dynamic_model_predictions.csv",
+      "size_bytes": 6717,
+      "rows": 24,
+      "cols": 24,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "target_date",
+        "previous_diameter_mm",
+        "observed_diameter_mm",
+        "interval_days",
+        "no_change_prediction",
+        "linear_prediction",
+        "constant_exponential_prediction",
+        "adaptive_exponential_prediction",
+        "initial_exponential_rate",
+        "adaptive_exponential_rate",
+        "no_change_error_mm",
+        "no_change_absolute_error_mm",
+        "no_change_squared_error",
+        "linear_error_mm",
+        "linear_absolute_error_mm",
+        "linear_squared_error",
+        "constant_exponential_error_mm",
+        "constant_exponential_absolute_error_mm",
+        "constant_exponential_squared_error",
+        "adaptive_exponential_error_mm",
+        "adaptive_exponential_absolute_error_mm",
+        "adaptive_exponential_squared_error"
+      ]
+    },
+    {
+      "filename": "13_hbgd_feature_patient_performance.csv",
+      "path": "DATA\\13_hbgd_feature_patient_performance.csv",
+      "size_bytes": 413,
+      "rows": 3,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "no_change_MAE_mm",
+        "diameter_only_MAE_mm",
+        "diameter_plus_time_MAE_mm",
+        "diameter_volume_time_MAE_mm",
+        "full_feature_model_MAE_mm"
+      ]
+    },
+    {
+      "filename": "13_hbgd_feature_performance.csv",
+      "path": "DATA\\13_hbgd_feature_performance.csv",
+      "size_bytes": 399,
+      "rows": 5,
+      "cols": 5,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm",
+        "R2"
+      ]
+    },
+    {
+      "filename": "13_hbgd_feature_predictions.csv",
+      "path": "DATA\\13_hbgd_feature_predictions.csv",
+      "size_bytes": 2149,
+      "rows": 8,
+      "cols": 19,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "previous_volume_cm3",
+        "current_volume_cm3",
+        "diameter_change_mm",
+        "volume_change_cm3",
+        "diameter_percent_change",
+        "volume_percent_change",
+        "no_change_prediction",
+        "diameter_only_prediction",
+        "diameter_time_prediction",
+        "diameter_volume_time_prediction",
+        "diameter_volume_interaction",
+        "full_feature_prediction"
+      ]
+    },
+    {
+      "filename": "14_hbgd_dynamic_states.csv",
+      "path": "DATA\\14_hbgd_dynamic_states.csv",
+      "size_bytes": 10628,
+      "rows": 49,
+      "cols": 19,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "previous_volume_cm3",
+        "current_volume_cm3",
+        "diameter_change_mm",
+        "diameter_percent_change",
+        "diameter_rate_mm_day",
+        "log_growth_rate",
+        "volume_change_cm3",
+        "volume_percent_change",
+        "volume_rate_cm3_day",
+        "dynamic_state",
+        "volume_state",
+        "previous_dynamic_state"
+      ]
+    },
+    {
+      "filename": "14_hbgd_lesion_behaviors.csv",
+      "path": "DATA\\14_hbgd_lesion_behaviors.csv",
+      "size_bytes": 2768,
+      "rows": 25,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "transitions",
+        "mean_diameter_rate",
+        "median_diameter_rate",
+        "diameter_rate_std",
+        "mean_volume_percent_change",
+        "growth_transitions",
+        "shrinkage_transitions",
+        "stable_transitions",
+        "behavior_type"
+      ]
+    },
+    {
+      "filename": "14_hbgd_patient_states.csv",
+      "path": "DATA\\14_hbgd_patient_states.csv",
+      "size_bytes": 695,
+      "rows": 12,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "transitions",
+        "growth",
+        "shrinkage",
+        "stable",
+        "mean_rate",
+        "mean_volume_change"
+      ]
+    },
+    {
+      "filename": "14_hbgd_state_summary.csv",
+      "path": "DATA\\14_hbgd_state_summary.csv",
+      "size_bytes": 341,
+      "rows": 3,
+      "cols": 6,
+      "col_names": [
+        "dynamic_state",
+        "observations",
+        "mean_rate",
+        "median_rate",
+        "mean_volume_change",
+        "median_volume_change"
+      ]
+    },
+    {
+      "filename": "14_hbgd_state_transitions.csv",
+      "path": "DATA\\14_hbgd_state_transitions.csv",
+      "size_bytes": 1147,
+      "rows": 24,
+      "cols": 6,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "previous_state",
+        "current_state"
+      ]
+    },
+    {
+      "filename": "15_hbgd_lesion_transition_summary.csv",
+      "path": "DATA\\15_hbgd_lesion_transition_summary.csv",
+      "size_bytes": 427,
+      "rows": 21,
+      "cols": 6,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "transitions",
+        "same_state",
+        "switches",
+        "persistence_percent"
+      ]
+    },
+    {
+      "filename": "15_hbgd_patient_transition_summary.csv",
+      "path": "DATA\\15_hbgd_patient_transition_summary.csv",
+      "size_bytes": 231,
+      "rows": 10,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "transitions",
+        "same_state",
+        "state_switches",
+        "persistence_percent"
+      ]
+    },
+    {
+      "filename": "15_hbgd_transition_entropy.csv",
+      "path": "DATA\\15_hbgd_transition_entropy.csv",
+      "size_bytes": 109,
+      "rows": 3,
+      "cols": 2,
+      "col_names": [
+        "previous_state",
+        "transition_entropy_bits"
+      ]
+    },
+    {
+      "filename": "15_hbgd_transition_matrix.csv",
+      "path": "DATA\\15_hbgd_transition_matrix.csv",
+      "size_bytes": 85,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "previous_state",
+        "growth",
+        "stable",
+        "shrinkage"
+      ]
+    },
+    {
+      "filename": "15_hbgd_transition_probabilities.csv",
+      "path": "DATA\\15_hbgd_transition_probabilities.csv",
+      "size_bytes": 138,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "previous_state",
+        "growth",
+        "stable",
+        "shrinkage"
+      ]
+    },
+    {
+      "filename": "15_hbgd_volume_state_agreement.csv",
+      "path": "DATA\\15_hbgd_volume_state_agreement.csv",
+      "size_bytes": 107,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "dynamic_state",
+        "volume_growth",
+        "volume_shrinkage",
+        "volume_stable"
+      ]
+    },
+    {
+      "filename": "16_hbgd_state_patient_performance.csv",
+      "path": "DATA\\16_hbgd_state_patient_performance.csv",
+      "size_bytes": 144,
+      "rows": 3,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "previous_state_accuracy",
+        "most_common_accuracy",
+        "transition_accuracy"
+      ]
+    },
+    {
+      "filename": "16_hbgd_state_prediction_performance.csv",
+      "path": "DATA\\16_hbgd_state_prediction_performance.csv",
+      "size_bytes": 186,
+      "rows": 3,
+      "cols": 5,
+      "col_names": [
+        "model",
+        "observations",
+        "accuracy",
+        "balanced_accuracy",
+        "macro_f1"
+      ]
+    },
+    {
+      "filename": "16_hbgd_state_predictions.csv",
+      "path": "DATA\\16_hbgd_state_predictions.csv",
+      "size_bytes": 334,
+      "rows": 5,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_state",
+        "current_state",
+        "pred_previous_state",
+        "pred_most_common_state",
+        "pred_transition_matrix"
+      ]
+    },
+    {
+      "filename": "16_hbgd_training_transition_probabilities.csv",
+      "path": "DATA\\16_hbgd_training_transition_probabilities.csv",
+      "size_bytes": 103,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "previous_state",
+        "growth",
+        "stable",
+        "shrinkage"
+      ]
+    },
+    {
+      "filename": "17_hbgd_diameter_trajectories.csv",
+      "path": "DATA\\17_hbgd_diameter_trajectories.csv",
+      "size_bytes": 7090,
+      "rows": 74,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "time_days",
+        "observed_diameter_mm",
+        "predicted_diameter_mm",
+        "diameter_error_mm",
+        "growth_rate_r_per_day",
+        "trajectory_MAE_mm",
+        "trajectory_RMSE_mm"
+      ]
+    },
+    {
+      "filename": "17_hbgd_growth_parameters.csv",
+      "path": "DATA\\17_hbgd_growth_parameters.csv",
+      "size_bytes": 1519,
+      "rows": 25,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "growth_rate_r_per_day",
+        "trajectory_MAE_mm",
+        "trajectory_RMSE_mm"
+      ]
+    },
+    {
+      "filename": "17_hbgd_mathematical_features.csv",
+      "path": "DATA\\17_hbgd_mathematical_features.csv",
+      "size_bytes": 20260,
+      "rows": 82,
+      "cols": 21,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "study_date_string",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "diameter_mm",
+        "volume_cm3",
+        "volume_mm3",
+        "equivalent_diameter_mm",
+        "equivalent_to_recist_ratio",
+        "equivalent_minus_recist_mm",
+        "baseline_diameter_mm",
+        "baseline_volume_cm3",
+        "diameter_normalized",
+        "volume_normalized",
+        "diameter_percent_from_baseline",
+        "volume_percent_from_baseline",
+        "days_from_baseline",
+        "months_from_baseline",
+        "sphere_equivalent_diameter_mm",
+        "geometric_diameter_difference_mm"
+      ]
+    },
+    {
+      "filename": "17_hbgd_state_parameters.csv",
+      "path": "DATA\\17_hbgd_state_parameters.csv",
+      "size_bytes": 2675,
+      "rows": 49,
+      "cols": 8,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "time_start_days",
+        "time_end_days",
+        "diameter_start_mm",
+        "diameter_end_mm",
+        "growth_rate",
+        "dynamic_state"
+      ]
+    },
+    {
+      "filename": "17_hbgd_volume_parameters.csv",
+      "path": "DATA\\17_hbgd_volume_parameters.csv",
+      "size_bytes": 1599,
+      "rows": 25,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "volume_growth_rate_per_day",
+        "volume_MAE_cm3",
+        "volume_RMSE_cm3"
+      ]
+    },
+    {
+      "filename": "18_hbgd_forecast_horizon_analysis.csv",
+      "path": "DATA\\18_hbgd_forecast_horizon_analysis.csv",
+      "size_bytes": 842,
+      "rows": 19,
+      "cols": 5,
+      "col_names": [
+        "days_ahead",
+        "count",
+        "mean",
+        "median",
+        "max"
+      ]
+    },
+    {
+      "filename": "18_hbgd_forward_lesion_performance.csv",
+      "path": "DATA\\18_hbgd_forward_lesion_performance.csv",
+      "size_bytes": 893,
+      "rows": 21,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "18_hbgd_forward_predictions.csv",
+      "path": "DATA\\18_hbgd_forward_predictions.csv",
+      "size_bytes": 8303,
+      "rows": 45,
+      "cols": 19,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "baseline_day",
+        "prediction_day",
+        "days_ahead",
+        "baseline_diameter_mm",
+        "observed_diameter_mm",
+        "predicted_diameter_mm",
+        "diameter_error_mm",
+        "absolute_diameter_error_mm",
+        "diameter_percent_error",
+        "initial_growth_rate_per_day",
+        "baseline_volume_cm3",
+        "observed_volume_cm3",
+        "predicted_volume_cm3",
+        "volume_error_cm3",
+        "baseline_prediction_mm",
+        "baseline_error_mm",
+        "initial_state"
+      ]
+    },
+    {
+      "filename": "18_hbgd_forward_state_performance.csv",
+      "path": "DATA\\18_hbgd_forward_state_performance.csv",
+      "size_bytes": 209,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "initial_state",
+        "observations",
+        "MAE_mm",
+        "mean_growth_rate"
+      ]
+    },
+    {
+      "filename": "19_patient_independent_patient_performance.csv",
+      "path": "DATA\\19_patient_independent_patient_performance.csv",
+      "size_bytes": 539,
+      "rows": 10,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "no_change_MAE_mm",
+        "global_exponential_MAE_mm",
+        "hbgd_state_MAE_mm"
+      ]
+    },
+    {
+      "filename": "19_patient_independent_performance.csv",
+      "path": "DATA\\19_patient_independent_performance.csv",
+      "size_bytes": 184,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "19_patient_independent_predictions.csv",
+      "path": "DATA\\19_patient_independent_predictions.csv",
+      "size_bytes": 4304,
+      "rows": 24,
+      "cols": 16,
+      "col_names": [
+        "test_patient",
+        "lesion_alias",
+        "prediction_day",
+        "days_ahead",
+        "observed_diameter_mm",
+        "baseline_diameter_mm",
+        "initial_rate",
+        "initial_state",
+        "global_training_rate",
+        "hbgd_state_rate",
+        "pred_no_change",
+        "pred_global_exponential",
+        "pred_hbgd_state",
+        "error_no_change_mm",
+        "error_global_exponential_mm",
+        "error_hbgd_state_mm"
+      ]
+    },
+    {
+      "filename": "20_hbgd_prototype_parameters.csv",
+      "path": "DATA\\20_hbgd_prototype_parameters.csv",
+      "size_bytes": 173,
+      "rows": 5,
+      "cols": 2,
+      "col_names": [
+        "parameter",
+        "value"
+      ]
+    },
+    {
+      "filename": "20_hbgd_prototype_performance.csv",
+      "path": "DATA\\20_hbgd_prototype_performance.csv",
+      "size_bytes": 129,
+      "rows": 2,
+      "cols": 4,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "20_hbgd_prototype_predictions.csv",
+      "path": "DATA\\20_hbgd_prototype_predictions.csv",
+      "size_bytes": 645,
+      "rows": 5,
+      "cols": 12,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "prediction_day",
+        "days_ahead",
+        "baseline_diameter_mm",
+        "observed_diameter_mm",
+        "initial_rate",
+        "state",
+        "hbgd_rate",
+        "predicted_diameter_mm",
+        "error_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "21_individualized_hbgd_patient_performance.csv",
+      "path": "DATA\\21_individualized_hbgd_patient_performance.csv",
+      "size_bytes": 281,
+      "rows": 3,
+      "cols": 6,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "no_change_MAE_mm",
+        "global_exponential_MAE_mm",
+        "state_specific_MAE_mm",
+        "individualized_MAE_mm"
+      ]
+    },
+    {
+      "filename": "21_individualized_hbgd_performance.csv",
+      "path": "DATA\\21_individualized_hbgd_performance.csv",
+      "size_bytes": 241,
+      "rows": 4,
+      "cols": 4,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "21_individualized_hbgd_predictions.csv",
+      "path": "DATA\\21_individualized_hbgd_predictions.csv",
+      "size_bytes": 1137,
+      "rows": 5,
+      "cols": 18,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "prediction_day",
+        "days_ahead",
+        "baseline_diameter_mm",
+        "observed_diameter_mm",
+        "individual_rate",
+        "state",
+        "global_rate",
+        "state_rate",
+        "pred_no_change",
+        "pred_global",
+        "pred_state",
+        "pred_individual",
+        "error_no_change",
+        "error_global",
+        "error_state",
+        "error_individual"
+      ]
+    },
+    {
+      "filename": "22_rate_patient_performance.csv",
+      "path": "DATA\\22_rate_patient_performance.csv",
+      "size_bytes": 295,
+      "rows": 3,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "observations",
+        "global_exponential_MAE_mm",
+        "ridge_imaging_rate_MAE_mm",
+        "random_forest_imaging_rate_MAE_mm"
+      ]
+    },
+    {
+      "filename": "22_rate_performance.csv",
+      "path": "DATA\\22_rate_performance.csv",
+      "size_bytes": 218,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "model",
+        "observations",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "22_rate_predictions.csv",
+      "path": "DATA\\22_rate_predictions.csv",
+      "size_bytes": 1328,
+      "rows": 5,
+      "cols": 15,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "days_ahead",
+        "baseline_diameter_mm",
+        "observed_diameter_mm",
+        "true_r",
+        "global_r",
+        "ridge_predicted_r",
+        "random_forest_predicted_r",
+        "pred_global",
+        "pred_ridge",
+        "pred_random_forest",
+        "error_global",
+        "error_ridge",
+        "error_random_forest"
+      ]
+    },
+    {
+      "filename": "24_recist_lesion_mapping.csv",
+      "path": "DATA\\24_recist_lesion_mapping.csv",
+      "size_bytes": 14279,
+      "rows": 82,
+      "cols": 25,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "filename",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "recist_measurement_mm",
+        "ct_found",
+        "mask_found",
+        "label_found",
+        "shape_match",
+        "voxel_count",
+        "bbox_xmin",
+        "bbox_xmax",
+        "bbox_ymin",
+        "bbox_ymax",
+        "bbox_zmin",
+        "bbox_zmax",
+        "crop_xmin",
+        "crop_xmax",
+        "crop_ymin",
+        "crop_ymax",
+        "crop_zmin",
+        "crop_zmax",
+        "crop_saved",
+        "status"
+      ]
+    },
+    {
+      "filename": "25_ct_crop_quality.csv",
+      "path": "DATA\\25_ct_crop_quality.csv",
+      "size_bytes": 24114,
+      "rows": 82,
+      "cols": 17,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "recist_measurement_mm",
+        "voxel_count",
+        "status",
+        "reason",
+        "ct_file",
+        "crop_file",
+        "original_shape",
+        "crop_shape",
+        "crop_voxels",
+        "crop_fraction",
+        "bbox_width",
+        "bbox_height",
+        "bbox_depth"
+      ]
+    },
+    {
+      "filename": "26_ct_crop_audit.csv",
+      "path": "DATA\\26_ct_crop_audit.csv",
+      "size_bytes": 25922,
+      "rows": 82,
+      "cols": 21,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "recist_measurement_mm",
+        "voxel_count",
+        "status",
+        "reason",
+        "ct_file",
+        "crop_file",
+        "original_shape",
+        "crop_shape",
+        "crop_voxels",
+        "crop_fraction",
+        "bbox_width",
+        "bbox_height",
+        "bbox_depth",
+        "crop_file_exists",
+        "crop_loadable",
+        "crop_is_3d",
+        "crop_has_finite_values"
+      ]
+    },
+    {
+      "filename": "28_ct_rate_coverage_audit.csv",
+      "path": "DATA\\28_ct_rate_coverage_audit.csv",
+      "size_bytes": 4085,
+      "rows": 25,
+      "cols": 13,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "baseline_date",
+        "second_date",
+        "interval_days",
+        "baseline_diameter_mm",
+        "second_diameter_mm",
+        "individualized_rate",
+        "quality_records_found",
+        "crop_available",
+        "crop_file",
+        "status",
+        "coverage_reason"
+      ]
+    },
+    {
+      "filename": "28_ct_rate_coverage_summary.csv",
+      "path": "DATA\\28_ct_rate_coverage_summary.csv",
+      "size_bytes": 268,
+      "rows": 12,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "rate_targets",
+        "ct_available",
+        "ct_missing",
+        "coverage_percent"
+      ]
+    },
+    {
+      "filename": "29_ct_crop_repair_audit.csv",
+      "path": "DATA\\29_ct_crop_repair_audit.csv",
+      "size_bytes": 4253,
+      "rows": 38,
+      "cols": 17,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "lesion_alias",
+        "original_status",
+        "original_reason",
+        "label_value",
+        "ct_file",
+        "mask_file",
+        "repair_status",
+        "repair_reason",
+        "repaired_crop_file",
+        "original_shape",
+        "crop_shape",
+        "original_lesion_voxels",
+        "lesion_voxels_inside",
+        "crop_voxels",
+        "crop_fraction"
+      ]
+    },
+    {
+      "filename": "2_longitudinal_patient_summary.csv",
+      "path": "DATA\\2_longitudinal_patient_summary.csv",
+      "size_bytes": 1344,
+      "rows": 22,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "diagnosis",
+        "num_recist_rows",
+        "num_studies",
+        "num_dates",
+        "num_series",
+        "first_date",
+        "last_date",
+        "followup_days",
+        "has_longitudinal_data",
+        "num_measurements"
+      ]
+    },
+    {
+      "filename": "30_ct_rate_coverage.csv",
+      "path": "DATA\\30_ct_rate_coverage.csv",
+      "size_bytes": 2539,
+      "rows": 25,
+      "cols": 16,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "baseline_date",
+        "second_date",
+        "baseline_diameter_mm",
+        "second_diameter_mm",
+        "delta_days",
+        "individualized_rate",
+        "trajectory_observations",
+        "baseline_ct_crop_exists",
+        "baseline_ct_crop_valid",
+        "baseline_crop_file",
+        "ct_observation_count",
+        "future_ct_count",
+        "future_ct_exists",
+        "usable_for_ct_rate"
+      ]
+    },
+    {
+      "filename": "31_ct_rate_linkage_reconciliation.csv",
+      "path": "DATA\\31_ct_rate_linkage_reconciliation.csv",
+      "size_bytes": 2821,
+      "rows": 25,
+      "cols": 12,
+      "col_names": [
+        "patient_id",
+        "alias",
+        "hbgd_baseline_date",
+        "hbgd_second_date",
+        "hbgd_rate",
+        "ct_observation_count",
+        "baseline_ct_exact",
+        "second_ct_exact",
+        "closest_ct_to_baseline",
+        "closest_ct_to_second",
+        "baseline_day_difference",
+        "second_day_difference"
+      ]
+    },
+    {
+      "filename": "32_ct_rate_repaired_coverage.csv",
+      "path": "DATA\\32_ct_rate_repaired_coverage.csv",
+      "size_bytes": 4531,
+      "rows": 25,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "alias",
+        "baseline_date",
+        "second_date",
+        "individualized_rate",
+        "delta_days",
+        "baseline_ct_exists",
+        "second_ct_exists",
+        "usable_ct_rate",
+        "baseline_ct_file",
+        "second_ct_file"
+      ]
+    },
+    {
+      "filename": "34_ct_trajectory_recovery_audit.csv",
+      "path": "DATA\\34_ct_trajectory_recovery_audit.csv",
+      "size_bytes": 2270,
+      "rows": 26,
+      "cols": 14,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "hbgd_observations",
+        "hbgd_first_date",
+        "hbgd_last_date",
+        "ct_observations",
+        "ct_first_date",
+        "ct_last_date",
+        "ct_has_2",
+        "ct_has_3",
+        "ct_has_4",
+        "ct_longitudinal_available",
+        "ct_3plus_available",
+        "ct_4plus_available"
+      ]
+    },
+    {
+      "filename": "3_patient_trajectories.csv",
+      "path": "DATA\\3_patient_trajectories.csv",
+      "size_bytes": 959,
+      "rows": 12,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "baseline_date",
+        "final_date",
+        "followup_days",
+        "num_timepoints",
+        "baseline_sum_mm",
+        "final_sum_mm",
+        "change_mm",
+        "change_percent",
+        "direction"
+      ]
+    },
+    {
+      "filename": "3_tumor_change_summary.csv",
+      "path": "DATA\\3_tumor_change_summary.csv",
+      "size_bytes": 4115,
+      "rows": 41,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "date",
+        "study_uuid",
+        "study_order",
+        "number_of_lesions",
+        "total_diameter_mm",
+        "minimum_diameter_mm",
+        "maximum_diameter_mm",
+        "baseline_sum_mm",
+        "percentage_change_from_baseline",
+        "absolute_change_mm"
+      ]
+    },
+    {
+      "filename": "4_ct_verification_summary.csv",
+      "path": "DATA\\4_ct_verification_summary.csv",
+      "size_bytes": 831,
+      "rows": 22,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "number_of_series",
+        "number_of_studies",
+        "number_of_dates",
+        "first_date",
+        "last_date",
+        "has_multiple_dates"
+      ]
+    },
+    {
+      "filename": "5_ct_mask_verification.csv",
+      "path": "DATA\\5_ct_mask_verification.csv",
+      "size_bytes": 16171,
+      "rows": 58,
+      "cols": 17,
+      "col_names": [
+        "filename",
+        "ct_shape",
+        "mask_shape",
+        "shape_match",
+        "ct_spacing_x",
+        "ct_spacing_y",
+        "ct_spacing_z",
+        "spacing_match",
+        "affine_match",
+        "number_of_labels",
+        "foreground_labels",
+        "lesion_voxels",
+        "lesion_volume_cm3",
+        "ct_min",
+        "ct_max",
+        "ct_mean",
+        "has_lesion"
+      ]
+    },
+    {
+      "filename": "5_recist_mask_measurements.csv",
+      "path": "DATA\\5_recist_mask_measurements.csv",
+      "size_bytes": 11094,
+      "rows": 82,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "study_order",
+        "region",
+        "filename",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "recist_measurement_mm",
+        "lesion_voxels",
+        "lesion_volume_cm3",
+        "label_exists"
+      ]
+    },
+    {
+      "filename": "5_recist_mask_verification.csv",
+      "path": "DATA\\5_recist_mask_verification.csv",
+      "size_bytes": 8046,
+      "rows": 82,
+      "cols": 8,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "filename",
+        "lesion_label_value",
+        "lesion_label_alias",
+        "recist_measurement_mm",
+        "mask_found",
+        "label_found"
+      ]
+    },
+    {
+      "filename": "6_lesion_alias_summary.csv",
+      "path": "DATA\\6_lesion_alias_summary.csv",
+      "size_bytes": 907,
+      "rows": 32,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "number_of_records",
+        "number_of_dates",
+        "longitudinal",
+        "first_measurement_mm",
+        "last_measurement_mm"
+      ]
+    },
+    {
+      "filename": "6_patient_longitudinal_summary.csv",
+      "path": "DATA\\6_patient_longitudinal_summary.csv",
+      "size_bytes": 1049,
+      "rows": 22,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "number_of_series",
+        "number_of_unique_dates",
+        "longitudinal",
+        "first_date",
+        "last_date",
+        "min_interval_days",
+        "max_interval_days",
+        "total_followup_days"
+      ]
+    },
+    {
+      "filename": "6_recist_growth_analysis.csv",
+      "path": "DATA\\6_recist_growth_analysis.csv",
+      "size_bytes": 2091,
+      "rows": 26,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "first_date",
+        "last_date",
+        "time_days",
+        "first_diameter_mm",
+        "last_diameter_mm",
+        "diameter_change_mm",
+        "percent_change",
+        "diameter_rate_mm_per_day"
+      ]
+    },
+    {
+      "filename": "6_recist_patient_summary.csv",
+      "path": "DATA\\6_recist_patient_summary.csv",
+      "size_bytes": 302,
+      "rows": 18,
+      "cols": 4,
+      "col_names": [
+        "patient_id",
+        "recist_records",
+        "unique_recist_dates",
+        "longitudinal_recist"
+      ]
+    },
+    {
+      "filename": "6_study_order_consistency.csv",
+      "path": "DATA\\6_study_order_consistency.csv",
+      "size_bytes": 664,
+      "rows": 18,
+      "cols": 4,
+      "col_names": [
+        "patient_id",
+        "number_of_dates",
+        "number_of_study_orders",
+        "study_orders"
+      ]
+    },
+    {
+      "filename": "7_lesion_correspondence.csv",
+      "path": "DATA\\7_lesion_correspondence.csv",
+      "size_bytes": 75861,
+      "rows": 723,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_label",
+        "current_label",
+        "centroid_distance_mm",
+        "previous_volume_cm3",
+        "current_volume_cm3",
+        "volume_change_percent"
+      ]
+    },
+    {
+      "filename": "7_lesion_geometry.csv",
+      "path": "DATA\\7_lesion_geometry.csv",
+      "size_bytes": 324296,
+      "rows": 1246,
+      "cols": 18,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "study_date_string",
+        "region",
+        "uuid",
+        "filename",
+        "mask_label",
+        "voxel_count",
+        "volume_cm3",
+        "centroid_x",
+        "centroid_y",
+        "centroid_z",
+        "min_x",
+        "min_y",
+        "min_z",
+        "max_x",
+        "max_y",
+        "max_z"
+      ]
+    },
+    {
+      "filename": "7_recist_geometry.csv",
+      "path": "DATA\\7_recist_geometry.csv",
+      "size_bytes": 34011,
+      "rows": 82,
+      "cols": 29,
+      "col_names": [
+        "patient_id",
+        "subset",
+        "study_date_x",
+        "study_uuid",
+        "uuid_x",
+        "filename",
+        "region_x",
+        "final_3d_objects",
+        "lesion_label_value",
+        "lesion_label_alias",
+        "recist_measurement_mm",
+        "study_order",
+        "date_parsed",
+        "study_date_string",
+        "study_date_y",
+        "region_y",
+        "uuid_y",
+        "mask_label",
+        "voxel_count",
+        "volume_cm3",
+        "centroid_x",
+        "centroid_y",
+        "centroid_z",
+        "min_x",
+        "min_y",
+        "min_z",
+        "max_x",
+        "max_y",
+        "max_z"
+      ]
+    },
+    {
+      "filename": "8_longitudinal_patient_ranking.csv",
+      "path": "DATA\\8_longitudinal_patient_ranking.csv",
+      "size_bytes": 272,
+      "rows": 12,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "lesion_aliases",
+        "longitudinal_transitions",
+        "study_orders_observed",
+        "median_interval_days"
+      ]
+    },
+    {
+      "filename": "8_recist_pairwise_changes.csv",
+      "path": "DATA\\8_recist_pairwise_changes.csv",
+      "size_bytes": 5033,
+      "rows": 49,
+      "cols": 14,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_mask_label",
+        "current_mask_label",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "diameter_change_mm",
+        "percent_change",
+        "rate_mm_per_day",
+        "previous_study_order",
+        "current_study_order"
+      ]
+    },
+    {
+      "filename": "8_recist_trajectory_summary.csv",
+      "path": "DATA\\8_recist_trajectory_summary.csv",
+      "size_bytes": 1719,
+      "rows": 32,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "number_of_records",
+        "number_of_dates",
+        "longitudinal",
+        "first_date",
+        "last_date",
+        "first_measurement_mm",
+        "last_measurement_mm",
+        "number_of_measurements"
+      ]
+    },
+    {
+      "filename": "9_hbgd_features.csv",
+      "path": "DATA\\9_hbgd_features.csv",
+      "size_bytes": 17185,
+      "rows": 82,
+      "cols": 19,
+      "col_names": [
+        "patient_id",
+        "study_date",
+        "study_date_string",
+        "lesion_label_alias",
+        "lesion_label_value",
+        "diameter_mm",
+        "volume_cm3",
+        "volume_mm3",
+        "equivalent_diameter_mm",
+        "equivalent_to_recist_ratio",
+        "equivalent_minus_recist_mm",
+        "baseline_diameter_mm",
+        "baseline_volume_cm3",
+        "diameter_normalized",
+        "volume_normalized",
+        "diameter_percent_from_baseline",
+        "volume_percent_from_baseline",
+        "days_from_baseline",
+        "months_from_baseline"
+      ]
+    },
+    {
+      "filename": "9_hbgd_log_growth_features.csv",
+      "path": "DATA\\9_hbgd_log_growth_features.csv",
+      "size_bytes": 9645,
+      "rows": 49,
+      "cols": 20,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_mask_label",
+        "current_mask_label",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "diameter_change_mm",
+        "percent_change",
+        "rate_mm_per_day",
+        "previous_study_order",
+        "current_study_order",
+        "diameter_growth_rate_mm_per_day",
+        "diameter_growth_rate_mm_per_month",
+        "relative_growth_rate_per_day",
+        "relative_growth_rate_per_month",
+        "log_diameter_growth_rate_per_day",
+        "doubling_time_days"
+      ]
+    },
+    {
+      "filename": "9_hbgd_longitudinal_features.csv",
+      "path": "DATA\\9_hbgd_longitudinal_features.csv",
+      "size_bytes": 9970,
+      "rows": 49,
+      "cols": 20,
+      "col_names": [
+        "patient_id",
+        "lesion_alias",
+        "previous_date",
+        "current_date",
+        "interval_days",
+        "previous_mask_label",
+        "current_mask_label",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "diameter_change_mm",
+        "percent_change",
+        "rate_mm_per_day",
+        "previous_study_order",
+        "current_study_order",
+        "diameter_growth_rate_mm_per_day",
+        "diameter_growth_rate_mm_per_month",
+        "relative_growth_rate_per_day",
+        "relative_growth_rate_per_month",
+        "approx_volume_ratio_from_diameter",
+        "approx_volume_change_percent"
+      ]
+    },
+    {
+      "filename": "patients.csv",
+      "path": "DATA\\patients.csv",
+      "size_bytes": 1508,
+      "rows": 22,
+      "cols": 8,
+      "col_names": [
+        "patient_id",
+        "subset",
+        "first_study_date",
+        "sex",
+        "age",
+        "diagnosis",
+        "histology",
+        "health_insurance"
+      ]
+    },
+    {
+      "filename": "recist_measurements.csv",
+      "path": "DATA\\recist_measurements.csv",
+      "size_bytes": 17398,
+      "rows": 82,
+      "cols": 12,
+      "col_names": [
+        "patient_id",
+        "subset",
+        "study_date",
+        "study_uuid",
+        "uuid",
+        "filename",
+        "region",
+        "final_3d_objects",
+        "lesion_label_value",
+        "lesion_label_alias",
+        "recist_measurement_mm",
+        "study_order"
+      ]
+    }
+  ],
+  "lumiere_csv": [
+    {
+      "filename": "cross_cancer_hbgd_feature_distances.csv",
+      "path": "DATA/LUMIRE\\cross_cancer_hbgd_feature_distances.csv",
+      "size_bytes": 939,
+      "rows": 6,
+      "cols": 7,
+      "col_names": [
+        "feature",
+        "absolute_mean_difference",
+        "pooled_standard_deviation",
+        "standardized_mean_distance",
+        "source_std",
+        "lumiere_std",
+        "lumiere_to_source_std_ratio"
+      ]
+    },
+    {
+      "filename": "cross_cancer_hbgd_feature_statistics.csv",
+      "path": "DATA/LUMIRE\\cross_cancer_hbgd_feature_statistics.csv",
+      "size_bytes": 1256,
+      "rows": 6,
+      "cols": 14,
+      "col_names": [
+        "feature",
+        "source_n",
+        "target_n",
+        "source_mean",
+        "source_std",
+        "source_median",
+        "source_p10",
+        "source_p90",
+        "target_mean",
+        "target_std",
+        "target_median",
+        "target_p10",
+        "target_p90",
+        "standardized_mean_difference"
+      ]
+    },
+    {
+      "filename": "cross_cancer_hbgd_phenotype_vectors.csv",
+      "path": "DATA/LUMIRE\\cross_cancer_hbgd_phenotype_vectors.csv",
+      "size_bytes": 14057,
+      "rows": 92,
+      "cols": 9,
+      "col_names": [
+        "domain",
+        "subject_id",
+        "lesion_id",
+        "growth_rate_per_day_standardized",
+        "volume_growth_rate_per_day_standardized",
+        "growth_fraction_standardized",
+        "stable_fraction_standardized",
+        "shrinkage_fraction_standardized",
+        "state_persistence_standardized"
+      ]
+    },
+    {
+      "filename": "cross_cancer_hbgd_state_comparison.csv",
+      "path": "DATA/LUMIRE\\cross_cancer_hbgd_state_comparison.csv",
+      "size_bytes": 227,
+      "rows": 3,
+      "cols": 4,
+      "col_names": [
+        "state",
+        "source_mean_fraction",
+        "lumiere_mean_fraction",
+        "absolute_difference"
+      ]
+    },
+    {
+      "filename": "lumiere_cross_cancer_transfer_results.csv",
+      "path": "DATA/LUMIRE\\lumiere_cross_cancer_transfer_results.csv",
+      "size_bytes": 21776,
+      "rows": 225,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "target_week",
+        "future_delta_weeks",
+        "actual_future_diameter_mm",
+        "model",
+        "predicted_future_diameter_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_cross_cancer_transfer_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_cross_cancer_transfer_summary.csv",
+      "size_bytes": 501,
+      "rows": 3,
+      "cols": 11,
+      "col_names": [
+        "model",
+        "train_patients",
+        "validation_patients",
+        "test_patients",
+        "train_cases",
+        "validation_cases",
+        "test_cases",
+        "validation_mae_mm",
+        "validation_rmse_mm",
+        "test_mae_mm",
+        "test_rmse_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_forward_prediction_patient_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_forward_prediction_patient_summary.csv",
+      "size_bytes": 1797,
+      "rows": 13,
+      "cols": 8,
+      "col_names": [
+        "patient_id",
+        "prediction_cases",
+        "no_change_mae_mm",
+        "global_exponential_mae_mm",
+        "individual_hbgd_mae_mm",
+        "no_change_rmse_mm",
+        "global_exponential_rmse_mm",
+        "individual_hbgd_rmse_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_forward_prediction_results.csv",
+      "path": "DATA/LUMIRE\\lumiere_forward_prediction_results.csv",
+      "size_bytes": 23728,
+      "rows": 75,
+      "cols": 21,
+      "col_names": [
+        "patient_id",
+        "previous_week",
+        "current_week",
+        "future_week",
+        "delta_train_weeks",
+        "delta_future_weeks",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "actual_future_diameter_mm",
+        "individual_r_per_day",
+        "global_r_per_day",
+        "no_change_prediction_mm",
+        "global_prediction_mm",
+        "individual_hbgd_prediction_mm",
+        "no_change_error_mm",
+        "global_error_mm",
+        "individual_hbgd_error_mm",
+        "improvement_vs_no_change_percent",
+        "improvement_vs_global_percent",
+        "actual_future_volume_cm3",
+        "predicted_hbgd_volume_cm3"
+      ]
+    },
+    {
+      "filename": "lumiere_hbgd_feature_ml_results.csv",
+      "path": "DATA/LUMIRE\\lumiere_hbgd_feature_ml_results.csv",
+      "size_bytes": 19952,
+      "rows": 225,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "target_week",
+        "future_delta_weeks",
+        "actual_future_diameter_mm",
+        "model",
+        "predicted_future_diameter_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_hbgd_feature_ml_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_hbgd_feature_ml_summary.csv",
+      "size_bytes": 1285,
+      "rows": 4,
+      "cols": 10,
+      "col_names": [
+        "model",
+        "feature_group",
+        "n_train",
+        "n_validation",
+        "n_test",
+        "test_mae_mm",
+        "test_rmse_mm",
+        "test_mape_percent",
+        "validation_mae_mm",
+        "validation_rmse_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_hbgd_growth_features.csv",
+      "path": "DATA/LUMIRE\\lumiere_hbgd_growth_features.csv",
+      "size_bytes": 101966,
+      "rows": 409,
+      "cols": 18,
+      "col_names": [
+        "patient_id",
+        "week_start",
+        "week_end",
+        "delta_weeks",
+        "delta_days",
+        "volume_start_mm3",
+        "volume_end_mm3",
+        "volume_start_cm3",
+        "volume_end_cm3",
+        "diameter_start_mm",
+        "diameter_end_mm",
+        "diameter_change_mm",
+        "diameter_percent_change",
+        "volume_percent_change",
+        "r_diameter_per_day",
+        "r_volume_per_day",
+        "r_volume_div_r_diameter",
+        "growth_state"
+      ]
+    },
+    {
+      "filename": "lumiere_hbgd_growth_phenotypes.csv",
+      "path": "DATA/LUMIRE\\lumiere_hbgd_growth_phenotypes.csv",
+      "size_bytes": 21077,
+      "rows": 67,
+      "cols": 20,
+      "col_names": [
+        "subject_id",
+        "lesion_id",
+        "growth_rate_per_day",
+        "volume_growth_rate_per_day",
+        "overall_growth_rate_per_day",
+        "growth_rate_std",
+        "growth_rate_median",
+        "growth_rate_p10",
+        "growth_rate_p90",
+        "growth_fraction",
+        "stable_fraction",
+        "shrinkage_fraction",
+        "state_persistence",
+        "state_interval_count",
+        "mean_interval_days",
+        "total_followup_days",
+        "normalized_final_diameter",
+        "growth_rate_acceleration",
+        "initial_diameter_mm",
+        "final_diameter_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_hbgd_state_transition_matrix.csv",
+      "path": "DATA/LUMIRE\\lumiere_hbgd_state_transition_matrix.csv",
+      "size_bytes": 360,
+      "rows": 3,
+      "cols": 7,
+      "col_names": [
+        "current_state",
+        "future_growth_count",
+        "future_stable_count",
+        "future_shrinkage_count",
+        "future_growth_percent",
+        "future_stable_percent",
+        "future_shrinkage_percent"
+      ]
+    },
+    {
+      "filename": "lumiere_longitudinal_trajectories.csv",
+      "path": "DATA/LUMIRE\\lumiere_longitudinal_trajectories.csv",
+      "size_bytes": 39310,
+      "rows": 476,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "week",
+        "tumor_volume_cm3",
+        "equivalent_diameter_mm",
+        "bbox_x_mm",
+        "bbox_y_mm",
+        "bbox_z_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_nifti_mask_validation.csv",
+      "path": "DATA/LUMIRE\\lumiere_nifti_mask_validation.csv",
+      "size_bytes": 207617,
+      "rows": 489,
+      "cols": 25,
+      "col_names": [
+        "patient_id",
+        "week",
+        "image_zip_path",
+        "segmentation_zip_path",
+        "image_file",
+        "segmentation_file",
+        "segmentation_source",
+        "image_load_success",
+        "segmentation_load_success",
+        "image_shape",
+        "segmentation_shape",
+        "shape_match",
+        "image_spacing",
+        "segmentation_spacing",
+        "spacing_match",
+        "affine_match",
+        "nonzero_mask_voxels",
+        "tumor_volume_mm3",
+        "tumor_volume_cm3",
+        "bbox_x_mm",
+        "bbox_y_mm",
+        "bbox_z_mm",
+        "mask_binary",
+        "validation_status",
+        "error"
+      ]
+    },
+    {
+      "filename": "lumiere_patient_timepoint_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_patient_timepoint_summary.csv",
+      "size_bytes": 3829,
+      "rows": 83,
+      "cols": 13,
+      "col_names": [
+        "patient_id",
+        "total_weeks",
+        "min_week",
+        "max_week",
+        "structurally_usable_weeks",
+        "weeks_with_FLAIR",
+        "weeks_with_CT1",
+        "weeks_with_T1",
+        "weeks_with_T2",
+        "weeks_with_HDGLIO_segmentation",
+        "weeks_with_DeepBraTumIA_segmentation",
+        "complete_multimodal_weeks",
+        "usable_longitudinal_intervals"
+      ]
+    },
+    {
+      "filename": "lumiere_robust_hbgd_patient_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_robust_hbgd_patient_summary.csv",
+      "size_bytes": 3272,
+      "rows": 13,
+      "cols": 14,
+      "col_names": [
+        "patient_id",
+        "prediction_cases",
+        "no_change_mae_mm",
+        "no_change_rmse_mm",
+        "global_mae_mm",
+        "global_rmse_mm",
+        "one_interval_mae_mm",
+        "one_interval_rmse_mm",
+        "two_interval_mae_mm",
+        "two_interval_rmse_mm",
+        "multi_point_mae_mm",
+        "multi_point_rmse_mm",
+        "recent_window_mae_mm",
+        "recent_window_rmse_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_robust_hbgd_prediction_results.csv",
+      "path": "DATA/LUMIRE\\lumiere_robust_hbgd_prediction_results.csv",
+      "size_bytes": 31119,
+      "rows": 75,
+      "cols": 27,
+      "col_names": [
+        "patient_id",
+        "previous_week",
+        "current_week",
+        "future_week",
+        "history_points",
+        "train_delta_weeks",
+        "future_delta_weeks",
+        "previous_diameter_mm",
+        "current_diameter_mm",
+        "actual_future_diameter_mm",
+        "r_one_interval",
+        "r_two_interval_average",
+        "r_all_history",
+        "r_recent_history",
+        "r_global",
+        "no_change_prediction_mm",
+        "global_prediction_mm",
+        "one_interval_hbgd_prediction_mm",
+        "two_interval_hbgd_prediction_mm",
+        "multi_point_hbgd_prediction_mm",
+        "recent_window_hbgd_prediction_mm",
+        "no_change_error_mm",
+        "global_error_mm",
+        "one_interval_error_mm",
+        "two_interval_error_mm",
+        "multi_point_error_mm",
+        "recent_window_error_mm"
+      ]
+    },
+    {
+      "filename": "lumiere_state_aware_patient_summary.csv",
+      "path": "DATA/LUMIRE\\lumiere_state_aware_patient_summary.csv",
+      "size_bytes": 868,
+      "rows": 13,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "prediction_cases",
+        "state_aware_mae_mm",
+        "no_change_mae_mm",
+        "state_persistence_percent"
+      ]
+    },
+    {
+      "filename": "lumiere_state_aware_results.csv",
+      "path": "DATA/LUMIRE\\lumiere_state_aware_results.csv",
+      "size_bytes": 19337,
+      "rows": 75,
+      "cols": 18,
+      "col_names": [
+        "patient_id",
+        "previous_week",
+        "current_week",
+        "future_week",
+        "current_diameter_mm",
+        "future_diameter_mm",
+        "current_r_per_day",
+        "current_state",
+        "state_rate_per_day",
+        "state_prediction_mm",
+        "no_change_prediction_mm",
+        "state_prediction_error_mm",
+        "no_change_error_mm",
+        "future_r_per_day",
+        "future_state",
+        "state_persisted",
+        "future_change_mm",
+        "future_percent_change"
+      ]
+    },
+    {
+      "filename": "lumiere_tumor_geometry.csv",
+      "path": "DATA/LUMIRE\\lumiere_tumor_geometry.csv",
+      "size_bytes": 150529,
+      "rows": 476,
+      "cols": 23,
+      "col_names": [
+        "patient_id",
+        "week",
+        "segmentation_source",
+        "segmentation_file",
+        "voxel_spacing_x_mm",
+        "voxel_spacing_y_mm",
+        "voxel_spacing_z_mm",
+        "voxel_volume_mm3",
+        "mask_voxels",
+        "tumor_volume_mm3",
+        "tumor_volume_cm3",
+        "equivalent_diameter_mm",
+        "bbox_x_mm",
+        "bbox_y_mm",
+        "bbox_z_mm",
+        "centroid_voxel_x",
+        "centroid_voxel_y",
+        "centroid_voxel_z",
+        "centroid_world_x_mm",
+        "centroid_world_y_mm",
+        "centroid_world_z_mm",
+        "status",
+        "error"
+      ]
+    },
+    {
+      "filename": "lumiere_validated_longitudinal_patients.csv",
+      "path": "DATA/LUMIRE\\lumiere_validated_longitudinal_patients.csv",
+      "size_bytes": 3641,
+      "rows": 66,
+      "cols": 5,
+      "col_names": [
+        "patient_id",
+        "validated_timepoints",
+        "number_validated_timepoints",
+        "min_week",
+        "max_week"
+      ]
+    },
+    {
+      "filename": "source_cancer_hbgd_transfer_profile.csv",
+      "path": "DATA/LUMIRE\\source_cancer_hbgd_transfer_profile.csv",
+      "size_bytes": 654,
+      "rows": 18,
+      "cols": 2,
+      "col_names": [
+        "parameter",
+        "value"
+      ]
+    },
+    {
+      "filename": "source_hbgd_growth_phenotypes.csv",
+      "path": "DATA/LUMIRE\\source_hbgd_growth_phenotypes.csv",
+      "size_bytes": 3613,
+      "rows": 25,
+      "cols": 13,
+      "col_names": [
+        "subject_id",
+        "lesion_id",
+        "growth_rate_per_day",
+        "volume_growth_rate_per_day",
+        "state_rate_mean",
+        "state_rate_std",
+        "growth_fraction",
+        "stable_fraction",
+        "shrinkage_fraction",
+        "state_persistence",
+        "state_interval_count",
+        "trajectory_mae_mm",
+        "trajectory_rmse_mm"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_alignment_statistics.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_alignment_statistics.csv",
+      "size_bytes": 952,
+      "rows": 8,
+      "cols": 6,
+      "col_names": [
+        "feature",
+        "source_mean",
+        "source_std",
+        "target_mean",
+        "target_std",
+        "standardized_mean_difference"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_bootstrap_results.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_bootstrap_results.csv",
+      "size_bytes": 222,
+      "rows": 1,
+      "cols": 7,
+      "col_names": [
+        "metric",
+        "observed",
+        "bootstrap_mean",
+        "bootstrap_median",
+        "bootstrap_std",
+        "ci_lower_2_5",
+        "ci_upper_97_5"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_permutation_results.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_permutation_results.csv",
+      "size_bytes": 24016,
+      "rows": 1000,
+      "cols": 2,
+      "col_names": [
+        "permutation",
+        "alignment_distance"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_transfer_predictions.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_transfer_predictions.csv",
+      "size_bytes": 21756,
+      "rows": 225,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "target_week",
+        "future_delta_weeks",
+        "actual_future_diameter_mm",
+        "model",
+        "predicted_future_diameter_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_transfer_profiles.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_transfer_profiles.csv",
+      "size_bytes": 958,
+      "rows": 24,
+      "cols": 3,
+      "col_names": [
+        "prototype",
+        "feature",
+        "standardized_value"
+      ]
+    },
+    {
+      "filename": "step10_hbgd_transfer_summary.csv",
+      "path": "DATA/LUMIRE\\step10_hbgd_transfer_summary.csv",
+      "size_bytes": 504,
+      "rows": 3,
+      "cols": 11,
+      "col_names": [
+        "model",
+        "train_patients",
+        "validation_patients",
+        "test_patients",
+        "train_cases",
+        "validation_cases",
+        "test_cases",
+        "validation_mae_mm",
+        "validation_rmse_mm",
+        "test_mae_mm",
+        "test_rmse_mm"
+      ]
+    },
+    {
+      "filename": "step11_domain_adaptation_parameters.csv",
+      "path": "DATA/LUMIRE\\step11_domain_adaptation_parameters.csv",
+      "size_bytes": 202,
+      "rows": 4,
+      "cols": 2,
+      "col_names": [
+        "parameter",
+        "value"
+      ]
+    },
+    {
+      "filename": "step11_domain_adaptive_transfer_predictions.csv",
+      "path": "DATA/LUMIRE\\step11_domain_adaptive_transfer_predictions.csv",
+      "size_bytes": 21689,
+      "rows": 88,
+      "cols": 16,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "future_week",
+        "future_delta_weeks",
+        "actual_diameter_mm",
+        "direct_hbgd_prediction_mm",
+        "source_model_prediction_mm",
+        "domain_correction_mm",
+        "domain_adapted_prediction_mm",
+        "geometry_prediction_mm",
+        "geometry_plus_adapted_prediction_mm",
+        "direct_hbgd_error_mm",
+        "source_transfer_error_mm",
+        "adapted_hbgd_error_mm",
+        "geometry_error_mm",
+        "combined_error_mm"
+      ]
+    },
+    {
+      "filename": "step11_domain_adaptive_transfer_summary.csv",
+      "path": "DATA/LUMIRE\\step11_domain_adaptive_transfer_summary.csv",
+      "size_bytes": 540,
+      "rows": 5,
+      "cols": 5,
+      "col_names": [
+        "model",
+        "validation_mae_mm",
+        "validation_rmse_mm",
+        "test_mae_mm",
+        "test_rmse_mm"
+      ]
+    },
+    {
+      "filename": "step11_source_model_performance.csv",
+      "path": "DATA/LUMIRE\\step11_source_model_performance.csv",
+      "size_bytes": 104,
+      "rows": 1,
+      "cols": 3,
+      "col_names": [
+        "source_model",
+        "training_mae_mm",
+        "training_rmse_mm"
+      ]
+    },
+    {
+      "filename": "step12_hbgd_ablation_predictions.csv",
+      "path": "DATA/LUMIRE\\step12_hbgd_ablation_predictions.csv",
+      "size_bytes": 41924,
+      "rows": 440,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "future_week",
+        "actual_diameter_mm",
+        "model",
+        "predicted_diameter_mm",
+        "absolute_error_mm"
+      ]
+    },
+    {
+      "filename": "step12_hbgd_ablation_summary.csv",
+      "path": "DATA/LUMIRE\\step12_hbgd_ablation_summary.csv",
+      "size_bytes": 668,
+      "rows": 6,
+      "cols": 6,
+      "col_names": [
+        "model",
+        "validation_mae_mm",
+        "validation_rmse_mm",
+        "test_mae_mm",
+        "test_rmse_mm",
+        "feature_count"
+      ]
+    },
+    {
+      "filename": "step12_hbgd_feature_importance.csv",
+      "path": "DATA/LUMIRE\\step12_hbgd_feature_importance.csv",
+      "size_bytes": 2343,
+      "rows": 38,
+      "cols": 3,
+      "col_names": [
+        "model",
+        "feature",
+        "importance"
+      ]
+    },
+    {
+      "filename": "step13_hbgd_bootstrap_results.csv",
+      "path": "DATA/LUMIRE\\step13_hbgd_bootstrap_results.csv",
+      "size_bytes": 241,
+      "rows": 1,
+      "cols": 7,
+      "col_names": [
+        "metric",
+        "observed_mean",
+        "bootstrap_mean",
+        "bootstrap_median",
+        "bootstrap_std",
+        "ci_lower_2_5",
+        "ci_upper_97_5"
+      ]
+    },
+    {
+      "filename": "step13_hbgd_permutation_results.csv",
+      "path": "DATA/LUMIRE\\step13_hbgd_permutation_results.csv",
+      "size_bytes": 127903,
+      "rows": 5000,
+      "cols": 2,
+      "col_names": [
+        "permutation",
+        "mean_randomized_improvement_mm"
+      ]
+    },
+    {
+      "filename": "step13_hbgd_statistical_summary.csv",
+      "path": "DATA/LUMIRE\\step13_hbgd_statistical_summary.csv",
+      "size_bytes": 540,
+      "rows": 15,
+      "cols": 2,
+      "col_names": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filename": "step13_patient_level_hbgd_results.csv",
+      "path": "DATA/LUMIRE\\step13_patient_level_hbgd_results.csv",
+      "size_bytes": 1423,
+      "rows": 13,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "n_prediction_cases",
+        "geometry_mae_mm",
+        "geometry_hbgd_mae_mm",
+        "absolute_improvement_mm",
+        "relative_improvement_percent",
+        "status"
+      ]
+    },
+    {
+      "filename": "step14_hbgd_phenotype_interval_results.csv",
+      "path": "DATA/LUMIRE\\step14_hbgd_phenotype_interval_results.csv",
+      "size_bytes": 14676,
+      "rows": 88,
+      "cols": 11,
+      "col_names": [
+        "patient_id",
+        "start_week",
+        "target_week",
+        "phenotype",
+        "observed_current_interval_rate",
+        "actual_diameter_mm",
+        "geometry_prediction_mm",
+        "hbgd_prediction_mm",
+        "geometry_error_mm",
+        "hbgd_error_mm",
+        "hbgd_improvement_mm"
+      ]
+    },
+    {
+      "filename": "step14_hbgd_phenotype_patient_results.csv",
+      "path": "DATA/LUMIRE\\step14_hbgd_phenotype_patient_results.csv",
+      "size_bytes": 1168,
+      "rows": 13,
+      "cols": 6,
+      "col_names": [
+        "patient_id",
+        "n_cases",
+        "dominant_phenotype",
+        "geometry_mae_mm",
+        "hbgd_mae_mm",
+        "improvement_mm"
+      ]
+    },
+    {
+      "filename": "step14_hbgd_phenotype_summary.csv",
+      "path": "DATA/LUMIRE\\step14_hbgd_phenotype_summary.csv",
+      "size_bytes": 502,
+      "rows": 3,
+      "cols": 8,
+      "col_names": [
+        "phenotype",
+        "n_cases",
+        "geometry_mae_mm",
+        "hbgd_mae_mm",
+        "geometry_rmse_mm",
+        "hbgd_rmse_mm",
+        "improvement_mm",
+        "improvement_percent"
+      ]
+    },
+    {
+      "filename": "step15_phenotype_model_comparison.csv",
+      "path": "DATA/LUMIRE\\step15_phenotype_model_comparison.csv",
+      "size_bytes": 1067,
+      "rows": 15,
+      "cols": 5,
+      "col_names": [
+        "phenotype",
+        "n_cases",
+        "model",
+        "mae_mm",
+        "rmse_mm"
+      ]
+    },
+    {
+      "filename": "step15_phenotype_patient_results.csv",
+      "path": "DATA/LUMIRE\\step15_phenotype_patient_results.csv",
+      "size_bytes": 1469,
+      "rows": 8,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "phenotype",
+        "n_cases",
+        "geometry_mae_mm",
+        "geometry_plus_all_hbgd_mae_mm",
+        "geometry_plus_hbgd_rate_mae_mm",
+        "m2_geometry_temporal_mae_mm",
+        "m4_geometry_hbgd_variability_mae_mm",
+        "hbgd_rate_improvement_mm",
+        "all_hbgd_improvement_mm"
+      ]
+    },
+    {
+      "filename": "step15_step12_predictions_with_phenotype.csv",
+      "path": "DATA/LUMIRE\\step15_step12_predictions_with_phenotype.csv",
+      "size_bytes": 63982,
+      "rows": 440,
+      "cols": 10,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "future_week",
+        "actual_diameter_mm",
+        "model",
+        "predicted_diameter_mm",
+        "absolute_error_mm",
+        "normalized_model",
+        "phenotype",
+        "observed_interval_hbgd_rate_per_day"
+      ]
+    },
+    {
+      "filename": "step16_exact_phenotype_model_comparison.csv",
+      "path": "DATA/LUMIRE\\step16_exact_phenotype_model_comparison.csv",
+      "size_bytes": 1072,
+      "rows": 15,
+      "cols": 5,
+      "col_names": [
+        "phenotype",
+        "n_cases",
+        "model",
+        "mae_mm",
+        "rmse_mm"
+      ]
+    },
+    {
+      "filename": "step16_exact_phenotype_patient_results.csv",
+      "path": "DATA/LUMIRE\\step16_exact_phenotype_patient_results.csv",
+      "size_bytes": 5115,
+      "rows": 32,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "phenotype",
+        "M1_Geometry_MAE_mm",
+        "M2_Geometry_Temporal_MAE_mm",
+        "M3_Geometry_HBGD_Rate_MAE_mm",
+        "M4_Geometry_HBGD_Variability_MAE_mm",
+        "M5_Geometry_All_HBGD_MAE_mm",
+        "HBGD_Rate_Improvement_mm",
+        "All_HBGD_Improvement_mm"
+      ]
+    },
+    {
+      "filename": "step16_exact_step12_phenotype_predictions.csv",
+      "path": "DATA/LUMIRE\\step16_exact_step12_phenotype_predictions.csv",
+      "size_bytes": 55156,
+      "rows": 440,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "future_week",
+        "actual_diameter_mm",
+        "model",
+        "predicted_diameter_mm",
+        "absolute_error_mm",
+        "observed_hbgd_rate_per_day",
+        "phenotype"
+      ]
+    },
+    {
+      "filename": "step16_exact_step12_test_cohort.csv",
+      "path": "DATA/LUMIRE\\step16_exact_step12_test_cohort.csv",
+      "size_bytes": 282,
+      "rows": 13,
+      "cols": 3,
+      "col_names": [
+        "patient_id",
+        "prediction_cases",
+        "prediction_rows"
+      ]
+    },
+    {
+      "filename": "step17_patient_level_phenotype_results.csv",
+      "path": "DATA/LUMIRE\\step17_patient_level_phenotype_results.csv",
+      "size_bytes": 4211,
+      "rows": 32,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "phenotype",
+        "n_cases",
+        "geometry_mae_mm",
+        "hbgd_rate_mae_mm",
+        "all_hbgd_mae_mm",
+        "hbgd_rate_improvement_mm",
+        "all_hbgd_improvement_mm",
+        "status"
+      ]
+    },
+    {
+      "filename": "step17_phenotype_bootstrap_results.csv",
+      "path": "DATA/LUMIRE\\step17_phenotype_bootstrap_results.csv",
+      "size_bytes": 341,
+      "rows": 3,
+      "cols": 6,
+      "col_names": [
+        "phenotype",
+        "n_patients",
+        "bootstrap_mean_improvement_mm",
+        "bootstrap_95ci_low_mm",
+        "bootstrap_95ci_high_mm",
+        "n_bootstrap"
+      ]
+    },
+    {
+      "filename": "step17_phenotype_permutation_results.csv",
+      "path": "DATA/LUMIRE\\step17_phenotype_permutation_results.csv",
+      "size_bytes": 256,
+      "rows": 3,
+      "cols": 5,
+      "col_names": [
+        "phenotype",
+        "n_patients",
+        "observed_mean_improvement_mm",
+        "paired_permutation_p",
+        "n_permutations"
+      ]
+    },
+    {
+      "filename": "step17_phenotype_robustness_summary.csv",
+      "path": "DATA/LUMIRE\\step17_phenotype_robustness_summary.csv",
+      "size_bytes": 898,
+      "rows": 3,
+      "cols": 15,
+      "col_names": [
+        "phenotype",
+        "n_patients",
+        "improved",
+        "worsened",
+        "unchanged",
+        "mean_geometry_mae_mm",
+        "mean_hbgd_rate_mae_mm",
+        "mean_improvement_mm",
+        "median_improvement_mm",
+        "sd_improvement_mm",
+        "relative_improvement_percent",
+        "paired_effect_size",
+        "bootstrap_ci_low_mm",
+        "bootstrap_ci_high_mm",
+        "paired_permutation_p"
+      ]
+    },
+    {
+      "filename": "step18_hbgd_benefit_by_history.csv",
+      "path": "DATA/LUMIRE\\step18_hbgd_benefit_by_history.csv",
+      "size_bytes": 231,
+      "rows": 2,
+      "cols": 7,
+      "col_names": [
+        "history_group",
+        "n",
+        "median_timepoints",
+        "mean_improvement_mm",
+        "median_improvement_mm",
+        "improved",
+        "worsened"
+      ]
+    },
+    {
+      "filename": "step18_hbgd_benefit_by_phenotype.csv",
+      "path": "DATA/LUMIRE\\step18_hbgd_benefit_by_phenotype.csv",
+      "size_bytes": 353,
+      "rows": 3,
+      "cols": 7,
+      "col_names": [
+        "phenotype",
+        "n_patient_phenotype_groups",
+        "improved",
+        "worsened",
+        "mean_improvement_mm",
+        "median_improvement_mm",
+        "mean_relative_improvement_percent"
+      ]
+    },
+    {
+      "filename": "step18_hbgd_benefit_correlations.csv",
+      "path": "DATA/LUMIRE\\step18_hbgd_benefit_correlations.csv",
+      "size_bytes": 871,
+      "rows": 12,
+      "cols": 4,
+      "col_names": [
+        "feature",
+        "n",
+        "pearson_r",
+        "spearman_r"
+      ]
+    },
+    {
+      "filename": "step18_hbgd_benefit_patient_features.csv",
+      "path": "DATA/LUMIRE\\step18_hbgd_benefit_patient_features.csv",
+      "size_bytes": 9813,
+      "rows": 32,
+      "cols": 20,
+      "col_names": [
+        "patient_id",
+        "phenotype",
+        "n_prediction_cases",
+        "geometry_mae_mm",
+        "hbgd_rate_mae_mm",
+        "hbgd_improvement_mm",
+        "hbgd_relative_improvement_percent",
+        "mean_interval_rate_per_day",
+        "mean_absolute_interval_rate_per_day",
+        "interval_rate_std_per_day",
+        "mean_interval_weeks",
+        "mean_diameter_change_mm",
+        "mean_absolute_diameter_change_mm",
+        "mean_percent_diameter_change",
+        "mean_current_diameter_mm",
+        "mean_current_volume_cm3",
+        "n_timepoints",
+        "history_weeks",
+        "patient_mean_rate_per_day",
+        "patient_rate_variability_per_day"
+      ]
+    },
+    {
+      "filename": "step19_hbgd_representation_transfer_parameters.csv",
+      "path": "DATA/LUMIRE\\step19_hbgd_representation_transfer_parameters.csv",
+      "size_bytes": 446,
+      "rows": 13,
+      "cols": 2,
+      "col_names": [
+        "parameter",
+        "value"
+      ]
+    },
+    {
+      "filename": "step19_hbgd_representation_transfer_performance.csv",
+      "path": "DATA/LUMIRE\\step19_hbgd_representation_transfer_performance.csv",
+      "size_bytes": 1064,
+      "rows": 15,
+      "cols": 6,
+      "col_names": [
+        "split",
+        "model",
+        "n_cases",
+        "n_patients",
+        "MAE_mm",
+        "RMSE_mm"
+      ]
+    },
+    {
+      "filename": "step19_hbgd_representation_transfer_predictions.csv",
+      "path": "DATA/LUMIRE\\step19_hbgd_representation_transfer_predictions.csv",
+      "size_bytes": 109169,
+      "rows": 342,
+      "cols": 23,
+      "col_names": [
+        "patient_id",
+        "current_time",
+        "future_time",
+        "current_diameter_mm",
+        "previous_diameter_mm",
+        "current_volume_cm3",
+        "previous_volume_cm3",
+        "diameter_change_mm",
+        "interval_days",
+        "future_days",
+        "actual_future_diameter_mm",
+        "history_mean_rate",
+        "history_abs_mean_rate",
+        "history_rate_std",
+        "history_n_intervals",
+        "split",
+        "transferred_rate",
+        "pred_transferred",
+        "adapted_rate",
+        "pred_adapted",
+        "pred_geometry",
+        "pred_geometry_transfer",
+        "pred_no_change"
+      ]
+    },
+    {
+      "filename": "step19_transfer_representation_dataset.csv",
+      "path": "DATA/LUMIRE\\step19_transfer_representation_dataset.csv",
+      "size_bytes": 60422,
+      "rows": 365,
+      "cols": 17,
+      "col_names": [
+        "domain",
+        "patient_id",
+        "current_time",
+        "future_time",
+        "current_week",
+        "future_week",
+        "current_diameter_mm",
+        "current_volume_cm3",
+        "previous_diameter_mm",
+        "previous_volume_cm3",
+        "previous_growth_rate_per_day",
+        "historical_mean_rate_per_day",
+        "historical_rate_std_per_day",
+        "historical_abs_mean_rate_per_day",
+        "n_previous_intervals",
+        "history_weeks",
+        "future_diameter_mm"
+      ]
+    },
+    {
+      "filename": "step20_hbgd_transfer_bootstrap_results.csv",
+      "path": "DATA/LUMIRE\\step20_hbgd_transfer_bootstrap_results.csv",
+      "size_bytes": 255969,
+      "rows": 10000,
+      "cols": 2,
+      "col_names": [
+        "iteration",
+        "mean_patient_improvement_mm"
+      ]
+    },
+    {
+      "filename": "step20_hbgd_transfer_patient_results.csv",
+      "path": "DATA/LUMIRE\\step20_hbgd_transfer_patient_results.csv",
+      "size_bytes": 1406,
+      "rows": 13,
+      "cols": 9,
+      "col_names": [
+        "patient_id",
+        "n_prediction_cases",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm",
+        "relative_improvement_pct",
+        "hbgd_improved",
+        "hbgd_worsened",
+        "hbgd_unchanged"
+      ]
+    },
+    {
+      "filename": "step20_hbgd_transfer_permutation_results.csv",
+      "path": "DATA/LUMIRE\\step20_hbgd_transfer_permutation_results.csv",
+      "size_bytes": 121,
+      "rows": 1,
+      "cols": 4,
+      "col_names": [
+        "observed_mean_improvement_mm",
+        "permutation_p_value",
+        "iterations",
+        "n_patients"
+      ]
+    },
+    {
+      "filename": "step20_hbgd_transfer_phenotype_results.csv",
+      "path": "DATA/LUMIRE\\step20_hbgd_transfer_phenotype_results.csv",
+      "size_bytes": 381,
+      "rows": 3,
+      "cols": 7,
+      "col_names": [
+        "phenotype",
+        "n_prediction_cases",
+        "n_patients",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm",
+        "relative_improvement_pct"
+      ]
+    },
+    {
+      "filename": "step20_hbgd_transfer_statistical_summary.csv",
+      "path": "DATA/LUMIRE\\step20_hbgd_transfer_statistical_summary.csv",
+      "size_bytes": 890,
+      "rows": 22,
+      "cols": 2,
+      "col_names": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filename": "step21_cross_cancer_hbgd_claim_matrix.csv",
+      "path": "DATA/LUMIRE\\step21_cross_cancer_hbgd_claim_matrix.csv",
+      "size_bytes": 1290,
+      "rows": 7,
+      "cols": 4,
+      "col_names": [
+        "claim",
+        "evidence",
+        "support_level",
+        "safe_statement"
+      ]
+    },
+    {
+      "filename": "step21_cross_cancer_hbgd_evidence_table.csv",
+      "path": "DATA/LUMIRE\\step21_cross_cancer_hbgd_evidence_table.csv",
+      "size_bytes": 4721,
+      "rows": 11,
+      "cols": 7,
+      "col_names": [
+        "step",
+        "experiment",
+        "comparison",
+        "result",
+        "evidence_status",
+        "scientific_interpretation",
+        "key_limitation"
+      ]
+    },
+    {
+      "filename": "step21_cross_cancer_hbgd_numerical_evidence.csv",
+      "path": "DATA/LUMIRE\\step21_cross_cancer_hbgd_numerical_evidence.csv",
+      "size_bytes": 438,
+      "rows": 4,
+      "cols": 6,
+      "col_names": [
+        "step",
+        "comparison",
+        "test_MAE_mm",
+        "baseline_MAE_mm",
+        "improvement_pct",
+        "statistical_validation"
+      ]
+    },
+    {
+      "filename": "step21_cross_cancer_hbgd_statistical_evidence.csv",
+      "path": "DATA/LUMIRE\\step21_cross_cancer_hbgd_statistical_evidence.csv",
+      "size_bytes": 677,
+      "rows": 5,
+      "cols": 8,
+      "col_names": [
+        "analysis",
+        "n_patients",
+        "mean_improvement_mm",
+        "effect_size",
+        "bootstrap_CI",
+        "permutation_p",
+        "interpretation",
+        "n_groups"
+      ]
+    },
+    {
+      "filename": "step22_hbgd_transfer_patient_results.csv",
+      "path": "DATA/LUMIRE\\step22_hbgd_transfer_patient_results.csv",
+      "size_bytes": 10408,
+      "rows": 130,
+      "cols": 8,
+      "col_names": [
+        "seed",
+        "patient_id",
+        "n_cases",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm",
+        "improved",
+        "worsened"
+      ]
+    },
+    {
+      "filename": "step22_hbgd_transfer_robustness_summary.csv",
+      "path": "DATA/LUMIRE\\step22_hbgd_transfer_robustness_summary.csv",
+      "size_bytes": 653,
+      "rows": 18,
+      "cols": 2,
+      "col_names": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filename": "step22_hbgd_transfer_split_results.csv",
+      "path": "DATA/LUMIRE\\step22_hbgd_transfer_split_results.csv",
+      "size_bytes": 1996,
+      "rows": 10,
+      "cols": 16,
+      "col_names": [
+        "seed",
+        "train_patients",
+        "validation_patients",
+        "test_patients",
+        "train_cases",
+        "validation_cases",
+        "test_cases",
+        "no_change_MAE_mm",
+        "direct_transfer_MAE_mm",
+        "geometry_MAE_mm",
+        "geometry_RMSE_mm",
+        "geometry_hbgd_MAE_mm",
+        "geometry_hbgd_RMSE_mm",
+        "improvement_mm",
+        "improvement_pct",
+        "hbgd_better_than_geometry"
+      ]
+    },
+    {
+      "filename": "step23_hbgd_repeated_split_bootstrap.csv",
+      "path": "DATA/LUMIRE\\step23_hbgd_repeated_split_bootstrap.csv",
+      "size_bytes": 262378,
+      "rows": 10000,
+      "cols": 2,
+      "col_names": [
+        "iteration",
+        "mean_split_improvement_mm"
+      ]
+    },
+    {
+      "filename": "step23_hbgd_repeated_split_sensitivity.csv",
+      "path": "DATA/LUMIRE\\step23_hbgd_repeated_split_sensitivity.csv",
+      "size_bytes": 879,
+      "rows": 10,
+      "cols": 7,
+      "col_names": [
+        "excluded_seed",
+        "excluded_improvement_mm",
+        "remaining_splits",
+        "remaining_mean_improvement_mm",
+        "remaining_median_improvement_mm",
+        "remaining_positive_splits",
+        "remaining_negative_splits"
+      ]
+    },
+    {
+      "filename": "step23_hbgd_repeated_split_sign_test.csv",
+      "path": "DATA/LUMIRE\\step23_hbgd_repeated_split_sign_test.csv",
+      "size_bytes": 103,
+      "rows": 1,
+      "cols": 6,
+      "col_names": [
+        "n_positive",
+        "n_negative",
+        "n_zero",
+        "tested_splits",
+        "positive_fraction",
+        "exact_two_sided_p"
+      ]
+    },
+    {
+      "filename": "step23_hbgd_repeated_split_statistical_summary.csv",
+      "path": "DATA/LUMIRE\\step23_hbgd_repeated_split_statistical_summary.csv",
+      "size_bytes": 1340,
+      "rows": 33,
+      "cols": 2,
+      "col_names": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filename": "step24_hbgd_responder_case_features.csv",
+      "path": "DATA/LUMIRE\\step24_hbgd_responder_case_features.csv",
+      "size_bytes": 201210,
+      "rows": 692,
+      "cols": 23,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "current_time_days",
+        "current_diameter_mm",
+        "current_volume_cm3",
+        "history_n_timepoints",
+        "history_n_intervals",
+        "history_weeks",
+        "mean_hbgd_rate_per_day",
+        "absolute_mean_hbgd_rate_per_day",
+        "hbgd_rate_std_per_day",
+        "positive_rate_fraction",
+        "negative_rate_fraction",
+        "hbgd_phenotype",
+        "last_interval_rate_per_day",
+        "last_interval_abs_rate_per_day",
+        "rate_range_per_day",
+        "history_diameter_change_mm",
+        "history_percent_change",
+        "seed",
+        "improvement_mm",
+        "responder",
+        "response_group"
+      ]
+    },
+    {
+      "filename": "step24_hbgd_responder_correlations.csv",
+      "path": "DATA/LUMIRE\\step24_hbgd_responder_correlations.csv",
+      "size_bytes": 1147,
+      "rows": 15,
+      "cols": 4,
+      "col_names": [
+        "feature",
+        "n",
+        "pearson_r",
+        "absolute_pearson_r"
+      ]
+    },
+    {
+      "filename": "step24_hbgd_responder_group_comparison.csv",
+      "path": "DATA/LUMIRE\\step24_hbgd_responder_group_comparison.csv",
+      "size_bytes": 2023,
+      "rows": 15,
+      "cols": 8,
+      "col_names": [
+        "feature",
+        "responder_n",
+        "nonresponder_n",
+        "responder_mean",
+        "responder_median",
+        "nonresponder_mean",
+        "nonresponder_median",
+        "mean_difference"
+      ]
+    },
+    {
+      "filename": "step24_hbgd_responder_patient_profiles.csv",
+      "path": "DATA/LUMIRE\\step24_hbgd_responder_patient_profiles.csv",
+      "size_bytes": 61771,
+      "rows": 130,
+      "cols": 40,
+      "col_names": [
+        "seed",
+        "patient_id",
+        "n_cases",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm",
+        "improved",
+        "worsened",
+        "current_diameter_mm_mean",
+        "current_diameter_mm_median",
+        "current_volume_cm3_mean",
+        "current_volume_cm3_median",
+        "history_n_timepoints_mean",
+        "history_n_timepoints_median",
+        "history_n_timepoints_max",
+        "history_n_intervals_mean",
+        "history_n_intervals_median",
+        "history_n_intervals_max",
+        "history_weeks_mean",
+        "history_weeks_median",
+        "history_weeks_max",
+        "mean_hbgd_rate_per_day_mean",
+        "mean_hbgd_rate_per_day_median",
+        "absolute_mean_hbgd_rate_per_day_mean",
+        "absolute_mean_hbgd_rate_per_day_median",
+        "hbgd_rate_std_per_day_mean",
+        "hbgd_rate_std_per_day_median",
+        "positive_rate_fraction_mean",
+        "negative_rate_fraction_mean",
+        "last_interval_rate_per_day_mean",
+        "last_interval_abs_rate_per_day_mean",
+        "rate_range_per_day_mean",
+        "history_diameter_change_mm_mean",
+        "history_percent_change_mean",
+        "dominant_hbgd_phenotype",
+        "growth_prediction_origins",
+        "stable_prediction_origins",
+        "shrinkage_prediction_origins",
+        "responder",
+        "response_group"
+      ]
+    },
+    {
+      "filename": "step25_hbgd_temporal_patient_results.csv",
+      "path": "DATA/LUMIRE\\step25_hbgd_temporal_patient_results.csv",
+      "size_bytes": 6496,
+      "rows": 59,
+      "cols": 7,
+      "col_names": [
+        "patient_id",
+        "n_forecasts",
+        "no_change_MAE_mm",
+        "direct_transfer_MAE_mm",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm"
+      ]
+    },
+    {
+      "filename": "step25_hbgd_temporal_performance.csv",
+      "path": "DATA/LUMIRE\\step25_hbgd_temporal_performance.csv",
+      "size_bytes": 487,
+      "rows": 4,
+      "cols": 7,
+      "col_names": [
+        "model",
+        "n_forecasts",
+        "n_patients",
+        "MAE_mm",
+        "RMSE_mm",
+        "improvement_vs_geometry_mm",
+        "improvement_vs_geometry_pct"
+      ]
+    },
+    {
+      "filename": "step25_hbgd_temporal_phenotype_results.csv",
+      "path": "DATA/LUMIRE\\step25_hbgd_temporal_phenotype_results.csv",
+      "size_bytes": 301,
+      "rows": 3,
+      "cols": 6,
+      "col_names": [
+        "phenotype",
+        "n_forecasts",
+        "n_patients",
+        "geometry_MAE_mm",
+        "geometry_hbgd_MAE_mm",
+        "improvement_mm"
+      ]
+    },
+    {
+      "filename": "step25_hbgd_temporal_predictions.csv",
+      "path": "DATA/LUMIRE\\step25_hbgd_temporal_predictions.csv",
+      "size_bytes": 74942,
+      "rows": 276,
+      "cols": 19,
+      "col_names": [
+        "patient_id",
+        "current_week",
+        "future_week",
+        "future_days",
+        "actual_diameter_mm",
+        "no_change_pred",
+        "direct_transfer_pred",
+        "geometry_pred",
+        "geometry_hbgd_pred",
+        "geometry_error_mm",
+        "geometry_hbgd_error_mm",
+        "no_change_error_mm",
+        "direct_transfer_error_mm",
+        "improvement_geometry_hbgd_mm",
+        "hbgd_phenotype",
+        "history_n_timepoints",
+        "history_n_intervals",
+        "history_mean_rate",
+        "history_rate_std"
+      ]
+    },
+    {
+      "filename": "step25_hbgd_temporal_summary.csv",
+      "path": "DATA/LUMIRE\\step25_hbgd_temporal_summary.csv",
+      "size_bytes": 501,
+      "rows": 14,
+      "cols": 2,
+      "col_names": [
+        "metric",
+        "value"
+      ]
+    },
+    {
+      "filename": "step26_hbgd_evidence_matrix.csv",
+      "path": "DATA/LUMIRE\\step26_hbgd_evidence_matrix.csv",
+      "size_bytes": 1504,
+      "rows": 7,
+      "cols": 5,
+      "col_names": [
+        "step",
+        "analysis",
+        "key_result",
+        "status",
+        "interpretation"
+      ]
+    },
+    {
+      "filename": "step26_hbgd_leakage_audit.csv",
+      "path": "DATA/LUMIRE\\step26_hbgd_leakage_audit.csv",
+      "size_bytes": 3243,
+      "rows": 16,
+      "cols": 4,
+      "col_names": [
+        "audit_check",
+        "status",
+        "evidence",
+        "interpretation"
+      ]
+    },
+    {
+      "filename": "step26_hbgd_provenance_table.csv",
+      "path": "DATA/LUMIRE\\step26_hbgd_provenance_table.csv",
+      "size_bytes": 414,
+      "rows": 4,
+      "cols": 5,
+      "col_names": [
+        "artifact",
+        "file",
+        "role",
+        "count",
+        "patients"
+      ]
+    }
+  ]
+}

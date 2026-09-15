@@ -1,0 +1,5 @@
+step,comparison,test_MAE_mm,baseline_MAE_mm,improvement_pct,statistical_validation
+Step 12,Geometry + HBGD rate vs Geometry,7.9392,8.017,0.97,Not performed
+Step 13,Geometry + HBGD rate vs Geometry,7.1862,7.4912,4.07,Permutation p=0.274745
+Step 19,Geometry + Transferred HBGD vs Geometry,7.3678,7.4565,1.19,Pending Step 20
+Step 20,Geometry + Transferred HBGD vs Geometry,7.3678,7.4565,1.19,Permutation p=0.097390; Wilcoxon p=0.146484

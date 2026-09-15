@@ -1,0 +1,6 @@
+analysis,n_patients,mean_improvement_mm,effect_size,bootstrap_CI,permutation_p,interpretation,n_groups
+Step 13 patient-level HBGD rate,13.0,0.7685,0.3547,"[-0.2496, 1.9629]",0.274745,Not statistically significant,
+Step 17 Growth phenotype,,0.1512,0.3607,"[-0.0791, 0.3934]",0.264774,Not statistically significant,11.0
+Step 17 Stable phenotype,,0.1575,0.7043,"[0.0249, 0.2993]",0.086191,Promising but not statistically significant,9.0
+Step 17 Shrinkage phenotype,,0.0475,0.1102,"[-0.1886, 0.2798]",0.70213,Not statistically significant,12.0
+Step 20 cross-cancer transferred HBGD,,0.2062,0.5062,"[-0.0083, 0.4210]",0.09739,Directional positive effect; not significant,13.0

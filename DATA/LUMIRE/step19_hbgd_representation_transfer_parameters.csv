@@ -1,0 +1,14 @@
+parameter,value
+source_intervals,49.0
+source_patients,12.0
+source_training_MAE_mm,0.0012708100925738087
+source_training_RMSE_mm,0.0018693792708033253
+target_prediction_cases,342.0
+target_train_patients,46.0
+target_validation_patients,7.0
+target_test_patients,13.0
+target_train_cases,221.0
+target_validation_cases,46.0
+target_test_cases,75.0
+target_adaptation_intervals,267.0
+median_residual_correction_per_day,0.0006671479586704519

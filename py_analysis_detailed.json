@@ -1,0 +1,1485 @@
+{
+  "1_inspect_dataset.py": {
+    "filename": "1_inspect_dataset.py",
+    "path": "CODES\\1_inspect_dataset.py",
+    "lines": 470,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "patients.csv",
+      "recist_measurements.csv",
+      "series.json",
+      "windows_mapping.json"
+    ],
+    "code_sample": "# 1_inspect_dataset.py\n\nimport os\nimport json\nimport pandas as pd\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFILES = {\n    \"patients\": \"patients.csv\",\n    \"series\": \"series.json\",\n    \"windows\": \"windows_mapping.json\",\n    \"recist\": \"recist_measurements.csv\"\n}\n\n\n# ============================================================\n# HELPER FUNCTIONS\n# ============================================================\n\ndef print_header(title):\n    print(\"\\n\" + \"=\" * 80)\n    print(title)\n    print(\"=\" * 80)\n\n\ndef inspect_dataframe(name, path):\n    print_header(f\"{name.upper()} : {os.path.basename(path)}\")\n\n    try:\n        df = pd.read_csv(path)\n\n        print(f\"Rows       : {len(df):,}\")\n        print(f\"Columns    : {len(df.columns)}\")\n        print(f\"File size  : {os.path.getsize(path) / 1024:.2f} KB\")\n\n        print"
+  },
+  "2_longitudinal_patient_analysis.py": {
+    "filename": "2_longitudinal_patient_analysis.py",
+    "path": "CODES\\2_longitudinal_patient_analysis.py",
+    "lines": 595,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "2_longitudinal_patient_summary.csv",
+      "patients.csv",
+      "recist_measurements.csv",
+      "series.json"
+    ],
+    "code_sample": "# 2_longitudinal_patient_analysis.py\n\nimport os\nimport json\nimport pandas as pd\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nPATIENTS_FILE = os.path.join(DATA_DIR, \"patients.csv\")\nRECIST_FILE = os.path.join(DATA_DIR, \"recist_measurements.csv\")\nSERIES_FILE = os.path.join(DATA_DIR, \"series.json\")\n\n\n# ============================================================\n# HELPER\n# ============================================================\n\ndef header(title):\n    print(\"\\n\" + \"=\" * 90)\n    print(title)\n    print(\"=\" * 90)\n\n\ndef parse_date(value):\n    \"\"\"\n    Dataset stores dates as YYYYMMDD integers.\n    Example: 20230426 -> 2023-04-26\n    \"\"\"\n    return pd.to_datetime(\n        str(int(value)),\n        format=\"%Y%m%d\",\n        errors=\"coerce\"\n    )\n\n\n# ============================================================\n# LO"
+  },
+  "3_analyze_tumor_change.py": {
+    "filename": "3_analyze_tumor_change.py",
+    "path": "CODES\\3_analyze_tumor_change.py",
+    "lines": 573,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "3_patient_trajectories.csv",
+      "3_tumor_change_summary.csv",
+      "recist_measurements.csv"
+    ],
+    "code_sample": "# 3_analyze_tumor_change.py\n\nimport os\nimport pandas as pd\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nRECIST_FILE = os.path.join(\n    DATA_DIR,\n    \"recist_measurements.csv\"\n)\n\n\n# ============================================================\n# HELPER FUNCTIONS\n# ============================================================\n\ndef header(title):\n    print(\"\\n\" + \"=\" * 100)\n    print(title)\n    print(\"=\" * 100)\n\n\ndef parse_date(value):\n    return pd.to_datetime(\n        str(int(value)),\n        format=\"%Y%m%d\",\n        errors=\"coerce\"\n    )\n\n\n# ============================================================\n# LOAD DATA\n# ============================================================\n\nheader(\"LOADING RECIST DATA\")\n\ndf = pd.read_csv(RECIST_FILE)\n\ndf[\"date\"] = df[\"study_date\"].apply(parse_date)\n\ndf = df.sort_values(\n "
+  },
+  "4_verify_ct_files.py": {
+    "filename": "4_verify_ct_files.py",
+    "path": "CODES\\4_verify_ct_files.py",
+    "lines": 667,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "4_ct_verification_summary.csv",
+      "recist_measurements.csv",
+      "series.json",
+      "windows_mapping.json"
+    ],
+    "code_sample": "# 4_verify_ct_files.py\n\nimport os\nimport json\nimport pandas as pd\nimport sys\nsys.stdout.reconfigure(\n    encoding=\"utf-8\",\n    errors=\"replace\"\n)\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nSERIES_FILE = os.path.join(DATA_DIR, \"series.json\")\nWINDOWS_FILE = os.path.join(DATA_DIR, \"windows_mapping.json\")\nRECIST_FILE = os.path.join(DATA_DIR, \"recist_measurements.csv\")\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print(\"\\n\" + \"=\" * 100)\n    print(title.encode(\"ascii\", \"replace\").decode())\n    print(\"=\" * 100)\n\ndef find_nii_files(root):\n    \"\"\"\n    Search recursively for NIfTI files.\n    \"\"\"\n\n    nii_files = []\n\n    for current_root, dirs, files in os.walk(root):\n\n        for filename in files:\n\n"
+  },
+  "5_verify_ct_masks.py": {
+    "filename": "5_verify_ct_masks.py",
+    "path": "CODES\\5_verify_ct_masks.py",
+    "lines": 1187,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "5_ct_mask_verification.csv",
+      "5_recist_mask_measurements.csv",
+      "5_recist_mask_verification.csv",
+      "recist_measurements.csv",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport sys\nimport json\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\n\n# ============================================================\n# WINDOWS TERMINAL FIX\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nSERIES_FILE = os.path.join(\n    DATA_DIR,\n    \"series.json\"\n)\n\nRECIST_FILE = os.path.join(\n    DATA_DIR,\n    \"recist_measurements.csv\"\n)\n\n\n# ============================================================\n# PRINT HEADER\n# ============================================================\n\ndef header(text):\n    print()\n    print(\"=\" * 90)\n    print(text)\n    print(\"=\" * 90)\n\n\n# ========================================"
+  },
+  "6_analyze_longitudinal_lesions.py": {
+    "filename": "6_analyze_longitudinal_lesions.py",
+    "path": "CODES\\6_analyze_longitudinal_lesions.py",
+    "lines": 1065,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "6_lesion_alias_summary.csv",
+      "6_patient_longitudinal_summary.csv",
+      "6_recist_growth_analysis.csv",
+      "6_recist_patient_summary.csv",
+      "6_study_order_consistency.csv",
+      "recist_measurements.csv",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport sys\nimport json\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nSERIES_FILE = os.path.join(\n    DATA_DIR,\n    \"series.json\"\n)\n\nRECIST_FILE = os.path.join(\n    DATA_DIR,\n    \"recist_measurements.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(title):\n\n    print()\n    print(\"=\" * 90)\n    print(title)\n    print(\"=\" * 90)\n\n\n# ============================================================\n# LOAD "
+  },
+  "7_analyze_lesion_correspondence.py": {
+    "filename": "7_analyze_lesion_correspondence.py",
+    "path": "CODES\\7_analyze_lesion_correspondence.py",
+    "lines": 1448,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "7_lesion_correspondence.csv",
+      "7_lesion_geometry.csv",
+      "7_recist_geometry.csv",
+      "recist_measurements.csv",
+      "series.json"
+    ],
+    "code_sample": "# 7_analyze_lesion_correspondence.py\n\nimport os\nimport sys\nimport json\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\nfrom scipy import ndimage\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nSERIES_FILE = os.path.join(\n    DATA_DIR,\n    \"series.json\"\n)\n\nRECIST_FILE = os.path.join(\n    DATA_DIR,\n    \"recist_measurements.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n\n    print()\n    print(\"=\" * 90)\n    print(text)\n    pri"
+  },
+  "8_validate_recist_trajectories.py": {
+    "filename": "8_validate_recist_trajectories.py",
+    "path": "CODES\\8_validate_recist_trajectories.py",
+    "lines": 1305,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "7_recist_geometry.csv",
+      "8_longitudinal_patient_ranking.csv",
+      "8_recist_pairwise_changes.csv",
+      "8_recist_trajectory_summary.csv",
+      "recist_measurements.csv"
+    ],
+    "code_sample": "# 8_validate_recist_trajectories.py\n\nimport os\nimport sys\nimport pandas as pd\nimport numpy as np\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nRECIST_FILE = os.path.join(\n    DATA_DIR,\n    \"recist_measurements.csv\"\n)\n\nGEOMETRY_FILE = os.path.join(\n    DATA_DIR,\n    \"7_recist_geometry.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n\n    print()\n    print(\"=\" * 90)\n    print(text)\n    print(\"=\" * 90)\n\n\n# ================================="
+  },
+  "9_extract_hbgd_features.py": {
+    "filename": "9_extract_hbgd_features.py",
+    "path": "CODES\\9_extract_hbgd_features.py",
+    "lines": 1321,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "7_recist_geometry.csv",
+      "8_recist_pairwise_changes.csv",
+      "8_recist_trajectory_summary.csv",
+      "9_hbgd_features.csv",
+      "9_hbgd_log_growth_features.csv",
+      "9_hbgd_longitudinal_features.csv"
+    ],
+    "code_sample": "# 9_extract_hbgd_features.py\n\nimport os\nimport sys\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nRECIST_GEOMETRY_FILE = os.path.join(\n    DATA_DIR,\n    \"7_recist_geometry.csv\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_pairwise_changes.csv\"\n)\n\nTRAJECTORY_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_trajectory_summary.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n\n    print("
+  },
+  "10_fit_growth_models.py": {
+    "filename": "10_fit_growth_models.py",
+    "path": "CODES\\10_fit_growth_models.py",
+    "lines": 1460,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "10_growth_model_holdout.csv",
+      "10_growth_model_transitions.csv",
+      "10_patient_growth_rates.csv",
+      "8_recist_pairwise_changes.csv"
+    ],
+    "code_sample": "# 10_fit_growth_models.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom scipy.optimize import curve_fit\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.metrics import mean_squared_error\nfrom sklearn.metrics import r2_score\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\nwarnings.filterwarnings(\n    \"ignore\"\n)\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_pairwise_changes.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# =================================="
+  },
+  "11_validate_growth_dynamics.py": {
+    "filename": "11_validate_growth_dynamics.py",
+    "path": "CODES\\11_validate_growth_dynamics.py",
+    "lines": 1482,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "10_growth_model_holdout.csv",
+      "11_growth_rate_stability.csv",
+      "11_patient_growth_statistics.csv",
+      "11_volume_longitudinal_analysis.csv",
+      "8_recist_pairwise_changes.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 11_validate_growth_dynamics.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom scipy.stats import pearsonr\nfrom scipy.stats import spearmanr\nfrom scipy.stats import ttest_1samp\nfrom scipy.stats import wilcoxon\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\nwarnings.filterwarnings(\n    \"ignore\"\n)\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_pairwise_changes.csv\"\n)\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nHOLDOUT_FILE = os.path.join(\n    DATA_DIR,\n    \"10_growth_model"
+  },
+  "12_test_dynamic_growth_models.py": {
+    "filename": "12_test_dynamic_growth_models.py",
+    "path": "CODES\\12_test_dynamic_growth_models.py",
+    "lines": 1390,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "12_dynamic_model_patient_performance.csv",
+      "12_dynamic_model_performance.csv",
+      "12_dynamic_model_predictions.csv",
+      "8_recist_pairwise_changes.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 12_test_dynamic_growth_models.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.metrics import mean_squared_error\nfrom sklearn.metrics import r2_score\n\nfrom scipy.optimize import least_squares\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_pairwise_changes.csv\"\n)\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\n\n# =========================="
+  },
+  "13_test_hbgd_feature_value.py": {
+    "filename": "13_test_hbgd_feature_value.py",
+    "path": "CODES\\13_test_hbgd_feature_value.py",
+    "lines": 1673,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "13_hbgd_feature_patient_performance.csv",
+      "13_hbgd_feature_performance.csv",
+      "13_hbgd_feature_predictions.csv",
+      "8_recist_pairwise_changes.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 13_test_hbgd_feature_value.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.metrics import mean_squared_error\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_"
+  },
+  "14_characterize_hbgd_states.py": {
+    "filename": "14_characterize_hbgd_states.py",
+    "path": "CODES\\14_characterize_hbgd_states.py",
+    "lines": 1635,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "14_hbgd_dynamic_states.csv",
+      "14_hbgd_lesion_behaviors.csv",
+      "14_hbgd_patient_states.csv",
+      "14_hbgd_state_summary.csv",
+      "14_hbgd_state_transitions.csv",
+      "8_recist_pairwise_changes.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 14_characterize_hbgd_states.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom scipy.stats import pearsonr\nfrom scipy.stats import spearmanr\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"8_recist_pairwise_changes.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\nde"
+  },
+  "15_analyze_hbgd_state_transitions.py": {
+    "filename": "15_analyze_hbgd_state_transitions.py",
+    "path": "CODES\\15_analyze_hbgd_state_transitions.py",
+    "lines": 1283,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "14_hbgd_dynamic_states.csv",
+      "14_hbgd_state_transitions.csv",
+      "15_hbgd_lesion_transition_summary.csv",
+      "15_hbgd_patient_transition_summary.csv",
+      "15_hbgd_transition_entropy.csv",
+      "15_hbgd_transition_matrix.csv",
+      "15_hbgd_transition_probabilities.csv",
+      "15_hbgd_volume_state_agreement.csv"
+    ],
+    "code_sample": "# 15_analyze_hbgd_state_transitions.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.stats import chi2_contingency\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nSTATE_FILE = os.path.join(\n    DATA_DIR,\n    \"14_hbgd_dynamic_states.csv\"\n)\n\nTRANSITION_FILE = os.path.join(\n    DATA_DIR,\n    \"14_hbgd_state_transitions.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text)"
+  },
+  "16_test_state_transition_prediction.py": {
+    "filename": "16_test_state_transition_prediction.py",
+    "path": "CODES\\16_test_state_transition_prediction.py",
+    "lines": 1550,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "14_hbgd_dynamic_states.csv",
+      "14_hbgd_state_transitions.csv",
+      "16_hbgd_state_patient_performance.csv",
+      "16_hbgd_state_prediction_performance.csv",
+      "16_hbgd_state_predictions.csv",
+      "16_hbgd_training_transition_probabilities.csv"
+    ],
+    "code_sample": "# 16_test_state_transition_prediction.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom sklearn.metrics import (\n    accuracy_score,\n    balanced_accuracy_score,\n    f1_score,\n    confusion_matrix\n)\nfrom sklearn.preprocessing import LabelEncoder\nfrom sklearn.linear_model import LogisticRegression\n\n\n# ============================================================\n# TERMINAL ENCODING\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nSTATE_FILE = os.path.join(\n    DATA_DIR,\n    \"14_hbgd_dynamic_states.csv\"\n)\n\nTRANSITION_FILE = os.path.join(\n    DATA_DIR,\n    \"14_hbgd_st"
+  },
+  "17_build_hbgd_mathematical_model.py": {
+    "filename": "17_build_hbgd_mathematical_model.py",
+    "path": "CODES\\17_build_hbgd_mathematical_model.py",
+    "lines": 1310,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "17_hbgd_mathematical_features.csv",
+      "17_hbgd_state_parameters.csv",
+      "17_hbgd_volume_parameters.csv",
+      "9_hbgd_features.csv",
+      "9_hbgd_log_growth_features.csv"
+    ],
+    "code_sample": "# 17_build_hbgd_mathematical_model.py\n\nimport os\nimport sys\nimport warnings\n\nimport numpy as np\nimport pandas as pd\nfrom scipy.optimize import curve_fit\n\n\n# ============================================================\n# TERMINAL\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(\n        encoding=\"utf-8\",\n        errors=\"replace\"\n    )\nexcept Exception:\n    pass\n\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(\n    os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\"\n)\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nPAIRWISE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_log_growth_features.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n\n    print()\n    p"
+  },
+  "18_test_hbgd_forward_prediction.py": {
+    "filename": "18_test_hbgd_forward_prediction.py",
+    "path": "CODES\\18_test_hbgd_forward_prediction.py",
+    "lines": 968,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "18_hbgd_forecast_horizon_analysis.csv",
+      "18_hbgd_forward_lesion_performance.csv",
+      "18_hbgd_forward_predictions.csv",
+      "18_hbgd_forward_state_performance.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 18_test_hbgd_forward_prediction.py\n\nimport os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATH\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n    print()\n    print(\"=\" * 95)\n    print(text)\n    print(\"=\" * 95)\n\n\n# ============================================================\n# LOAD\n# ============================================================\n\nheader(\"STEP 18 - HBGD FORWARD PREDICTION\")\n\nif not os.path.exists(FEATURE_FILE):\n    print(\"ERROR: Missi"
+  },
+  "19_patient_independent_hbgd_validation.py": {
+    "filename": "19_patient_independent_hbgd_validation.py",
+    "path": "CODES\\19_patient_independent_hbgd_validation.py",
+    "lines": 1206,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "19_patient_independent_patient_performance.csv",
+      "19_patient_independent_performance.csv",
+      "19_patient_independent_predictions.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 19_patient_independent_hbgd_validation.py\n\nimport os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATH\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n    print()\n    print(\"=\" * 95)\n    print(text)\n    print(\"=\" * 95)\n\n\n# ============================================================\n# LOAD DATA\n# ============================================================\n\nheader(\"STEP 19 - PATIENT-INDEPENDENT HBGD VALIDATION\")\n\nif not os.path.exists(FEATURE_FILE):"
+  },
+  "20_build_hbgd_prototype.py": {
+    "filename": "20_build_hbgd_prototype.py",
+    "path": "CODES\\20_build_hbgd_prototype.py",
+    "lines": 1087,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "20_hbgd_prototype_parameters.csv",
+      "20_hbgd_prototype_performance.csv",
+      "20_hbgd_prototype_predictions.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nOUTPUT_FILE = os.path.join(\n    DATA_DIR,\n    \"20_hbgd_prototype_predictions.csv\"\n)\n\nPERFORMANCE_FILE = os.path.join(\n    DATA_DIR,\n    \"20_hbgd_prototype_performance.csv\"\n)\n\nPARAMETER_FILE = os.path.join(\n    DATA_DIR,\n    \"20_hbgd_prototype_parameters.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n    print()\n    print(\"=\" * 95)\n    print(text)\n    print(\"=\" * 95)\n\n\n# ============"
+  },
+  "21_test_individualized_hbgd.py": {
+    "filename": "21_test_individualized_hbgd.py",
+    "path": "CODES\\21_test_individualized_hbgd.py",
+    "lines": 1210,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "21_individualized_hbgd_patient_performance.csv",
+      "21_individualized_hbgd_performance.csv",
+      "21_individualized_hbgd_predictions.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nPREDICTION_FILE = os.path.join(\n    DATA_DIR,\n    \"21_individualized_hbgd_predictions.csv\"\n)\n\nPERFORMANCE_FILE = os.path.join(\n    DATA_DIR,\n    \"21_individualized_hbgd_performance.csv\"\n)\n\nPATIENT_FILE = os.path.join(\n    DATA_DIR,\n    \"21_individualized_hbgd_patient_performance.csv\"\n)\n\n\n# ============================================================\n# HEADER\n# ============================================================\n\ndef header(text):\n    print()\n    print(\"=\" * 95)\n    print(text)\n    print("
+  },
+  "22_predict_individualized_hbgd_rate.py": {
+    "filename": "22_predict_individualized_hbgd_rate.py",
+    "path": "CODES\\22_predict_individualized_hbgd_rate.py",
+    "lines": 1362,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "22_rate_patient_performance.csv",
+      "22_rate_performance.csv",
+      "22_rate_predictions.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.linear_model import Ridge\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nPREDICTION_FILE = os.path.join(\n    DATA_DIR,\n    \"22_rate_predictions.csv\"\n)\n\nPERFORMANCE_FILE = os.path.join(\n    DATA_DIR,\n    \"22_rate_performance.csv\"\n)\n\nPATIENT_FILE = os.path.join(\n    DATA_DIR,\n    \"22_rate_patient_performance.csv\"\n)\n\n\n#"
+  },
+  "23_ct_to_hbgd_rate.py": {
+    "filename": "23_ct_to_hbgd_rate.py",
+    "path": "CODES\\23_ct_to_hbgd_rate.py",
+    "lines": 1830,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "23_ct_hbgd_rate_results.csv",
+      "23_ct_hbgd_summary.csv",
+      "9_hbgd_features.csv",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport sys\nimport warnings\nimport numpy as np\nimport pandas as pd\n\nwarnings.filterwarnings(\"ignore\")\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\", errors=\"replace\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# STEP 23\n# CT IMAGE -> INDIVIDUALIZED HBGD GROWTH RATE\n# ============================================================\n\nDATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    DATA_DIR,\n    \"9_hbgd_features.csv\"\n)\n\nOUTPUT_FILE = os.path.join(\n    DATA_DIR,\n    \"23_ct_hbgd_rate_results.csv\"\n)\n\n\ndef header(text):\n    print()\n    print(\"=\" * 95)\n    print(text)\n    print(\"=\" * 95)\n\n\n# ============================================================\n# LOAD REQUIRED LIBRARIES\n# ============================================================\n\nheader(\"STEP 23 - CHECKING CT PROCESSING LIBRARIES\")\n\ntry:\n    import nibabel as nib\nexcept ImportError:\n    print(\"ERROR: nibabel i"
+  },
+  "24_map_recist_to_ct_lesions.py": {
+    "filename": "24_map_recist_to_ct_lesions.py",
+    "path": "CODES\\24_map_recist_to_ct_lesions.py",
+    "lines": 811,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "*.nii.gz",
+      "24_recist_lesion_mapping.csv",
+      "24_verified_lesion_crops.csv",
+      "recist_measurements.csv",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport json\nimport glob\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nBASE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nRECIST_FILE = os.path.join(BASE_DIR, \"recist_measurements.csv\")\nSERIES_FILE = os.path.join(BASE_DIR, \"series.json\")\n\nOUTPUT_MAPPING = os.path.join(\n    BASE_DIR, \"24_recist_lesion_mapping.csv\"\n)\n\nOUTPUT_CROPS = os.path.join(\n    BASE_DIR, \"24_verified_lesion_crops.csv\"\n)\n\nCROP_DIR = os.path.join(\n    BASE_DIR, \"24_lesion_crops\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\ndef normalize_filename(value):\n    \"\"\"\n    Normalize a filename for reliable comparison.\n    \"\"\"\n    if pd.isna(valu"
+  },
+  "25_extract_lesion_ct_crops.py": {
+    "filename": "25_extract_lesion_ct_crops.py",
+    "path": "CODES\\25_extract_lesion_ct_crops.py",
+    "lines": 1103,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "*.nii",
+      "*.nii.gz",
+      "24_recist_lesion_mapping.csv",
+      "25_ct_crop_quality.csv",
+      "Missing 24_recist_lesion_mapping.csv",
+      "Missing series.json",
+      "label_{label_value}.nii.gz",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport sys\nimport json\nimport glob\nimport traceback\n\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nDATA_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nMAPPING_FILE = os.path.join(\n    DATA_ROOT,\n    \"24_recist_lesion_mapping.csv\"\n)\n\nSERIES_FILE = os.path.join(\n    DATA_ROOT,\n    \"series.json\"\n)\n\nOUTPUT_DIR = os.path.join(\n    DATA_ROOT,\n    \"25_lesion_ct_crops\"\n)\n\nOUTPUT_CSV = os.path.join(\n    DATA_ROOT,\n    \"25_ct_crop_quality.csv\"\n)\n\n# Extra margin around segmentation bounding box.\n# This gives the CNN some surrounding tissue/context.\nMARGIN_XY = 16\nMARGIN_Z = 8\n\n# Minimum number of voxels required.\nMIN_VOXELS = 10\n\n# Maximum crop dimension safeguard.\nMAX_CROP_XY = 160\nMAX_CROP_Z = 96\n\n\n# ============================================================\n# TERMINAL UTF-8 SAFETY\n# =========="
+  },
+  "26_audit_ct_crops.py": {
+    "filename": "26_audit_ct_crops.py",
+    "path": "CODES\\26_audit_ct_crops.py",
+    "lines": 851,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "26_ct_crop_audit.csv"
+    ],
+    "code_sample": "import os\nimport sys\nimport glob\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\n\n# ============================================================\n# CONFIG\n# ============================================================\n\nDATA_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nQUALITY_FILE = os.path.join(\n    DATA_ROOT,\n    \"25_ct_crop_quality.csv\"\n)\n\nCROP_DIR = os.path.join(\n    DATA_ROOT,\n    \"25_lesion_ct_crops\"\n)\n\nAUDIT_FILE = os.path.join(\n    DATA_ROOT,\n    \"26_ct_crop_audit.csv\"\n)\n\n\n# ============================================================\n# UTF-8 TERMINAL\n# ============================================================\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\ndef safe_float(x)"
+  },
+  "27_train_ct_to_hbgd_rate.py": {
+    "filename": "27_train_ct_to_hbgd_rate.py",
+    "path": "CODES\\27_train_ct_to_hbgd_rate.py",
+    "lines": 1125,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "27_ct_hbgd_patient_performance.csv",
+      "27_ct_hbgd_performance.csv",
+      "27_ct_hbgd_predictions.csv",
+      "27_ct_to_hbgd_rate_model.pt",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "# 27_train_ct_to_hbgd_rate.py\n\nimport os\nimport sys\nimport math\nimport random\nimport warnings\nfrom pathlib import Path\n\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\nwarnings.filterwarnings(\"ignore\")\n\nROOT = Path(__file__).resolve().parent.parent / \"DATA\"\n\nQUALITY_FILE = ROOT / \"25_ct_crop_quality.csv\"\nFEATURE_FILE = ROOT / \"9_hbgd_features.csv\"\nCROP_DIR = ROOT / \"25_lesion_ct_crops\"\n\nPREDICTION_FILE = ROOT / \"27_ct_hbgd_predictions.csv\"\nPERFORMANCE_FILE = ROOT / \"27_ct_hbgd_performance.csv\"\nPATIENT_PERFORMANCE_FILE = ROOT / \"27_ct_hbgd_patient_performance.csv\"\nMODEL_FILE = ROOT / \"27_ct_to_hbgd_rate_model.pt\"\n\nSEED = 42\n\nTARGET_SHAPE = (64, 64, 64)\nEPOCHS = 25\nBATCH_SIZE = 2\nLEARNING_RATE = 1e-3\nRATE_SCALE = 1000.0\n\nTRAIN_PATIENTS = [3, 7, 8, 12, 13, 16, 22]\nTEST_PATIENTS = [23, 25, 30]\n\nrandom.seed(SEED)\nnp.random.seed(SEED)\n\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\n# ==================================================="
+  },
+  "28_audit_ct_rate_coverage.py": {
+    "filename": "28_audit_ct_rate_coverage.py",
+    "path": "CODES\\28_audit_ct_rate_coverage.py",
+    "lines": 1047,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "*.nii",
+      "*.nii.gz",
+      "25_ct_crop_quality.csv",
+      "28_ct_rate_coverage_audit.csv",
+      "28_ct_rate_coverage_summary.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport glob\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# STEP 28\n# AUDIT CT COVERAGE FOR INDIVIDUALIZED HBGD RATE TARGETS\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(ROOT, \"9_hbgd_features.csv\")\nQUALITY_FILE = os.path.join(ROOT, \"25_ct_crop_quality.csv\")\nCROP_DIR = os.path.join(ROOT, \"25_lesion_ct_crops\")\n\nOUTPUT_FILE = os.path.join(\n    ROOT,\n    \"28_ct_rate_coverage_audit.csv\"\n)\n\nSUMMARY_FILE = os.path.join(\n    ROOT,\n    \"28_ct_rate_coverage_summary.csv\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\ndef normalize_patient(value):\n    try:\n        return int(float(value))\n    except Exception:\n        return "
+  },
+  "29_repair_failed_ct_crops.py": {
+    "filename": "29_repair_failed_ct_crops.py",
+    "path": "CODES\\29_repair_failed_ct_crops.py",
+    "lines": 1353,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "*.nii",
+      "*.nii.gz",
+      "24_recist_lesion_mapping.csv",
+      "25_ct_crop_quality.csv",
+      "29_ct_crop_repair_audit.csv",
+      "repaired.nii.gz",
+      "series.json"
+    ],
+    "code_sample": "import os\nimport glob\nimport shutil\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\n\n# ============================================================\n# STEP 29\n# REPAIR FAILED CT CROP EXTRACTION\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nQUALITY_FILE = os.path.join(\n    ROOT,\n    \"25_ct_crop_quality.csv\"\n)\n\nMAPPING_FILE = os.path.join(\n    ROOT,\n    \"24_recist_lesion_mapping.csv\"\n)\n\nSERIES_FILE = os.path.join(\n    ROOT,\n    \"series.json\"\n)\n\nORIGINAL_CROP_DIR = os.path.join(\n    ROOT,\n    \"25_lesion_ct_crops\"\n)\n\nREPAIR_DIR = os.path.join(\n    ROOT,\n    \"29_repaired_ct_crops\"\n)\n\nAUDIT_FILE = os.path.join(\n    ROOT,\n    \"29_ct_crop_repair_audit.csv\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\nde"
+  },
+  "30_audit_ct_rate_coverage.py": {
+    "filename": "30_audit_ct_rate_coverage.py",
+    "path": "CODES\\30_audit_ct_rate_coverage.py",
+    "lines": 847,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "30_ct_rate_coverage.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport glob\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(ROOT, \"9_hbgd_features.csv\")\nQUALITY_FILE = os.path.join(ROOT, \"25_ct_crop_quality.csv\")\nCROP_DIR = os.path.join(ROOT, \"25_lesion_ct_crops\")\n\nOUTPUT_FILE = os.path.join(ROOT, \"30_ct_rate_coverage.csv\")\n\n\n# ============================================================\n# DISPLAY HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 95)\n    print(title)\n    print(\"=\" * 95)\n\n\ndef subheader(title):\n    print()\n    print(\"-\" * 95)\n    print(title)\n    print(\"-\" * 95)\n\n\n# ============================================================\n# START\n# ============================================================\n\nheader(\"STEP 30 - AU"
+  },
+  "31_reconcile_ct_rate_linkage.py": {
+    "filename": "31_reconcile_ct_rate_linkage.py",
+    "path": "CODES\\31_reconcile_ct_rate_linkage.py",
+    "lines": 777,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "31_ct_rate_linkage_reconciliation.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport pandas as pd\nimport numpy as np\n\n\n# ============================================================\n# CONFIG\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(ROOT, \"9_hbgd_features.csv\")\nQUALITY_FILE = os.path.join(ROOT, \"25_ct_crop_quality.csv\")\n\nOUTPUT_FILE = os.path.join(\n    ROOT,\n    \"31_ct_rate_linkage_reconciliation.csv\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 100)\n    print(title)\n    print(\"=\" * 100)\n\n\ndef normalize_date(value):\n    return pd.to_datetime(\n        value,\n        errors=\"coerce\"\n    )\n\n\n# ============================================================\n# START\n# ============================================================\n\nheader(\"STEP 31 - CT TO HBGD RATE LINKAGE RECONCILIATION\")\n\nprint"
+  },
+  "32_repair_ct_rate_dates.py": {
+    "filename": "32_repair_ct_rate_dates.py",
+    "path": "CODES\\32_repair_ct_rate_dates.py",
+    "lines": 945,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "32_ct_rate_repaired_coverage.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport re\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# CONFIG\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    ROOT, \"9_hbgd_features.csv\"\n)\n\nQUALITY_FILE = os.path.join(\n    ROOT, \"25_ct_crop_quality.csv\"\n)\n\nOUTPUT_FILE = os.path.join(\n    ROOT, \"32_ct_rate_repaired_coverage.csv\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print()\n    print(\"=\" * 100)\n    print(title)\n    print(\"=\" * 100)\n\n\ndef parse_yyyymmdd(value):\n    \"\"\"\n    Safely convert YYYYMMDD into a real calendar date.\n    \"\"\"\n    if pd.isna(value):\n        return pd.NaT\n\n    text = str(value).strip()\n\n    # Remove decimal representation such as 20210526.0\n    if text.endswith(\".0\"):\n        text = text[:-2]\n\n   "
+  },
+  "33_train_ct_to_hbgd_rate.py": {
+    "filename": "33_train_ct_to_hbgd_rate.py",
+    "path": "CODES\\33_train_ct_to_hbgd_rate.py",
+    "lines": 1295,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "32_ct_rate_repaired_coverage.csv",
+      "33_cnn_hbgd_forward_predictions.csv",
+      "33_cnn_hbgd_performance.csv",
+      "33_cnn_rate_predictions.csv",
+      "33_training_history.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport random\nimport numpy as np\nimport pandas as pd\nimport nibabel as nib\n\nimport torch\nimport torch.nn as nn\nfrom torch.utils.data import Dataset, DataLoader\n\nimport sys\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\")\n    sys.stderr.reconfigure(encoding=\"utf-8\")\nexcept Exception:\n    pass\n# ============================================================\n# CONFIG\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nCOVERAGE_FILE = os.path.join(\n    ROOT,\n    \"32_ct_rate_repaired_coverage.csv\"\n)\n\nOUTPUT_DIR = os.path.join(\n    ROOT,\n    \"33_ct_rate_cnn_results\"\n)\n\nos.makedirs(\n    OUTPUT_DIR,\n    exist_ok=True\n)\n\nSEED = 42\n\nTRAIN_PATIENTS = [\n    3, 7, 8, 12, 13, 16, 22\n]\n\nTEST_PATIENTS = [\n    23, 25, 30\n]\n\n# Because only patient 30 currently has a complete\n# CT-to-rate trajectory, patient 30 is the actual\n# held-out demonstration case.\n\nBATCH_SIZE = 2\nEPOCHS = 30\nLEARNING_RATE = 1e-4\n\n"
+  },
+  "34_audit_ct_trajectory_recovery.py": {
+    "filename": "34_audit_ct_trajectory_recovery.py",
+    "path": "CODES\\34_audit_ct_trajectory_recovery.py",
+    "lines": 959,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "25_ct_crop_quality.csv",
+      "32_ct_rate_repaired_coverage.csv",
+      "34_ct_trajectory_recovery_audit.csv",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport sys\nimport pandas as pd\nimport numpy as np\n\ntry:\n    sys.stdout.reconfigure(encoding=\"utf-8\")\n    sys.stderr.reconfigure(encoding=\"utf-8\")\nexcept Exception:\n    pass\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\n\nFEATURE_FILE = os.path.join(\n    ROOT,\n    \"9_hbgd_features.csv\"\n)\n\nQUALITY_FILE = os.path.join(\n    ROOT,\n    \"25_ct_crop_quality.csv\"\n)\n\nCOVERAGE_FILE = os.path.join(\n    ROOT,\n    \"32_ct_rate_repaired_coverage.csv\"\n)\n\nOUTPUT_FILE = os.path.join(\n    ROOT,\n    \"34_ct_trajectory_recovery_audit.csv\"\n)\n\n\n# ============================================================\n# HELPERS\n# ============================================================\n\ndef header(title):\n    print(\"\\n\" + \"=\" * 100)\n    print(title)\n    print(\"=\" * 100)\n\n\ndef normalize_date(series):\n\n    s = series.astype(str).str.stri"
+  },
+  "35_build_hbgd_validation_report.py": {
+    "filename": "35_build_hbgd_validation_report.py",
+    "path": "CODES\\35_build_hbgd_validation_report.py",
+    "lines": 830,
+    "docstring": "",
+    "inputs": [
+      "25_ct_crop_quality.csv",
+      "9_hbgd_features.csv"
+    ],
+    "outputs": [
+      "=",
+      "HBGD EXPERIMENTAL VALIDATION REPORT\\n",
+      "\\n\\n"
+    ],
+    "all_ext_files": [
+      "12_dynamic_model_performance.csv",
+      "13_hbgd_feature_performance.csv",
+      "16_hbgd_state_prediction_performance.csv",
+      "18_hbgd_forward_predictions.csv",
+      "19_patient_independent_performance.csv",
+      "20_hbgd_prototype_performance.csv",
+      "21_individualized_hbgd_performance.csv",
+      "25_ct_crop_quality.csv",
+      "30_ct_rate_coverage.csv",
+      "32_ct_rate_repaired_coverage.csv",
+      "33_cnn_rate_predictions.csv",
+      "34_ct_trajectory_recovery_audit.csv",
+      "35_HBGD_VALIDATION_REPORT.txt",
+      "9_hbgd_features.csv"
+    ],
+    "code_sample": "import os\nimport glob\nimport pandas as pd\nimport numpy as np\n\nROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"..\", \"DATA\")\nOUT = os.path.join(ROOT, \"35_HBGD_VALIDATION_REPORT.txt\")\n\n\ndef section(title):\n    print(\"\\n\" + \"=\" * 100)\n    print(title)\n    print(\"=\" * 100)\n\n\ndef read_csv(name):\n    path = os.path.join(ROOT, name)\n    if os.path.exists(path):\n        try:\n            return pd.read_csv(path)\n        except Exception as e:\n            return None\n    return None\n\n\ndef fmt(x, n=4):\n    if pd.isna(x):\n        return \"N/A\"\n    return f\"{x:.{n}f}\"\n\n\nprint(\"=\" * 100)\nprint(\"STEP 35 - HBGD EXPERIMENTAL VALIDATION CONSOLIDATION\")\nprint(\"=\" * 100)\n\nprint(\"\"\"\nPurpose:\n\nConsolidate the completed HBGD feasibility experiments into one\ntechnical evidence report.\n\nThis step does NOT:\n\n    - train a new model\n    - modify the dataset\n    - modify CT crops\n    - claim biological states\n    - claim clinical validation\n\nIt summarizes the evidence already generated by Steps 12-"
+  },
+  "0_lumiere_zip_inspection.py": {
+    "filename": "0_lumiere_zip_inspection.py",
+    "path": "CODES/LUMIRE\\0_lumiere_zip_inspection.py",
+    "lines": 1090,
+    "docstring": "\"\n0_lumiere_zip_inspection.py\n\nLUMIERE DATASET - ZIP-ONLY INSPECTION\n\nPurpose:\n    Inspect ONLY LUMIRE.zip without extracting the dataset.\n\nExpected project structure:\n\n    PROJECT/\n    \u251c\u2500\u2500 CODES/\n    \u2502   \u2514\u2500\u2500 LUMIRE/\n    \u2502       \u2514\u2500\u2500 0_lumiere_zip_inspection.py\n    \u2502\n    \u2514\u2500\u2500 DATA/\n        \u2514\u2500\u2500 LUMIRE.zip\n\nAll inspection reports are saved to:\n\n    DATA/LUMIRE/\n\nIMPORTANT:\n    - This script does NOT extract LUMIRE.zip.\n    - This script does NOT modify the ZIP.\n    - This script does NOT inspect any other ZIP file.\n    - Only LUMIRE.zip is inspected.",
+    "inputs": [],
+    "outputs": [
+      "-",
+      "=",
+      "BASIC INFORMATION\\n",
+      "EXTRACTED: NO\\n",
+      "INSPECTION TYPE: ZIP CONTENTS ONLY\\n\\n",
+      "LUMIERE DATASET - ZIP INSPECTION REPORT\\n",
+      "\\nDIRECTORY STRUCTURE\\n",
+      "\\nFILE EXTENSIONS\\n",
+      "\\nFIRST 500 FILES\\n",
+      "\\nKEYWORD SAMPLES\\n",
+      "\\nMEDICAL IMAGE SUMMARY\\n",
+      "\\nMETADATA FILES\\n",
+      "\\nPOSSIBLE PATIENT IDENTIFIERS\\n",
+      "\\nPOSSIBLE TIMEPOINTS\\n",
+      "\\nSEGMENTATION / MASK SUMMARY\\n",
+      "\\nTOP-LEVEL DIRECTORIES\\n"
+    ],
+    "all_ext_files": [
+      "0_lumiere_zip_inspection_report.json",
+      "0_lumiere_zip_inspection_report.txt"
+    ],
+    "code_sample": "\n\"\"\"\n0_lumiere_zip_inspection.py\n\nLUMIERE DATASET - ZIP-ONLY INSPECTION\n\nPurpose:\n    Inspect ONLY LUMIRE.zip without extracting the dataset.\n\nExpected project structure:\n\n    PROJECT/\n    \u251c\u2500\u2500 CODES/\n    \u2502   \u2514\u2500\u2500 LUMIRE/\n    \u2502       \u2514\u2500\u2500 0_lumiere_zip_inspection.py\n    \u2502\n    \u2514\u2500\u2500 DATA/\n        \u2514\u2500\u2500 LUMIRE.zip\n\nAll inspection reports are saved to:\n\n    DATA/LUMIRE/\n\nIMPORTANT:\n    - This script does NOT extract LUMIRE.zip.\n    - This script does NOT modify the ZIP.\n    - This script does NOT inspect any other ZIP file.\n    - Only LUMIRE.zip is inspected.\n\"\"\"\n\nfrom pathlib import Path\nfrom collections import Counter\nimport zipfile\nimport json\nimport re\n\n\n# ============================================================\n# PROJECT PATHS\n# ============================================================\n\n# Current file:\n# PROJECT/CODES/LUMIRE/0_lumiere_zip_inspection.py\n\nSCRIPT_DIR = Path(__file__).resolve().parent\n\n# PROJECT/\nPROJECT_DIR = SCRIPT_DIR.parent.parent\n\n# DATA/\nDATA_DIR = PROJECT_DIR / \"D"
+  },
+  "1_lumiere_dataset_structure_analysis.py": {
+    "filename": "1_lumiere_dataset_structure_analysis.py",
+    "path": "CODES/LUMIRE\\1_lumiere_dataset_structure_analysis.py",
+    "lines": 1726,
+    "docstring": "\"\"\n1_lumiere_dataset_structure_analysis.py\n\nPurpose:\n    Analyze the internal structure of the LUMIERE dataset ZIP\n    without extracting or reading NIfTI voxel data.\n\nPython:\n    Compatible with Python 3.6+\n\nDataset:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE.zip",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "CT1.nii.gz",
+      "FLAIR.nii.gz",
+      "LUMIERE_DATASET_STRUCTURE_ANALYSIS.md",
+      "T1.nii.gz",
+      "T2.nii.gz",
+      "complete_longitudinal_patients.txt",
+      "ct1_seg_mask.nii.gz",
+      "flair_seg_mask.nii.gz",
+      "lumiere_patient_timepoint_summary.csv",
+      "segmentation.nii.gz",
+      "segmentation_CT1_origspace.nii.gz",
+      "segmentation_FLAIR_origspace.nii.gz",
+      "segmentation_T1_origspace.nii.gz",
+      "segmentation_T2_origspace.nii.gz",
+      "t1_seg_mask.nii.gz",
+      "t2_seg_mask.nii.gz"
+    ],
+    "code_sample": "\n\n\"\"\"\n1_lumiere_dataset_structure_analysis.py\n\nPurpose:\n    Analyze the internal structure of the LUMIERE dataset ZIP\n    without extracting or reading NIfTI voxel data.\n\nPython:\n    Compatible with Python 3.6+\n\nDataset:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE.zip\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport re\nimport csv\nimport zipfile\nimport statistics\nfrom collections import defaultdict, Counter\n\n\n# ============================================================\n# CONFIGURATION\n# ============================================================\n\nZIP_PATH = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE.zip\"\n\nOUTPUT_DIR = os.path.dirname(ZIP_PATH)\n\nREPORT_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"LUMIERE_DATASET_STRUCTURE_ANALYSIS.md\"\n)\n\nCSV_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"lumiere_patient_timepoint_summary.csv\"\n)\n\nPATIENT_LIST_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"complete_longitudinal_patients.txt\"\n)\n\n\n# ========================================================"
+  },
+  "2_lumiere_nifti_mask_validation.py": {
+    "filename": "2_lumiere_nifti_mask_validation.py",
+    "path": "CODES/LUMIRE\\2_lumiere_nifti_mask_validation.py",
+    "lines": 1701,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "CT1.nii.gz",
+      "FLAIR.nii.gz",
+      "LUMIERE_NIFTI_MASK_VALIDATION.md",
+      "T1.nii.gz",
+      "T2.nii.gz",
+      "ct1_seg_mask.nii.gz",
+      "flair_seg_mask.nii.gz",
+      "lumiere_nifti_mask_validation.csv",
+      "lumiere_validated_longitudinal_patients.csv",
+      "segmentation.nii.gz",
+      "segmentation_CT1_origspace.nii.gz",
+      "segmentation_FLAIR_origspace.nii.gz",
+      "segmentation_T1_origspace.nii.gz",
+      "segmentation_T2_origspace.nii.gz",
+      "t1_seg_mask.nii.gz",
+      "t2_seg_mask.nii.gz"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n2_lumiere_nifti_mask_validation.py\n\nLUMIERE NIfTI + segmentation validation.\n\nIMPORTANT:\n- Does NOT extract the complete 30+ GB ZIP.\n- Uses the exact paths stored inside the ZIP.\n- Selectively extracts only candidate patient/timepoint files.\n- Python 3.6 compatible.\n- All outputs are saved to DATA/LUMIRE.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport re\nimport csv\nimport shutil\nimport zipfile\nimport math\n\nimport nibabel as nib\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nZIP_PATH = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE.zip\"\n\nOUTPUT_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n\nREPORT_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"LUMIERE_NIFTI_MASK_VALIDATION.md\"\n)\n\nCSV_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"lumiere_nifti_mask_validation.csv\"\n)\n\nTRAJECTORY_PATH = os.path.join(\n    OUTPUT_DIR,\n    \"lumiere_validated_longitudinal_pat"
+  },
+  "3_lumiere_tumor_geometry_hbgd.py": {
+    "filename": "3_lumiere_tumor_geometry_hbgd.py",
+    "path": "CODES/LUMIRE\\3_lumiere_tumor_geometry_hbgd.py",
+    "lines": 1906,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "LUMIERE_TUMOR_GEOMETRY_HBGD_REPORT.md",
+      "lumiere_hbgd_growth_features.csv",
+      "lumiere_longitudinal_trajectories.csv",
+      "lumiere_nifti_mask_validation.csv",
+      "lumiere_tumor_geometry.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n3_lumiere_tumor_geometry_hbgd.py\n\nSTEP 3:\n    Extract tumor geometry and HBGD growth features\n    from validated LUMIERE longitudinal timepoints.\n\nIMPORTANT:\n    - Does NOT extract the complete ZIP.\n    - Uses only validated timepoints from Step 2.\n    - Extracts one segmentation at a time.\n    - Uses memory-efficient integer mask loading.\n    - Does NOT use get_fdata().\n    - Python 3.6 compatible.\n\nOutputs:\n    lumiere_tumor_geometry.csv\n    lumiere_hbgd_growth_features.csv\n    lumiere_longitudinal_trajectories.csv\n    LUMIERE_TUMOR_GEOMETRY_HBGD_REPORT.md\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport re\nimport shutil\nimport zipfile\nimport math\n\nimport nibabel as nib\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nZIP_PATH = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE.zip\"\n\nOUTPUT_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n"
+  },
+  "4_lumiere_hbgd_forward_prediction.py": {
+    "filename": "4_lumiere_hbgd_forward_prediction.py",
+    "path": "CODES/LUMIRE\\4_lumiere_hbgd_forward_prediction.py",
+    "lines": 1765,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "LUMIERE_FORWARD_PREDICTION_REPORT.md",
+      "lumiere_forward_prediction_patient_summary.csv",
+      "lumiere_forward_prediction_results.csv",
+      "lumiere_hbgd_growth_features.csv",
+      "lumiere_longitudinal_trajectories.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n4_lumiere_hbgd_forward_prediction.py\n\nSTEP 4:\n    Within-LUMIERE longitudinal forward prediction.\n\nGoal:\n    Test whether individualized HBGD growth rates can predict\n    a future tumor measurement.\n\nPrediction:\n    D_pred = D_current * exp(r * delta_t)\n\nwhere:\n    r = ln(D_current / D_previous) / delta_t\n\nBaselines:\n    1. No-change\n    2. Global exponential growth\n    3. Individualized HBGD\n\nIMPORTANT:\n    - Patient-level split.\n    - No patient appears in both train and test.\n    - Week difference is converted to days using 7 days/week.\n    - This temporal assumption must later be verified against\n      official LUMIERE documentation.\n    - Python 3.6 compatible.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nLUMIERE_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n\nTRAJECTORY_C"
+  },
+  "5_lumiere_hbgd_robust_prediction.py": {
+    "filename": "5_lumiere_hbgd_robust_prediction.py",
+    "path": "CODES/LUMIRE\\5_lumiere_hbgd_robust_prediction.py",
+    "lines": 2160,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "LUMIERE_ROBUST_HBGD_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "lumiere_robust_hbgd_patient_summary.csv",
+      "lumiere_robust_hbgd_prediction_results.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n5_lumiere_hbgd_robust_prediction.py\n\nSTEP 5:\n    Diagnose the failure of one-interval HBGD and evaluate\n    multi-timepoint growth-rate estimation.\n\nModels:\n\n    1. No-change\n    2. Global exponential\n    3. One-interval HBGD\n    4. Two-interval average HBGD\n    5. Multi-point exponential regression\n    6. Recent multi-point exponential regression\n\nIMPORTANT:\n    - Patient-level train/test split.\n    - Same random seed as Step 4.\n    - Test patients remain completely unseen.\n    - Future observation is never used to estimate its prediction.\n    - Week difference is converted to days using 7 days/week.\n    - Python 3.6 compatible.\n\nINPUT:\n    lumiere_longitudinal_trajectories.csv\n\nOUTPUT:\n    lumiere_robust_hbgd_prediction_results.csv\n    lumiere_robust_hbgd_patient_summary.csv\n    LUMIERE_ROBUST_HBGD_REPORT.md\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\n\n# ======================================================"
+  },
+  "6_lumiere_state_aware_hbgd.py": {
+    "filename": "6_lumiere_state_aware_hbgd.py",
+    "path": "CODES/LUMIRE\\6_lumiere_state_aware_hbgd.py",
+    "lines": 1975,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "LUMIERE_STATE_AWARE_HBGD_REPORT.md",
+      "lumiere_hbgd_growth_features.csv",
+      "lumiere_hbgd_state_transition_matrix.csv",
+      "lumiere_longitudinal_trajectories.csv",
+      "lumiere_state_aware_patient_summary.csv",
+      "lumiere_state_aware_results.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n6_lumiere_state_aware_hbgd.py\n\nSTEP 6:\n    State-aware HBGD analysis for LUMIERE.\n\nPurpose:\n    Determine whether HBGD dynamic states contain predictive\n    information about subsequent tumor behavior.\n\nStates:\n    GROWTH\n    STABLE\n    SHRINKAGE\n\nThresholds:\n    GROWTH    r > +0.0005/day\n    STABLE   -0.0010 <= r <= +0.0005/day\n    SHRINKAGE r < -0.0010/day\n\nExperiments:\n    1. Current-state persistence\n    2. State transition matrix\n    3. State-specific future diameter change\n    4. State-specific prediction error\n    5. State-aware prediction\n    6. Comparison against no-change baseline\n    7. Growth-state transition statistics\n\nPatient-level split:\n    Same seed and split as Steps 4 and 5.\n\nPython:\n    3.6 compatible.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nLUMIERE_DI"
+  },
+  "7_lumiere_hbgd_feature_ml.py": {
+    "filename": "7_lumiere_hbgd_feature_ml.py",
+    "path": "CODES/LUMIRE\\7_lumiere_hbgd_feature_ml.py",
+    "lines": 2305,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "LUMIERE_HBGD_FEATURE_ML_REPORT.md",
+      "lumiere_hbgd_feature_ml_results.csv",
+      "lumiere_hbgd_feature_ml_summary.csv",
+      "lumiere_longitudinal_trajectories.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n7_lumiere_hbgd_feature_ml.py\n\nSTEP 7:\n    Evaluate whether HBGD-derived temporal features improve\n    machine-learning prediction of future tumor diameter.\n\nEXPERIMENT:\n\n    A. No-change baseline\n    B. Geometry/history only\n    C. HBGD features only\n    D. Geometry + HBGD features\n\nMODEL:\n    Random Forest Regressor\n\nSPLIT:\n    Patient-level\n        70% training\n        10% validation\n        20% test\n\nWith 67 patients:\n    47 train\n     7 validation\n    13 test\n\nIMPORTANT:\n    - Patient-level separation.\n    - Test patients are completely untouched during training/model selection.\n    - Future target measurement is never included in features.\n    - Feature construction uses only observations before target.\n    - Python 3.6 compatible.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn."
+  },
+  "8_cross_cancer_hbgd_transfer.py": {
+    "filename": "8_cross_cancer_hbgd_transfer.py",
+    "path": "CODES/LUMIRE\\8_cross_cancer_hbgd_transfer.py",
+    "lines": 2039,
+    "docstring": "\"\"\n8_cross_cancer_hbgd_transfer.py\n\nCROSS-CANCER HBGD TRANSFER EXPERIMENT\n\nSource cancer:\n    Existing HBGD pipeline\n\nTarget cancer:\n    LUMIERE glioblastoma cohort\n\nObjective:\n    Test whether source-cancer HBGD growth-pattern information\n    can be transferred to LUMIERE and provide predictive value.\n\nIMPORTANT:\n    Source growth rates are NOT directly copied to GBM.\n\n    Instead:\n        1. Learn source-cancer growth-pattern normalization.\n        2. Transform LUMIERE HBGD features into the source\n           representation.\n        3. Compare GBM geometry-only against\n           geometry + transferred HBGD representation.\n\nAll outputs:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "17_hbgd_mathematical_features.csv",
+      "17_hbgd_state_parameters.csv",
+      "17_hbgd_volume_parameters.csv",
+      "LUMIERE_CROSS_CANCER_HBGD_TRANSFER_REPORT.md",
+      "lumiere_cross_cancer_transfer_results.csv",
+      "lumiere_cross_cancer_transfer_summary.csv",
+      "lumiere_hbgd_growth_features.csv",
+      "lumiere_longitudinal_trajectories.csv",
+      "source_cancer_hbgd_transfer_profile.csv"
+    ],
+    "code_sample": "\n\n\"\"\"\n8_cross_cancer_hbgd_transfer.py\n\nCROSS-CANCER HBGD TRANSFER EXPERIMENT\n\nSource cancer:\n    Existing HBGD pipeline\n\nTarget cancer:\n    LUMIERE glioblastoma cohort\n\nObjective:\n    Test whether source-cancer HBGD growth-pattern information\n    can be transferred to LUMIERE and provide predictive value.\n\nIMPORTANT:\n    Source growth rates are NOT directly copied to GBM.\n\n    Instead:\n        1. Learn source-cancer growth-pattern normalization.\n        2. Transform LUMIERE HBGD features into the source\n           representation.\n        3. Compare GBM geometry-only against\n           geometry + transferred HBGD representation.\n\nAll outputs:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_absolute_error\nfrom sklearn.metrics import mean_squared_error\n\n\n# ======================================="
+  },
+  "9_cross_cancer_hbgd_growth_phenotype.py": {
+    "filename": "9_cross_cancer_hbgd_growth_phenotype.py",
+    "path": "CODES/LUMIRE\\9_cross_cancer_hbgd_growth_phenotype.py",
+    "lines": 2454,
+    "docstring": "\"\n9_cross_cancer_hbgd_growth_phenotype.py\n\nSTEP 9\nCross-Cancer HBGD Growth-Phenotype Alignment\n\nSOURCE:\n    Existing HBGD source-cancer pipeline\n\nTARGET:\n    LUMIERE glioblastoma longitudinal cohort\n\nOBJECTIVE:\n    Determine whether HBGD growth dynamics from the source\n    cancer and LUMIERE GBM can be represented in a comparable\n    growth-phenotype space.\n\nIMPORTANT:\n    This is NOT a prediction experiment.\n\n    It evaluates:\n        - growth-rate distributions\n        - volume-growth distributions\n        - temporal variability\n        - dynamic states\n        - trajectory behavior\n        - normalized growth\n        - cross-domain feature similarity\n\n    It does NOT claim that source-cancer growth rates are\n    biologically identical to GBM growth rates.\n\nOUTPUT:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\nPython:\n    Designed for Python 3.6 compatibility.",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "17_hbgd_mathematical_features.csv",
+      "17_hbgd_state_parameters.csv",
+      "17_hbgd_volume_parameters.csv",
+      "CROSS_CANCER_HBGD_GROWTH_PHENOTYPE_REPORT.md",
+      "cross_cancer_hbgd_feature_distances.csv",
+      "cross_cancer_hbgd_feature_statistics.csv",
+      "cross_cancer_hbgd_phenotype_vectors.csv",
+      "cross_cancer_hbgd_state_comparison.csv",
+      "lumiere_hbgd_growth_features.csv",
+      "lumiere_hbgd_growth_phenotypes.csv",
+      "lumiere_longitudinal_trajectories.csv",
+      "source_hbgd_growth_phenotypes.csv"
+    ],
+    "code_sample": "\n\"\"\"\n9_cross_cancer_hbgd_growth_phenotype.py\n\nSTEP 9\nCross-Cancer HBGD Growth-Phenotype Alignment\n\nSOURCE:\n    Existing HBGD source-cancer pipeline\n\nTARGET:\n    LUMIERE glioblastoma longitudinal cohort\n\nOBJECTIVE:\n    Determine whether HBGD growth dynamics from the source\n    cancer and LUMIERE GBM can be represented in a comparable\n    growth-phenotype space.\n\nIMPORTANT:\n    This is NOT a prediction experiment.\n\n    It evaluates:\n        - growth-rate distributions\n        - volume-growth distributions\n        - temporal variability\n        - dynamic states\n        - trajectory behavior\n        - normalized growth\n        - cross-domain feature similarity\n\n    It does NOT claim that source-cancer growth rates are\n    biologically identical to GBM growth rates.\n\nOUTPUT:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\nPython:\n    Designed for Python 3.6 compatibility.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\n\n# =="
+  },
+  "10_hbgd_statistical_alignment_transfer.py": {
+    "filename": "10_hbgd_statistical_alignment_transfer.py",
+    "path": "CODES/LUMIRE\\10_hbgd_statistical_alignment_transfer.py",
+    "lines": 2952,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "17_hbgd_mathematical_features.csv",
+      "17_hbgd_state_parameters.csv",
+      "17_hbgd_volume_parameters.csv",
+      "STEP10_HBGD_STATISTICAL_ALIGNMENT_TRANSFER_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step10_hbgd_alignment_statistics.csv",
+      "step10_hbgd_bootstrap_results.csv",
+      "step10_hbgd_permutation_results.csv",
+      "step10_hbgd_transfer_predictions.csv",
+      "step10_hbgd_transfer_profiles.csv",
+      "step10_hbgd_transfer_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\n10_hbgd_statistical_alignment_transfer.py\n\nSTEP 10A\n    Statistical validation of cross-cancer HBGD phenotype alignment.\n\nSTEP 10B\n    Cancer-adaptive HBGD phenotype transfer.\n\nSOURCE:\n    Existing source-cancer HBGD pipeline.\n\nTARGET:\n    LUMIERE glioblastoma cohort.\n\nIMPORTANT:\n    This experiment does NOT directly copy source-cancer growth\n    rates to GBM.\n\n    It:\n        1. Builds comparable phenotype features.\n        2. Tests source-vs-GBM alignment using permutation analysis.\n        3. Estimates bootstrap confidence intervals.\n        4. Learns source HBGD growth-pattern prototypes.\n        5. Projects LUMIERE tumors into the source phenotype space.\n        6. Generates transfer similarity features.\n        7. Tests whether transfer features improve GBM prediction.\n\nPython:\n    Compatible with Python 3.6.\n\nAll outputs:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimp"
+  },
+  "11_domain_adaptive_hbgd_transfer.py": {
+    "filename": "11_domain_adaptive_hbgd_transfer.py",
+    "path": "CODES/LUMIRE\\11_domain_adaptive_hbgd_transfer.py",
+    "lines": 2813,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "STEP11_DOMAIN_ADAPTIVE_HBGD_TRANSFER_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step11_domain_adaptation_parameters.csv",
+      "step11_domain_adaptive_transfer_predictions.csv",
+      "step11_domain_adaptive_transfer_summary.csv",
+      "step11_source_model_performance.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 11 - DOMAIN-ADAPTIVE HBGD TRANSFER\n\nGoal\n----\nTest whether an HBGD growth predictor learned from the\nsource cancer can be adapted to LUMIERE glioblastoma.\n\nThis experiment deliberately avoids assuming that source\nand GBM growth-rate distributions are identical.\n\nPipeline\n--------\nSOURCE CANCER\n    longitudinal trajectories\n        |\n        v\nsource HBGD prediction model\n        |\n        v\nsource prediction applied to GBM\n        |\n        v\nGBM TRAIN patients\n        |\n        v\nlearn target-domain residual correction\n        |\n        v\nadapted HBGD prediction\n        |\n        v\nuntouched GBM TEST patients\n\nModels\n------\n1. Geometry-only target model\n2. Source HBGD direct transfer\n3. Domain-adapted HBGD\n4. Geometry + adapted HBGD\n\nPatient split\n-------------\n47 train\n7 validation\n13 test\n\nThe test patients are never used to fit the target-domain\nadaptation model.\n\nPython\n------\nCompatible with Python 3.6.\n\nOutput directory\n----------------\nD:\\\\VIT\\"
+  },
+  "12_hbgd_incremental_information_ablation.py": {
+    "filename": "12_hbgd_incremental_information_ablation.py",
+    "path": "CODES/LUMIRE\\12_hbgd_incremental_information_ablation.py",
+    "lines": 1957,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP12_HBGD_INCREMENTAL_INFORMATION_ABLATION_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step11_domain_adaptive_transfer_summary.csv",
+      "step12_hbgd_ablation_predictions.csv",
+      "step12_hbgd_ablation_summary.csv",
+      "step12_hbgd_feature_importance.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 12 - HBGD INCREMENTAL INFORMATION AND ABLATION ANALYSIS\n\nPurpose\n-------\nDetermine whether HBGD-derived features provide predictive\ninformation beyond tumor geometry and temporal history.\n\nModels\n------\nM0  No-change baseline\nM1  Geometry only\nM2  Geometry + temporal history\nM3  Geometry + HBGD rate\nM4  Geometry + HBGD variability\nM5  Geometry + all HBGD features\nM6  Geometry + adapted HBGD\n\nEvaluation\n----------\nPatient-level split:\n\n    47 train\n     7 validation\n    13 test\n\nThe test patients remain completely untouched during\nmodel selection and fitting.\n\nPython\n------\nCompatible with Python 3.6.\n\nOutput\n------\nD:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\nfrom sklearn.ensemble import RandomForestRegressor\nfrom sklearn.metrics import mean_absolute_error\n\n\n# ============================================================\n# PATHS\n# ==========="
+  },
+  "13_hbgd_patient_level_robustness.py": {
+    "filename": "13_hbgd_patient_level_robustness.py",
+    "path": "CODES/LUMIRE\\13_hbgd_patient_level_robustness.py",
+    "lines": 2272,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP13_HBGD_PATIENT_LEVEL_ROBUSTNESS_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step13_hbgd_bootstrap_results.csv",
+      "step13_hbgd_permutation_results.csv",
+      "step13_hbgd_statistical_summary.csv",
+      "step13_patient_level_hbgd_results.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 13 - PATIENT-LEVEL HBGD ROBUSTNESS AND STATISTICAL TESTING\n\nPurpose\n-------\nDetermine whether the small HBGD improvement observed in Step 12\nis consistent across patients or driven by a small number of cases.\n\nPrimary comparison\n------------------\nGeometry-only\n        VS\nGeometry + HBGD rate\n\nPatient-level analysis\n----------------------\nFor every held-out test patient:\n\n    patient MAE - Geometry\n    patient MAE - Geometry + HBGD\n    improvement\n\nThen calculate:\n\n    mean improvement\n    median improvement\n    number improved\n    number worsened\n    bootstrap 95% CI\n    paired permutation test\n    Wilcoxon signed-rank test if scipy is available\n    Cohen-style standardized paired effect size\n\nImportant\n---------\nThe 13 test patients remain untouched during model fitting.\n\nPython\n------\nCompatible with Python 3.6.\n\nOutput\n------\nD:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\ni"
+  },
+  "14_hbgd_phenotype_stratified_analysis.py": {
+    "filename": "14_hbgd_phenotype_stratified_analysis.py",
+    "path": "CODES/LUMIRE\\14_hbgd_phenotype_stratified_analysis.py",
+    "lines": 1674,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP14_HBGD_PHENOTYPE_STRATIFIED_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step14_hbgd_phenotype_interval_results.csv",
+      "step14_hbgd_phenotype_patient_results.csv",
+      "step14_hbgd_phenotype_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 14 - HBGD PHENOTYPE-STRATIFIED PREDICTIVE ANALYSIS\n\nPurpose\n-------\nEvaluate whether HBGD-derived growth information provides different\npredictive value for different tumor dynamic states:\n\n    Growth\n    Stable\n    Shrinkage\n\nPrimary comparison\n------------------\nGeometry-only\n        VS\nGeometry + HBGD rate\n\nThe dynamic state is assigned from the CURRENT longitudinal interval:\n\n    Growth:\n        r > +0.0005 / day\n\n    Stable:\n        -0.0010 <= r <= +0.0005 / day\n\n    Shrinkage:\n        r < -0.0010 / day\n\nImportant\n---------\nThe state is descriptive of the observed current interval. It is NOT\nused as an input feature to the predictive models.\n\nThis avoids directly feeding the target phenotype into the model.\n\nPatient-level split:\n    47 train\n    7 validation\n    13 test\n\nPython:\n    3.6 compatible\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\nfrom sklearn.ensemble import RandomFores"
+  },
+  "15_exact_step12_phenotype_stratification.py": {
+    "filename": "15_exact_step12_phenotype_stratification.py",
+    "path": "CODES/LUMIRE\\15_exact_step12_phenotype_stratification.py",
+    "lines": 1673,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP15_EXACT_STEP12_PHENOTYPE_STRATIFICATION_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step12_hbgd_ablation_predictions.csv",
+      "step15_phenotype_model_comparison.csv",
+      "step15_phenotype_patient_results.csv",
+      "step15_step12_predictions_with_phenotype.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 15 - EXACT STEP-12 PHENOTYPE STRATIFICATION\n\nUses the EXISTING Step 12 prediction CSV.\n\nStep 12 CSV format:\n\n    patient_id\n    current_week\n    future_week\n    actual_diameter_mm\n    model\n    predicted_diameter_mm\n    absolute_error_mm\n\nNo model retraining is performed.\n\nThe script:\n    1. Loads Step 12 predictions\n    2. Loads LUMIERE longitudinal trajectories\n    3. Determines observed phenotype for each prediction interval\n    4. Matches phenotype to the exact Step 12 prediction\n    5. Compares models within:\n         Growth\n         Stable\n         Shrinkage\n    6. Produces case-level and patient-level summaries\n\nPython 3.6 compatible.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\n\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nTARGET_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n\nSTEP12_FILE = os.path.join("
+  },
+  "16_recover_step12_test_cohort.py": {
+    "filename": "16_recover_step12_test_cohort.py",
+    "path": "CODES/LUMIRE\\16_recover_step12_test_cohort.py",
+    "lines": 1258,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP16_EXACT_STEP12_TEST_COHORT_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step12_hbgd_ablation_predictions.csv",
+      "step13_patient_level_hbgd_results.csv",
+      "step16_exact_phenotype_model_comparison.csv",
+      "step16_exact_phenotype_patient_results.csv",
+      "step16_exact_step12_phenotype_predictions.csv",
+      "step16_exact_step12_test_cohort.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 16\nEXACT STEP-12 TEST COHORT FROM STEP-13 PATIENT RESULTS\n\nStep 13 was generated using the established Step-12\npatient-level split.\n\nTherefore, Step 13 patient-level results are used ONLY\nto recover the exact 13 test patient IDs.\n\nNo model is retrained.\nNo predictions are modified.\nPhenotype is used only for post-hoc stratification.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nTARGET_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n\nSTEP12_FILE = os.path.join(\n    TARGET_DIR,\n    \"step12_hbgd_ablation_predictions.csv\"\n)\n\nSTEP13_FILE = os.path.join(\n    TARGET_DIR,\n    \"step13_patient_level_hbgd_results.csv\"\n)\n\nTRAJECTORY_FILE = os.path.join(\n    TARGET_DIR,\n    \"lumiere_longitudinal_trajectories.csv\"\n)\n\nOUTPUT_COHORT = os.path.join(\n    TARGET_DIR,\n    \"step16_exact_ste"
+  },
+  "17_patient_level_phenotype_robustness.py": {
+    "filename": "17_patient_level_phenotype_robustness.py",
+    "path": "CODES/LUMIRE\\17_patient_level_phenotype_robustness.py",
+    "lines": 1192,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP17_PATIENT_LEVEL_PHENOTYPE_ROBUSTNESS_REPORT.md",
+      "step16_exact_step12_phenotype_predictions.csv",
+      "step17_patient_level_phenotype_results.csv",
+      "step17_phenotype_bootstrap_results.csv",
+      "step17_phenotype_permutation_results.csv",
+      "step17_phenotype_robustness_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 17 - PATIENT-LEVEL PHENOTYPE ROBUSTNESS\n\nPurpose\n-------\nEvaluate whether HBGD-derived growth-rate information provides\nconsistent patient-level benefit within Growth, Stable and\nShrinkage phenotypes.\n\nUses:\n    Step 16 exact Step-12 test-cohort predictions.\n\nNo model retraining.\nNo split reconstruction.\nNo phenotype leakage.\n\nPython 3.6 compatible.\n\"\"\"\n\nfrom __future__ import print_function\n\nimport os\nimport csv\nimport math\nimport random\n\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nTARGET_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n\nINPUT_FILE = os.path.join(\n    TARGET_DIR,\n    \"step16_exact_step12_phenotype_predictions.csv\"\n)\n\nOUTPUT_PATIENT = os.path.join(\n    TARGET_DIR,\n    \"step17_patient_level_phenotype_results.csv\"\n)\n\nOUTPUT_SUMMARY = os.path.join(\n    TARGET_DIR,\n    \"step17_phenotype_robustness_summary.csv\"\n)\n\nOUTPUT_BOOTSTRAP ="
+  },
+  "18_hbgd_benefit_mechanism_analysis.py": {
+    "filename": "18_hbgd_benefit_mechanism_analysis.py",
+    "path": "CODES/LUMIRE\\18_hbgd_benefit_mechanism_analysis.py",
+    "lines": 1732,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "\\n"
+    ],
+    "all_ext_files": [
+      "STEP18_HBGD_BENEFIT_MECHANISM_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step16_exact_step12_phenotype_predictions.csv",
+      "step18_hbgd_benefit_by_history.csv",
+      "step18_hbgd_benefit_by_phenotype.csv",
+      "step18_hbgd_benefit_correlations.csv",
+      "step18_hbgd_benefit_patient_features.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 18 - HBGD BENEFIT MECHANISM ANALYSIS\n\nQuestion\n--------\nUnder what longitudinal / growth conditions does HBGD-derived\ngrowth-rate information improve prediction over geometry alone?\n\nData source\n-----------\nExact Step-12 test cohort recovered in Step 16.\n\nInputs\n-------\n1. step16_exact_step12_phenotype_predictions.csv\n2. lumiere_longitudinal_trajectories.csv\n\nAnalysis\n--------\nFor every held-out patient and phenotype:\n\n    HBGD improvement =\n        Geometry MAE - Geometry + HBGD Rate MAE\n\nInvestigated explanatory characteristics:\n\n    - baseline/current diameter\n    - baseline/current volume\n    - observed HBGD growth rate\n    - absolute growth rate\n    - growth-rate variability\n    - number of longitudinal observations\n    - history duration\n    - interval duration\n    - absolute diameter change\n    - percentage diameter change\n    - phenotype\n\nNo model is retrained.\nNo new train/test split.\nNo prediction is changed.\n\nPython 3.6 compatible.\n\"\"\"\n\nfrom"
+  },
+  "19_hbgd_representation_transfer.py": {
+    "filename": "19_hbgd_representation_transfer.py",
+    "path": "CODES/LUMIRE\\19_hbgd_representation_transfer.py",
+    "lines": 1815,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 19 \u2014 Cross-Cancer Transfer of HBGD-Derived Growth Representations\\n\\n",
+      "## Held-out test interpretation\\n\\n",
+      "## Leakage control\\n\\n",
+      "## Models\\n\\n",
+      "## Objective\\n\\n",
+      "## Performance\\n\\n",
+      "## Scientific interpretation rule\\n\\n",
+      "## Source cohort\\n\\n",
+      "## Target cohort\\n\\n",
+      "- %s\\n",
+      "- Exact held-out Step-13 test patients: %d\\n\\n",
+      "- LUMIERE longitudinal trajectory rows: %d\\n",
+      "- LUMIERE patients represented in prediction cases: %d\\n",
+      "- Source artifact: `17_hbgd_state_parameters.csv`\\n",
+      "- Source growth-rate model: Random Forest\\n",
+      "- Source patients represented: %d\\n",
+      "- Source training MAE: %.8f mm-equivalent rate error\\n",
+      "- Source training RMSE: %.8f\\n\\n",
+      "- Train patients: %d\\n",
+      "- Validated source intervals: %d\\n",
+      "- Validation patients: %d\\n",
+      "Because the source cohort contains only 12 patients and 49 ",
+      "Cross-cancer HBGD transfer is considered preliminarily ",
+      "Direct transferred HBGD test MAE: %.4f mm ",
+      "Domain-adapted HBGD test MAE: %.4f mm ",
+      "Geometry + transferred HBGD test MAE: %.4f mm ",
+      "Geometry-only test MAE: %.4f mm\\n\\n",
+      "Target prediction inputs use only measurements available ",
+      "The experiment does not assume that the numerical growth rate ",
+      "The target-domain residual calibration uses historical ",
+      "This experiment evaluates whether a compact growth-dynamics ",
+      "\\n",
+      "| %s | %s | %d | %d | %.4f | %.4f |\\n",
+      "| Split | Model | Cases | Patients | MAE (mm) | RMSE (mm) |\\n",
+      "|---|---|---:|---:|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_state_parameters.csv",
+      "3_lumiere_longitudinal_trajectories.csv",
+      "476_lumiere_longitudinal_trajectories.csv",
+      "STEP19_HBGD_REPRESENTATION_TRANSFER_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step13_patient_level_hbgd_results.csv",
+      "step19_hbgd_representation_transfer_parameters.csv",
+      "step19_hbgd_representation_transfer_performance.csv",
+      "step19_hbgd_representation_transfer_predictions.csv",
+      "step3_lumiere_longitudinal_trajectories.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 19\nCROSS-CANCER TRANSFER OF HBGD-DERIVED GROWTH REPRESENTATIONS\n\nPurpose\n-------\nEvaluate whether a growth-dynamics representation learned from the\nvalidated source HBGD cohort can transfer to LUMIERE GBM progression\nprediction.\n\nIMPORTANT\n---------\n1. Source HBGD intervals come ONLY from:\n      17_hbgd_state_parameters.csv\n\n   This is the validated 49-interval source cohort identified during\n   the Step 19 source audit.\n\n2. LUMIERE uses the exact 13-patient held-out test cohort established\n   by Step 13.\n\n3. Target prediction features use only information available before\n   the future observation.\n\n4. No future diameter/volume is used as an input feature.\n\n5. Test patients are never used for fitting, calibration, or model\n   selection.\n\nPython:\n    C:\\\\Users\\\\Akaash MK\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python36-32\\\\python.exe\n\"\"\"\n\nimport os\nimport math\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom sklearn.ensemble import RandomForest"
+  },
+  "19_source_transfer_audit.py": {
+    "filename": "19_source_transfer_audit.py",
+    "path": "CODES/LUMIRE\\19_source_transfer_audit.py",
+    "lines": 113,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [],
+    "all_ext_files": [
+      "17_hbgd_diameter_trajectories.csv",
+      "17_hbgd_growth_parameters.csv",
+      "17_hbgd_mathematical_features.csv",
+      "17_hbgd_state_parameters.csv",
+      "17_hbgd_volume_parameters.csv",
+      "21_individualized_hbgd_patient_performance.csv",
+      "21_individualized_hbgd_predictions.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\nfrom __future__ import print_function\n\nimport os\nimport csv\n\n\nSOURCE_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\"\n\nFILES = [\n    \"17_hbgd_growth_parameters.csv\",\n    \"17_hbgd_mathematical_features.csv\",\n    \"17_hbgd_state_parameters.csv\",\n    \"17_hbgd_volume_parameters.csv\",\n    \"17_hbgd_diameter_trajectories.csv\",\n    \"21_individualized_hbgd_predictions.csv\",\n    \"21_individualized_hbgd_patient_performance.csv\"\n]\n\n\ndef read_csv(path):\n\n    rows = []\n\n    with open(\n        path,\n        \"r\",\n        encoding=\"utf-8\"\n    ) as f:\n\n        reader = csv.DictReader(f)\n\n        for row in reader:\n            rows.append(row)\n\n    return rows\n\n\nprint(\"=\" * 70)\nprint(\"STEP 19 SOURCE DATA AUDIT\")\nprint(\"=\" * 70)\n\n\nfor filename in FILES:\n\n    path = os.path.join(\n        SOURCE_DIR,\n        filename\n    )\n\n    print(\"\\n\" + \"-\" * 70)\n\n    print(filename)\n\n    if not os.path.exists(path):\n\n        print(\"NOT FOUND\")\n\n        continue\n\n    rows = read_csv(path)\n\n    print(\n    "
+  },
+  "20_hbgd_transfer_statistical_validation.py": {
+    "filename": "20_hbgd_transfer_statistical_validation.py",
+    "path": "CODES/LUMIRE\\20_hbgd_transfer_statistical_validation.py",
+    "lines": 1540,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 20 \u2014 Patient-Level Statistical Validation ",
+      "## Important limitation\\n\\n",
+      "## Interpretation\\n\\n",
+      "## Objective\\n\\n",
+      "## Patient-level results\\n\\n",
+      "## Pooled test performance\\n\\n",
+      "## Statistical validation\\n\\n",
+      "## Test cohort\\n\\n",
+      "### Bootstrap\\n\\n",
+      "### Paired effect size\\n\\n",
+      "### Paired permutation test\\n\\n",
+      "### Wilcoxon signed-rank test\\n\\n",
+      "- Expected test patients: 13\\n",
+      "- Mean improvement: %.4f mm\\n",
+      "- Median improvement: %.4f mm\\n",
+      "- Patients improved: %d/%d\\n",
+      "- Patients unchanged: %d/%d\\n\\n",
+      "- Patients worsened: %d/%d\\n",
+      "- Prediction cases analyzed: %d\\n\\n",
+      "- Standard deviation: %.4f mm\\n",
+      "- Test patients analyzed: %d\\n",
+      "95%% bootstrap CI: [%.4f, %.4f] mm\\n\\n",
+      "A positive improvement means that the ",
+      "Because only 13 held-out patients are available, ",
+      "Effect size: %.4f\\n\\n",
+      "Mean patient-level improvement: %.4f mm\\n\\n",
+      "No model was retrained during this analysis.\\n\\n",
+      "Observed mean patient-level improvement: %.4f mm\\n\\n",
+      "Permutation p-value: %.6f\\n\\n",
+      "The analysis uses patient-level aggregation so that ",
+      "The statistical analysis validates the observed ",
+      "This analysis statistically validates the exact ",
+      "Wilcoxon p-value: %.6f\\n\\n",
+      "Wilcoxon statistic: %.4f\\n\\n",
+      "\\nPooled MAE improvement: %.4f mm (%.2f%%).\\n\\n",
+      "| Geometry + Transferred HBGD | %.4f | %.4f |\\n",
+      "| Geometry | %.4f | %.4f |\\n",
+      "| Model | MAE (mm) | RMSE (mm) |\\n",
+      "|---|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "STEP20_HBGD_TRANSFER_STATISTICAL_VALIDATION_REPORT.md",
+      "step19_hbgd_representation_transfer_predictions.csv",
+      "step20_hbgd_transfer_bootstrap_results.csv",
+      "step20_hbgd_transfer_patient_results.csv",
+      "step20_hbgd_transfer_permutation_results.csv",
+      "step20_hbgd_transfer_phenotype_results.csv",
+      "step20_hbgd_transfer_statistical_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 20\nPATIENT-LEVEL STATISTICAL VALIDATION OF CROSS-CANCER HBGD TRANSFER\n\nPurpose\n-------\nStatistically validate the Step 19 result:\n\n    Geometry\n        vs\n    Geometry + Transferred HBGD\n\nusing the EXACT Step 19 held-out test predictions.\n\nIMPORTANT\n---------\n- No model is retrained.\n- No test patient is used for model fitting.\n- Exact Step-13/Step-19 test cohort is preserved.\n- Statistics are performed at patient level to avoid treating\n  multiple observations from the same patient as independent.\n- Bootstrap and paired permutation tests are performed on\n  patient-level MAE differences.\n- Wilcoxon signed-rank test is performed when possible.\n\nPython 3.6 compatible.\n\"\"\"\n\nimport os\nimport math\nimport warnings\n\nimport numpy as np\nimport pandas as pd\n\nfrom scipy.stats import (\n    wilcoxon\n)\nfrom sklearn.metrics import mean_absolute_error\nwarnings.filterwarnings(\"ignore\")\n\n\n# ============================================================\n# PATHS\n# ========="
+  },
+  "21_cross_cancer_hbgd_evidence_synthesis.py": {
+    "filename": "21_cross_cancer_hbgd_evidence_synthesis.py",
+    "path": "CODES/LUMIRE\\21_cross_cancer_hbgd_evidence_synthesis.py",
+    "lines": 1164,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 21 \u2014 Cross-Cancer HBGD Evidence Synthesis\\n\\n",
+      "## 1. Purpose\\n\\n",
+      "## 2. Validated experimental progression\\n\\n",
+      "## 3. Overall evidence assessment\\n\\n",
+      "## 4. Strongest current result\\n\\n",
+      "## 5. Recommended scientific claim\\n\\n",
+      "## 6. Claims that should NOT be made\\n\\n",
+      "## 7. Main limitations\\n\\n",
+      "## 8. Final conclusion\\n\\n",
+      "### Step 10 \u2014 Statistical alignment\\n\\n",
+      "### Step 11 \u2014 Domain adaptation\\n\\n",
+      "### Step 19 \u2014 Representation-level transfer\\n\\n",
+      "### Step 20 \u2014 Statistical validation\\n\\n",
+      "### Step 8 \u2014 Simple transfer\\n\\n",
+      "### Step 9 \u2014 Phenotype comparison\\n\\n",
+      "### Steps 12\u201318 \u2014 Incremental HBGD signal\\n\\n",
+      "- HBGD outperforms tumor geometry.\\n",
+      "- HBGD transfer is clinically validated.\\n",
+      "- HBGD transfer is statistically proven.\\n",
+      "- HBGD universally transfers between cancer types.\\n",
+      "- Source growth rates can be directly copied to GBM.\\n",
+      "- The 1.19% improvement is statistically significant.\\n\\n",
+      "1. The source HBGD cohort contains only 12 patients and ",
+      "2. The LUMIERE held-out test cohort contains only 13 patients.\\n",
+      "3. The cross-cancer improvement is modest.\\n",
+      "4. Statistical confidence intervals include zero.\\n",
+      "5. The source and target cancers differ biologically ",
+      "6. Larger independent longitudinal datasets are needed ",
+      "> A source-derived HBGD growth representation demonstrated ",
+      "At the patient level, 9 of 13 held-out patients improved ",
+      "Descriptive HBGD-derived phenotype comparison showed ",
+      "Domain adaptation reduced the error of direct HBGD ",
+      "However, the 95% bootstrap confidence interval was ",
+      "On the held-out test cohort, geometry-only prediction ",
+      "Simple source-to-target HBGD distribution normalization ",
+      "The ablation and patient-level analyses consistently ",
+      "The accumulated experiments do not establish HBGD as a ",
+      "The corrected representation-level transfer experiment ",
+      "The improvement remains preliminary because the ",
+      "The observed standardized phenotype distance was ",
+      "The strongest current cross-cancer observation is that ",
+      "The transferred HBGD representation alone did not ",
+      "This report consolidates the cross-cancer HBGD experiments ",
+      "| Domain-adaptive transfer | Not superior to geometry |\\n",
+      "| Evidence area | Assessment |\\n",
+      "| HBGD incremental information | Preliminary positive |\\n",
+      "| HBGD mathematical formulation | Established in source pipeline |\\n",
+      "| HBGD-derived predictive signal | Preliminary |\\n",
+      "| Representation-level cross-cancer transfer | Preliminary positive |\\n",
+      "| Simple cross-cancer rate transfer | Not supported |\\n",
+      "| Simple phenotype alignment | Not supported statistically |\\n",
+      "| Statistical proof of cross-cancer transfer | Not established |\\n\\n",
+      "|---|---|\\n"
+    ],
+    "all_ext_files": [
+      "STEP21_CROSS_CANCER_HBGD_EVIDENCE_SYNTHESIS_REPORT.md",
+      "cross_cancer_hbgd_feature_distances.csv",
+      "cross_cancer_hbgd_feature_statistics.csv",
+      "cross_cancer_hbgd_state_comparison.csv",
+      "step10_hbgd_alignment_statistics.csv",
+      "step10_hbgd_transfer_summary.csv",
+      "step11_domain_adaptive_transfer_summary.csv",
+      "step11_source_model_performance.csv",
+      "step12_hbgd_ablation_summary.csv",
+      "step13_hbgd_statistical_summary.csv",
+      "step13_patient_level_hbgd_results.csv",
+      "step16_exact_phenotype_model_comparison.csv",
+      "step17_phenotype_robustness_summary.csv",
+      "step18_hbgd_benefit_by_history.csv",
+      "step18_hbgd_benefit_by_phenotype.csv",
+      "step18_hbgd_benefit_correlations.csv",
+      "step19_hbgd_representation_transfer_parameters.csv",
+      "step19_hbgd_representation_transfer_performance.csv",
+      "step20_hbgd_transfer_patient_results.csv",
+      "step20_hbgd_transfer_phenotype_results.csv",
+      "step20_hbgd_transfer_statistical_summary.csv",
+      "step21_cross_cancer_hbgd_claim_matrix.csv",
+      "step21_cross_cancer_hbgd_evidence_table.csv",
+      "step21_cross_cancer_hbgd_numerical_evidence.csv",
+      "step21_cross_cancer_hbgd_statistical_evidence.csv",
+      "step8_cross_cancer_hbgd_transfer_predictions.csv",
+      "step8_cross_cancer_hbgd_transfer_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 21\nCROSS-CANCER HBGD EVIDENCE SYNTHESIS\n\nPurpose\n-------\nConsolidate the validated findings from Steps 8-20 into a single\ncross-cancer HBGD evidence package.\n\nNO MODEL TRAINING IS PERFORMED.\n\nThis script reads previously generated CSV/report outputs and creates:\n\n1. Master evidence table\n2. Cross-cancer performance comparison\n3. Statistical evidence summary\n4. Patient-level robustness summary\n5. Final scientific interpretation report\n\nImportant:\n-----------\nThis script does not alter previous results and does not attempt to\nreconcile conflicting experiments by changing their numbers.\n\nThe interpretation distinguishes:\n- demonstrated findings\n- preliminary findings\n- unsupported/negative findings\n- limitations\n\"\"\"\n\nimport os\nimport pandas as pd\nimport numpy as np\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nBASE_DIR = r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\"\nLUMIERE_DIR"
+  },
+  "22_hbgd_transfer_split_robustness.py": {
+    "filename": "22_hbgd_transfer_split_robustness.py",
+    "path": "CODES/LUMIRE\\22_hbgd_transfer_split_robustness.py",
+    "lines": 1893,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 22 \u2014 Cross-Cancer HBGD Transfer Split Robustness\\n\\n",
+      "## Interpretation\\n\\n",
+      "## Leakage control\\n\\n",
+      "## Objective\\n\\n",
+      "## Patient-level robustness\\n\\n",
+      "## Robustness summary\\n\\n",
+      "## Scientific conclusion\\n\\n",
+      "## Split-level results\\n\\n",
+      "- Fraction of splits improved: %.2f%%\\n",
+      "- Future target diameter was not used as an input.\\n",
+      "- Geometry and fusion models were independently fitted ",
+      "- Improved evaluations: %d\\n",
+      "- Mean patient improvement: %.4f mm\\n",
+      "- Mean percentage improvement: %.2f%%\\n",
+      "- Mean split improvement: %.4f mm\\n",
+      "- Median patient improvement: %.4f mm\\n\\n",
+      "- Median percentage improvement: %.2f%%\\n\\n",
+      "- Median split improvement: %.4f mm\\n",
+      "- Patient evaluations across splits: %d\\n",
+      "- Splits improved by HBGD: %d/%d\\n",
+      "- Splits worsened by HBGD: %d/%d\\n",
+      "- Splitting was performed at the patient level.\\n",
+      "- Test patients were excluded from model fitting.\\n",
+      "- The source HBGD model was fixed across target splits.\\n",
+      "- Valid splits: %d\\n",
+      "- Worsened evaluations: %d\\n",
+      "Across repeated patient-level splits, the ",
+      "The repeated split analysis did not demonstrate ",
+      "The source HBGD representation was learned once from ",
+      "This analysis evaluates stability of the observed ",
+      "This experiment evaluates whether the incremental ",
+      "\\n",
+      "| %d | %d | %d | %d | %.4f | %.4f | %.4f | %.2f%% |\\n",
+      "| Seed | Train patients | Validation patients | ",
+      "|---:|---:|---:|---:|---:|---:|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_state_parameters.csv",
+      "STEP22_HBGD_TRANSFER_SPLIT_ROBUSTNESS_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step22_hbgd_transfer_patient_results.csv",
+      "step22_hbgd_transfer_robustness_summary.csv",
+      "step22_hbgd_transfer_split_results.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 22\nCROSS-CANCER HBGD TRANSFER SPLIT ROBUSTNESS\n\nPurpose\n-------\nEvaluate whether the incremental contribution of the transferred\nHBGD representation remains directionally stable across multiple\npatient-level train/validation/test splits.\n\nComparison:\n    Geometry\n        vs\n    Geometry + Transferred HBGD\n\nIMPORTANT\n---------\n1. Source HBGD representation is learned once from the validated\n   source artifact:\n       17_hbgd_state_parameters.csv\n\n2. Source representation is NOT relearned separately for every\n   target split.\n\n3. LUMIERE target models are trained independently inside each\n   patient-level split.\n\n4. No patient appears in more than one split.\n\n5. Future target diameter is never used as an input feature.\n\n6. Test patients are not used for model fitting.\n\n7. This is a robustness experiment, NOT a statistical claim of\n   clinical validation.\n\nPython 3.6 compatible.\n\"\"\"\n\nimport os\nimport math\nimport warnings\n\nimport numpy as np\nimport pandas "
+  },
+  "23_hbgd_repeated_split_statistics.py": {
+    "filename": "23_hbgd_repeated_split_statistics.py",
+    "path": "CODES/LUMIRE\\23_hbgd_repeated_split_statistics.py",
+    "lines": 1568,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 23 \u2014 Repeated-Split Statistical Aggregation\\n\\n",
+      "## Bootstrap analysis\\n\\n",
+      "## Exact sign test\\n\\n",
+      "## Interpretation\\n\\n",
+      "## Main statistical results\\n\\n",
+      "## Objective\\n\\n",
+      "## Patient-level aggregation\\n\\n",
+      "## Scientific conclusion\\n\\n",
+      "## Sensitivity analysis\\n\\n",
+      "## Split-level results\\n\\n",
+      "- Best split: seed %d, improvement %.6f mm\\n",
+      "- Bootstrap 95%% CI: [%.6f, %.6f] mm\\n\\n",
+      "- Bootstrap iterations: %d\\n",
+      "- Bootstrap mean: %.6f mm\\n",
+      "- Exact two-sided p-value: %.6f\\n\\n",
+      "- Improved: %d\\n",
+      "- Mean after removing best split: %.6f mm\\n",
+      "- Mean after removing worst split: %.6f mm\\n\\n",
+      "- Mean improvement: %.6f mm\\n",
+      "- Mean patient improvement: %.6f mm\\n",
+      "- Mean relative improvement: %.4f%%\\n",
+      "- Median improvement: %.6f mm\\n",
+      "- Median patient improvement: %.6f mm\\n",
+      "- Median relative improvement: %.4f%%\\n\\n",
+      "- Negative splits: %d/%d\\n",
+      "- Negative splits: %d\\n",
+      "- Number of splits: %d\\n",
+      "- Patient bootstrap 95%% CI: [%.6f, %.6f] mm\\n\\n",
+      "- Patient evaluations: %d\\n",
+      "- Positive fraction: %.2f%%\\n",
+      "- Positive splits: %d/%d\\n",
+      "- Positive splits: %d\\n",
+      "- SD: %.6f mm\\n",
+      "- Worsened: %d\\n",
+      "- Worst split: seed %d, improvement %.6f mm\\n",
+      "Repeated patient-level splitting provides additional ",
+      "Step 23 statistically aggregates the independent ",
+      "The appropriate overall interpretation is therefore ",
+      "The best-split sensitivity analysis evaluates whether ",
+      "The primary comparison is Geometry versus ",
+      "\\n",
+      "| %d | %.4f | %.4f | %.4f | %.2f%% |\\n",
+      "| Seed | Geometry MAE | Geometry + HBGD MAE | ",
+      "|---:|---:|---:|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "STEP23_HBGD_REPEATED_SPLIT_STATISTICAL_AGGREGATION_REPORT.md",
+      "step22_hbgd_transfer_patient_results.csv",
+      "step22_hbgd_transfer_split_results.csv",
+      "step23_hbgd_repeated_split_bootstrap.csv",
+      "step23_hbgd_repeated_split_sensitivity.csv",
+      "step23_hbgd_repeated_split_sign_test.csv",
+      "step23_hbgd_repeated_split_statistical_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 23\nREPEATED-SPLIT STATISTICAL AGGREGATION FOR CROSS-CANCER HBGD TRANSFER\n\nUses the fixed results generated by Step 22.\n\nTests:\n1. Mean / median split improvement\n2. Standard deviation\n3. Bootstrap 95% CI across split-level improvements\n4. Exact binomial sign test for positive splits\n5. Leave-one-split-out sensitivity\n6. Best-split removal\n7. Worst-split removal\n8. Distribution of split-level effects\n\nIMPORTANT:\nThis is a statistical aggregation of the existing Step 22 results.\nNo model is retrained.\n\nPython 3.6 compatible.\n\"\"\"\n\nimport os\nimport math\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nLUMIERE_DIR = (\n    r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n)\n\nINPUT_SPLITS = os.path.join(\n    LUMIERE_DIR,\n    \"step22_hbgd_transfer_split_results.csv\"\n)\n\nINPUT_PATIENT = os.path.join(\n    LUMIERE_DIR,\n    \"step22_hbgd_transfer_pat"
+  },
+  "24_hbgd_transfer_responder_analysis.py": {
+    "filename": "24_hbgd_transfer_responder_analysis.py",
+    "path": "CODES/LUMIRE\\24_hbgd_transfer_responder_analysis.py",
+    "lines": 1460,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 24 \u2014 HBGD Transfer Responder / Non-Responder Analysis\\n\\n",
+      "## Descriptive benefit correlations\\n\\n",
+      "## Interpretation\\n\\n",
+      "## Leakage control\\n\\n",
+      "## Objective\\n\\n",
+      "## Phenotype response\\n\\n",
+      "## Responder versus non-responder features\\n\\n",
+      "## Response distribution\\n\\n",
+      "## Scientific conclusion\\n\\n",
+      "- Non-responders: %d\\n",
+      "- Responder fraction: %.2f%%\\n\\n",
+      "- Responders: %d\\n",
+      "- Total patient-seed evaluations: %d\\n",
+      "A patient-seed evaluation is considered a **Responder** ",
+      "All longitudinal characteristics were calculated from ",
+      "Any observed responder pattern should be considered ",
+      "Step 24 investigates whether the incremental benefit ",
+      "The analysis is intended to identify longitudinal ",
+      "The cross-cancer HBGD transfer effect should not be ",
+      "This responder analysis is exploratory and hypothesis-",
+      "\\n",
+      "| %s | %.6f | %.6f | %.6f |\\n",
+      "| %s | %d | %.4f |\\n",
+      "| %s | %d | %d | %d | %.2f%% | %.6f mm |\\n",
+      "| Feature | N | Pearson r |\\n",
+      "| Feature | Responder mean | Non-responder mean | Difference |\\n",
+      "| Phenotype | N | Responders | ",
+      "|---|---:|---:|---:|---:|---:|\\n",
+      "|---|---:|---:|---:|\\n",
+      "|---|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "STEP24_HBGD_TRANSFER_RESPONDER_ANALYSIS_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step22_hbgd_transfer_patient_results.csv",
+      "step24_hbgd_responder_case_features.csv",
+      "step24_hbgd_responder_correlations.csv",
+      "step24_hbgd_responder_group_comparison.csv",
+      "step24_hbgd_responder_patient_profiles.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 24\nHBGD TRANSFER RESPONDER / NON-RESPONDER ANALYSIS\n\nPurpose\n-------\nDetermine whether patients/cases that benefit from transferred HBGD\nhave distinguishable longitudinal characteristics.\n\nPrimary comparison:\n    Geometry\n        vs\n    Geometry + Transferred HBGD\n\nResponder:\n    Geometry + HBGD has lower absolute prediction error.\n\nNon-responder:\n    Geometry + HBGD has equal or higher absolute prediction error.\n\nFeatures are calculated only from historical observations available\nBEFORE each prediction time.\n\nNo future tumor diameter is used to construct responder features.\n\nPython 3.6 compatible.\n\"\"\"\n\nimport os\nimport math\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nLUMIERE_DIR = (\n    r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n)\n\nSTEP22_PATIENT = os.path.join(\n    LUMIERE_DIR,\n    \"step22_hbgd_transfer_patient_results.csv"
+  },
+  "25_hbgd_temporal_holdout_validation.py": {
+    "filename": "25_hbgd_temporal_holdout_validation.py",
+    "path": "CODES/LUMIRE\\25_hbgd_temporal_holdout_validation.py",
+    "lines": 1846,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 25 \u2014 Strict Temporal Holdout Validation\\n\\n",
+      "## Dataset\\n\\n",
+      "## Interpretation\\n\\n",
+      "## Objective\\n\\n",
+      "## Overall performance\\n\\n",
+      "## Patient-level performance\\n\\n",
+      "## Phenotype-specific performance\\n\\n",
+      "## Scientific conclusion\\n\\n",
+      "## Temporal protocol\\n\\n",
+      "- Eligible temporal patients: %d\\n",
+      "- Forecast patients: %d\\n\\n",
+      "- LUMIERE patients: %d\\n",
+      "- Mean improvement: %.6f mm\\n",
+      "- Median improvement: %.6f mm\\n",
+      "- Patients improved: %d/%d\\n",
+      "- Patients worsened: %d/%d\\n\\n",
+      "- Source HBGD intervals: %d\\n",
+      "- Source patients: %d\\n",
+      "- Temporal forecasts: %d\\n",
+      "For each eligible patient, prediction origins were ",
+      "Strict temporal validation is a stronger test of the ",
+      "Target-domain regression models were trained using ",
+      "This analysis remains exploratory and does not establish ",
+      "This experiment evaluates whether transferred HBGD ",
+      "Under the strict temporal holdout protocol, ",
+      "\\n",
+      "| %s | %.4f | %.4f | %.4f | %.2f%% |\\n",
+      "| %s | %d | %d | %.4f | %.4f | %.4f |\\n",
+      "| Model | MAE (mm) | RMSE (mm) | ",
+      "| Phenotype | Forecasts | Patients | ",
+      "|---|---:|---:|---:|---:|---:|\\n",
+      "|---|---:|---:|---:|---:|\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_state_parameters.csv",
+      "STEP25_HBGD_STRICT_TEMPORAL_HOLDOUT_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step25_hbgd_temporal_patient_results.csv",
+      "step25_hbgd_temporal_performance.csv",
+      "step25_hbgd_temporal_phenotype_results.csv",
+      "step25_hbgd_temporal_predictions.csv",
+      "step25_hbgd_temporal_summary.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 25\nSTRICT TEMPORAL HOLDOUT VALIDATION\n\nGoal\n----\nEvaluate whether transferred HBGD information remains useful when\nprediction is performed strictly forward in time.\n\nFor each patient:\n\n    Historical observations\n            |\n            v\n    HBGD representation\n            |\n            v\n    Predict later unseen observation\n\nNo future observation is used to construct historical features.\n\nModels:\n    M0 = No Change\n    M1 = Geometry\n    M2 = Geometry + Transferred HBGD\n    M3 = Direct Transferred HBGD\n\nTemporal forecasting protocol:\n    For each patient with >= 4 timepoints:\n\n        history = observations before prediction\n        target   = next unseen observation\n\n    Multiple origins are evaluated within each patient.\n\nIMPORTANT\n---------\nThe source HBGD model is fixed and learned only from:\n    17_hbgd_state_parameters.csv\n\nTarget-domain models are trained using only earlier temporal\nobservations.\n\nPatient-level separation is maintained for ta"
+  },
+  "26_hbgd_final_leakage_audit.py": {
+    "filename": "26_hbgd_final_leakage_audit.py",
+    "path": "CODES/LUMIRE\\26_hbgd_final_leakage_audit.py",
+    "lines": 1623,
+    "docstring": "",
+    "inputs": [],
+    "outputs": [
+      "# Step 26 \u2014 Final HBGD Leakage Audit and Evidence Consolidation\\n\\n",
+      "## Audit summary\\n\\n",
+      "## Consolidated evidence matrix\\n\\n",
+      "## Dataset provenance\\n\\n",
+      "## Leakage audit\\n\\n",
+      "## Major limitations\\n\\n",
+      "## Overall scientific interpretation\\n\\n",
+      "## Purpose\\n\\n",
+      "## Recommended final claim\\n\\n",
+      "- CHECK items: %d\\n\\n",
+      "- FAIL checks: %d\\n",
+      "- PASS checks: %d\\n",
+      "1. The source HBGD representation is based on only 49 ",
+      "2. The LUMIERE target cohort contains limited longitudinal ",
+      "3. The observed predictive benefit is small.\\n",
+      "4. Repeated-split results are heterogeneous.\\n",
+      "5. Statistical confidence intervals include zero.\\n",
+      "6. The week-to-day temporal conversion should be verified ",
+      "7. Independent external validation is still required.\\n\\n",
+      "A source-derived HBGD growth representation demonstrated ",
+      "However, the available statistical analyses do not ",
+      "No predictive model is retrained in this step.\\n\\n",
+      "Step 26 audits the provenance and structural integrity ",
+      "The cross-cancer HBGD experiments provide preliminary ",
+      "Therefore, the appropriate conclusion is that ",
+      "\\n",
+      "| %d | %s | %s | %s | %s |\\n",
+      "| %s | %s | %d | %d |\\n",
+      "| %s | %s | %s | %s |\\n",
+      "| Artifact | Role | Count | Patients |\\n",
+      "| Check | Status | Evidence | Interpretation |\\n",
+      "| Step | Analysis | Key result | Status | Interpretation |\\n",
+      "|---:|---|---|---|---|\\n",
+      "|---|---|---:|---:|\\n",
+      "|---|---|---|---|\\n"
+    ],
+    "all_ext_files": [
+      "17_hbgd_state_parameters.csv",
+      "STEP26_HBGD_FINAL_LEAKAGE_AUDIT_REPORT.md",
+      "lumiere_longitudinal_trajectories.csv",
+      "step19_hbgd_representation_transfer_performance.csv",
+      "step20_hbgd_transfer_statistical_summary.csv",
+      "step22_hbgd_transfer_split_results.csv",
+      "step23_hbgd_repeated_split_statistical_summary.csv",
+      "step24_hbgd_responder_correlations.csv",
+      "step25_hbgd_temporal_patient_results.csv",
+      "step25_hbgd_temporal_performance.csv",
+      "step25_hbgd_temporal_predictions.csv",
+      "step25_hbgd_temporal_summary.csv",
+      "step26_hbgd_evidence_matrix.csv",
+      "step26_hbgd_leakage_audit.csv",
+      "step26_hbgd_provenance_table.csv"
+    ],
+    "code_sample": "# -*- coding: utf-8 -*-\n\n\"\"\"\nSTEP 26\nFINAL HBGD CROSS-CANCER LEAKAGE AUDIT + EVIDENCE CONSOLIDATION\n\nPurpose\n-------\n1. Audit the strict temporal Step 25 experiment.\n2. Verify source HBGD provenance.\n3. Verify target prediction provenance.\n4. Check temporal ordering.\n5. Check that future diameter is not used as a feature.\n6. Check patient-level isolation in Step 25 predictions.\n7. Summarize Steps 19-25 into one evidence matrix.\n\nThis script DOES NOT retrain any model.\n\nPython 3.6 compatible.\n\"\"\"\n\nimport os\nimport numpy as np\nimport pandas as pd\n\n\n# ============================================================\n# PATHS\n# ============================================================\n\nBASE_DIR = (\n    r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\"\n)\n\nLUMIERE_DIR = (\n    r\"D:\\VIT\\PROJECT\\NLP\\PATENT\\DATA\\LUMIRE\"\n)\n\nSOURCE_STATE = os.path.join(\n    BASE_DIR,\n    \"17_hbgd_state_parameters.csv\"\n)\n\nTRAJECTORIES = os.path.join(\n    LUMIERE_DIR,\n    \"lumiere_longitudinal_trajectories.csv\"\n)\n\nSTEP25_PREDICTIONS ="
+  }
+}

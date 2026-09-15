@@ -1,0 +1,8 @@
+step,analysis,key_result,status,interpretation
+19,Representation-level cross-cancer transfer,Geometry + transferred HBGD improved MAE by 0.0887 mm (1.19%),PRELIMINARY POSITIVE,Source-derived HBGD representation added small complementary information beyond geometry.
+20,Statistical validation of Step 19,9/13 patients improved; p=0.097390; bootstrap CI crossed zero,NOT SIGNIFICANT,Directional benefit but insufficient evidence for statistical significance.
+22,Repeated patient-level splits,8/10 splits improved; mean +0.0592 mm,DIRECTIONALLY POSITIVE,Effect was present across a majority of repeated splits but was small and split-dependent.
+23,Repeated-split statistical aggregation,"Bootstrap CI [-0.1097, 0.2065] mm; sign-test p=0.109375",NOT STATISTICALLY ESTABLISHED,Repeated-split evidence does not establish a non-zero effect.
+24,Responder analysis,61.54% of patient-seed evaluations favored HBGD; correlations weak,HYPOTHESIS-GENERATING,Benefit appears heterogeneous and no strong responder phenotype was established.
+25,Strict temporal holdout,Geometry MAE 7.0506 mm; Geometry+HBGD MAE 7.0272 mm; +0.0234 mm (0.33%),WEAK POSITIVE,"A small pooled benefit persisted under strict temporal forecasting, but only 28/59 patients improved and median patient benefit was negative."
+26,Final leakage audit,"Audit of source provenance, temporal ordering, prediction arithmetic and patient identifiers",AUDIT,Establishes methodological traceability and documents remaining assumptions/limitations.

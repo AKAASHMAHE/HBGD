@@ -1,0 +1,15 @@
+metric,value
+source_intervals,49.0
+source_patients,12.0
+target_patients,67.0
+eligible_temporal_patients,59.0
+temporal_forecasts,276.0
+temporal_forecast_patients,59.0
+geometry_MAE_mm,7.050609348833932
+geometry_hbgd_MAE_mm,7.027219124927364
+geometry_hbgd_improvement_mm,0.023390223906567975
+geometry_hbgd_improvement_pct,0.33174755186849736
+patient_mean_improvement_mm,0.036395086992992466
+patient_median_improvement_mm,-0.037897843005513465
+patients_improved,28.0
+patients_worsened,31.0

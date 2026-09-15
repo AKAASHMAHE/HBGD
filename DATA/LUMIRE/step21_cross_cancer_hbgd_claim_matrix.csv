@@ -1,0 +1,8 @@
+claim,evidence,support_level,safe_statement
+HBGD-derived growth information contains predictive signal,Steps 12-13,PRELIMINARY,HBGD-derived features provide a modest incremental predictive contribution beyond geometry in the tested LUMIERE cohort.
+HBGD benefit is statistically proven,"Steps 13, 17, 20",NOT SUPPORTED,Observed improvements did not consistently reach statistical significance.
+HBGD phenotype structure is transferable across cancers,Steps 9-10,NOT ESTABLISHED,"Descriptive phenotype similarities were observed, but statistical alignment was not established."
+Simple growth-rate normalization transfers across cancers,Step 8,NOT SUPPORTED,Simple source-to-target rate normalization did not outperform the target geometry baseline.
+Domain adaptation solves cross-cancer mismatch,Step 11,NOT SUPPORTED,The tested domain-adaptation strategy improved direct transfer but did not outperform geometry.
+Representation-level transfer provides complementary signal,Steps 19-20,PRELIMINARY,A source-derived HBGD representation produced a directional improvement beyond geometry on the held-out LUMIERE cohort.
+Cross-cancer HBGD transfer is clinically validated,Steps 19-20,NOT SUPPORTED,The current evidence is exploratory and requires larger independent longitudinal cohorts.

@@ -1,0 +1,1315 @@
+{
+  "orig": {
+    "1_inspect_dataset.py": {
+      "filename": "1_inspect_dataset.py",
+      "path": "CODES\\1_inspect_dataset.py",
+      "lines": 470,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "patients.csv",
+        "recist_measurements.csv",
+        "series.json",
+        "windows_mapping.json"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "2_longitudinal_patient_analysis.py": {
+      "filename": "2_longitudinal_patient_analysis.py",
+      "path": "CODES\\2_longitudinal_patient_analysis.py",
+      "lines": 595,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "2_longitudinal_patient_summary.csv",
+        "patients.csv",
+        "recist_measurements.csv",
+        "series.json"
+      ],
+      "formulas": []
+    },
+    "3_analyze_tumor_change.py": {
+      "filename": "3_analyze_tumor_change.py",
+      "path": "CODES\\3_analyze_tumor_change.py",
+      "lines": 573,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "3_patient_trajectories.csv",
+        "3_tumor_change_summary.csv",
+        "recist_measurements.csv"
+      ],
+      "formulas": []
+    },
+    "4_verify_ct_files.py": {
+      "filename": "4_verify_ct_files.py",
+      "path": "CODES\\4_verify_ct_files.py",
+      "lines": 667,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "4_ct_verification_summary.csv",
+        "recist_measurements.csv",
+        "series.json",
+        "windows_mapping.json"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "5_verify_ct_masks.py": {
+      "filename": "5_verify_ct_masks.py",
+      "path": "CODES\\5_verify_ct_masks.py",
+      "lines": 1187,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "5_ct_mask_verification.csv",
+        "5_recist_mask_measurements.csv",
+        "5_recist_mask_verification.csv",
+        "recist_measurements.csv",
+        "series.json"
+      ],
+      "formulas": []
+    },
+    "6_analyze_longitudinal_lesions.py": {
+      "filename": "6_analyze_longitudinal_lesions.py",
+      "path": "CODES\\6_analyze_longitudinal_lesions.py",
+      "lines": 1065,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "6_lesion_alias_summary.csv",
+        "6_patient_longitudinal_summary.csv",
+        "6_recist_growth_analysis.csv",
+        "6_recist_patient_summary.csv",
+        "6_study_order_consistency.csv",
+        "recist_measurements.csv",
+        "series.json"
+      ],
+      "formulas": []
+    },
+    "7_analyze_lesion_correspondence.py": {
+      "filename": "7_analyze_lesion_correspondence.py",
+      "path": "CODES\\7_analyze_lesion_correspondence.py",
+      "lines": 1448,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "7_lesion_correspondence.csv",
+        "7_lesion_geometry.csv",
+        "7_recist_geometry.csv",
+        "recist_measurements.csv",
+        "series.json"
+      ],
+      "formulas": []
+    },
+    "8_validate_recist_trajectories.py": {
+      "filename": "8_validate_recist_trajectories.py",
+      "path": "CODES\\8_validate_recist_trajectories.py",
+      "lines": 1305,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "7_recist_geometry.csv",
+        "8_longitudinal_patient_ranking.csv",
+        "8_recist_pairwise_changes.csv",
+        "8_recist_trajectory_summary.csv",
+        "recist_measurements.csv"
+      ],
+      "formulas": []
+    },
+    "9_extract_hbgd_features.py": {
+      "filename": "9_extract_hbgd_features.py",
+      "path": "CODES\\9_extract_hbgd_features.py",
+      "lines": 1321,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "7_recist_geometry.csv",
+        "8_recist_pairwise_changes.csv",
+        "8_recist_trajectory_summary.csv",
+        "9_hbgd_features.csv",
+        "9_hbgd_log_growth_features.csv",
+        "9_hbgd_longitudinal_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "10_fit_growth_models.py": {
+      "filename": "10_fit_growth_models.py",
+      "path": "CODES\\10_fit_growth_models.py",
+      "lines": 1460,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "10_growth_model_holdout.csv",
+        "10_growth_model_transitions.csv",
+        "10_patient_growth_rates.csv",
+        "8_recist_pairwise_changes.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)"
+      ]
+    },
+    "11_validate_growth_dynamics.py": {
+      "filename": "11_validate_growth_dynamics.py",
+      "path": "CODES\\11_validate_growth_dynamics.py",
+      "lines": 1482,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "10_growth_model_holdout.csv",
+        "11_growth_rate_stability.csv",
+        "11_patient_growth_statistics.csv",
+        "11_volume_longitudinal_analysis.csv",
+        "8_recist_pairwise_changes.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Statistical hypothesis testing (t-test/Wilcoxon)"
+      ]
+    },
+    "12_test_dynamic_growth_models.py": {
+      "filename": "12_test_dynamic_growth_models.py",
+      "path": "CODES\\12_test_dynamic_growth_models.py",
+      "lines": 1390,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "12_dynamic_model_patient_performance.csv",
+        "12_dynamic_model_performance.csv",
+        "12_dynamic_model_predictions.csv",
+        "8_recist_pairwise_changes.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)"
+      ]
+    },
+    "13_test_hbgd_feature_value.py": {
+      "filename": "13_test_hbgd_feature_value.py",
+      "path": "CODES\\13_test_hbgd_feature_value.py",
+      "lines": 1673,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "13_hbgd_feature_patient_performance.csv",
+        "13_hbgd_feature_performance.csv",
+        "13_hbgd_feature_predictions.csv",
+        "8_recist_pairwise_changes.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)"
+      ]
+    },
+    "14_characterize_hbgd_states.py": {
+      "filename": "14_characterize_hbgd_states.py",
+      "path": "CODES\\14_characterize_hbgd_states.py",
+      "lines": 1635,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "14_hbgd_dynamic_states.csv",
+        "14_hbgd_lesion_behaviors.csv",
+        "14_hbgd_patient_states.csv",
+        "14_hbgd_state_summary.csv",
+        "14_hbgd_state_transitions.csv",
+        "8_recist_pairwise_changes.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "15_analyze_hbgd_state_transitions.py": {
+      "filename": "15_analyze_hbgd_state_transitions.py",
+      "path": "CODES\\15_analyze_hbgd_state_transitions.py",
+      "lines": 1283,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "14_hbgd_dynamic_states.csv",
+        "14_hbgd_state_transitions.csv",
+        "15_hbgd_lesion_transition_summary.csv",
+        "15_hbgd_patient_transition_summary.csv",
+        "15_hbgd_transition_entropy.csv",
+        "15_hbgd_transition_matrix.csv",
+        "15_hbgd_transition_probabilities.csv",
+        "15_hbgd_volume_state_agreement.csv"
+      ],
+      "formulas": []
+    },
+    "16_test_state_transition_prediction.py": {
+      "filename": "16_test_state_transition_prediction.py",
+      "path": "CODES\\16_test_state_transition_prediction.py",
+      "lines": 1550,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "14_hbgd_dynamic_states.csv",
+        "14_hbgd_state_transitions.csv",
+        "16_hbgd_state_patient_performance.csv",
+        "16_hbgd_state_prediction_performance.csv",
+        "16_hbgd_state_predictions.csv",
+        "16_hbgd_training_transition_probabilities.csv"
+      ],
+      "formulas": []
+    },
+    "17_build_hbgd_mathematical_model.py": {
+      "filename": "17_build_hbgd_mathematical_model.py",
+      "path": "CODES\\17_build_hbgd_mathematical_model.py",
+      "lines": 1310,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "17_hbgd_mathematical_features.csv",
+        "17_hbgd_state_parameters.csv",
+        "17_hbgd_volume_parameters.csv",
+        "9_hbgd_features.csv",
+        "9_hbgd_log_growth_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "18_test_hbgd_forward_prediction.py": {
+      "filename": "18_test_hbgd_forward_prediction.py",
+      "path": "CODES\\18_test_hbgd_forward_prediction.py",
+      "lines": 968,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "18_hbgd_forecast_horizon_analysis.csv",
+        "18_hbgd_forward_lesion_performance.csv",
+        "18_hbgd_forward_predictions.csv",
+        "18_hbgd_forward_state_performance.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "19_patient_independent_hbgd_validation.py": {
+      "filename": "19_patient_independent_hbgd_validation.py",
+      "path": "CODES\\19_patient_independent_hbgd_validation.py",
+      "lines": 1206,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "19_patient_independent_patient_performance.csv",
+        "19_patient_independent_performance.csv",
+        "19_patient_independent_predictions.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "20_build_hbgd_prototype.py": {
+      "filename": "20_build_hbgd_prototype.py",
+      "path": "CODES\\20_build_hbgd_prototype.py",
+      "lines": 1087,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "20_hbgd_prototype_parameters.csv",
+        "20_hbgd_prototype_performance.csv",
+        "20_hbgd_prototype_predictions.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "21_test_individualized_hbgd.py": {
+      "filename": "21_test_individualized_hbgd.py",
+      "path": "CODES\\21_test_individualized_hbgd.py",
+      "lines": 1210,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "21_individualized_hbgd_patient_performance.csv",
+        "21_individualized_hbgd_performance.csv",
+        "21_individualized_hbgd_predictions.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "22_predict_individualized_hbgd_rate.py": {
+      "filename": "22_predict_individualized_hbgd_rate.py",
+      "path": "CODES\\22_predict_individualized_hbgd_rate.py",
+      "lines": 1362,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "22_rate_patient_performance.csv",
+        "22_rate_performance.csv",
+        "22_rate_predictions.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification"
+      ]
+    },
+    "23_ct_to_hbgd_rate.py": {
+      "filename": "23_ct_to_hbgd_rate.py",
+      "path": "CODES\\23_ct_to_hbgd_rate.py",
+      "lines": 1830,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "23_ct_hbgd_rate_results.csv",
+        "23_ct_hbgd_summary.csv",
+        "9_hbgd_features.csv",
+        "series.json"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "3D CNN architecture",
+        "Permutation testing"
+      ]
+    },
+    "24_map_recist_to_ct_lesions.py": {
+      "filename": "24_map_recist_to_ct_lesions.py",
+      "path": "CODES\\24_map_recist_to_ct_lesions.py",
+      "lines": 811,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "*.nii.gz",
+        "24_recist_lesion_mapping.csv",
+        "24_verified_lesion_crops.csv",
+        "recist_measurements.csv",
+        "series.json"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "25_extract_lesion_ct_crops.py": {
+      "filename": "25_extract_lesion_ct_crops.py",
+      "path": "CODES\\25_extract_lesion_ct_crops.py",
+      "lines": 1103,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "*.nii",
+        "*.nii.gz",
+        "24_recist_lesion_mapping.csv",
+        "25_ct_crop_quality.csv",
+        "Missing 24_recist_lesion_mapping.csv",
+        "Missing series.json",
+        "label_{label_value}.nii.gz",
+        "series.json"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "26_audit_ct_crops.py": {
+      "filename": "26_audit_ct_crops.py",
+      "path": "CODES\\26_audit_ct_crops.py",
+      "lines": 851,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "26_ct_crop_audit.csv"
+      ],
+      "formulas": []
+    },
+    "27_train_ct_to_hbgd_rate.py": {
+      "filename": "27_train_ct_to_hbgd_rate.py",
+      "path": "CODES\\27_train_ct_to_hbgd_rate.py",
+      "lines": 1125,
+      "docstring": "",
+      "reads": [],
+      "writes": [
+        "target_shape"
+      ],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "27_ct_hbgd_patient_performance.csv",
+        "27_ct_hbgd_performance.csv",
+        "27_ct_hbgd_predictions.csv",
+        "27_ct_to_hbgd_rate_model.pt",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "3D CNN architecture",
+        "Permutation testing"
+      ]
+    },
+    "28_audit_ct_rate_coverage.py": {
+      "filename": "28_audit_ct_rate_coverage.py",
+      "path": "CODES\\28_audit_ct_rate_coverage.py",
+      "lines": 1047,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "*.nii",
+        "*.nii.gz",
+        "25_ct_crop_quality.csv",
+        "28_ct_rate_coverage_audit.csv",
+        "28_ct_rate_coverage_summary.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "29_repair_failed_ct_crops.py": {
+      "filename": "29_repair_failed_ct_crops.py",
+      "path": "CODES\\29_repair_failed_ct_crops.py",
+      "lines": 1353,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "*.nii",
+        "*.nii.gz",
+        "24_recist_lesion_mapping.csv",
+        "25_ct_crop_quality.csv",
+        "29_ct_crop_repair_audit.csv",
+        "repaired.nii.gz",
+        "series.json"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "30_audit_ct_rate_coverage.py": {
+      "filename": "30_audit_ct_rate_coverage.py",
+      "path": "CODES\\30_audit_ct_rate_coverage.py",
+      "lines": 847,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "30_ct_rate_coverage.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "31_reconcile_ct_rate_linkage.py": {
+      "filename": "31_reconcile_ct_rate_linkage.py",
+      "path": "CODES\\31_reconcile_ct_rate_linkage.py",
+      "lines": 777,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "31_ct_rate_linkage_reconciliation.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "32_repair_ct_rate_dates.py": {
+      "filename": "32_repair_ct_rate_dates.py",
+      "path": "CODES\\32_repair_ct_rate_dates.py",
+      "lines": 945,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "32_ct_rate_repaired_coverage.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "33_train_ct_to_hbgd_rate.py": {
+      "filename": "33_train_ct_to_hbgd_rate.py",
+      "path": "CODES\\33_train_ct_to_hbgd_rate.py",
+      "lines": 1295,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "32_ct_rate_repaired_coverage.csv",
+        "33_cnn_hbgd_forward_predictions.csv",
+        "33_cnn_hbgd_performance.csv",
+        "33_cnn_rate_predictions.csv",
+        "33_training_history.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "3D CNN architecture",
+        "Permutation testing"
+      ]
+    },
+    "34_audit_ct_trajectory_recovery.py": {
+      "filename": "34_audit_ct_trajectory_recovery.py",
+      "path": "CODES\\34_audit_ct_trajectory_recovery.py",
+      "lines": 959,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "25_ct_crop_quality.csv",
+        "32_ct_rate_repaired_coverage.csv",
+        "34_ct_trajectory_recovery_audit.csv",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": []
+    },
+    "35_build_hbgd_validation_report.py": {
+      "filename": "35_build_hbgd_validation_report.py",
+      "path": "CODES\\35_build_hbgd_validation_report.py",
+      "lines": 830,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "12_dynamic_model_performance.csv",
+        "13_hbgd_feature_performance.csv",
+        "16_hbgd_state_prediction_performance.csv",
+        "18_hbgd_forward_predictions.csv",
+        "19_patient_independent_performance.csv",
+        "20_hbgd_prototype_performance.csv",
+        "21_individualized_hbgd_performance.csv",
+        "25_ct_crop_quality.csv",
+        "30_ct_rate_coverage.csv",
+        "32_ct_rate_repaired_coverage.csv",
+        "33_cnn_rate_predictions.csv",
+        "34_ct_trajectory_recovery_audit.csv",
+        "35_HBGD_VALIDATION_REPORT.txt",
+        "9_hbgd_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    }
+  },
+  "lumiere": {
+    "0_lumiere_zip_inspection.py": {
+      "filename": "0_lumiere_zip_inspection.py",
+      "path": "CODES/LUMIRE\\0_lumiere_zip_inspection.py",
+      "lines": 1090,
+      "docstring": "0_lumiere_zip_inspection.py\n\nLUMIERE DATASET - ZIP-ONLY INSPECTION\n\nPurpose:\n    Inspect ONLY LUMIRE.zip without extracting the dataset.\n\nExpected project structure:\n\n    PROJECT/\n    \u251c\u2500\u2500 CODES/\n    \u2502   \u2514\u2500\u2500 LUMIRE/\n    \u2502       \u2514\u2500\u2500 0_lumiere_zip_inspection.py\n    \u2502\n    \u2514\u2500\u2500 DATA/\n        \u2514\u2500\u2500 LUMIRE.zip\n\nAll inspection reports are saved to:\n\n    DATA/LUMIRE/\n\nIMPORTANT:\n    - This script does NOT extract LUMIRE.zip.\n    - This script does NOT modify the ZIP.\n    - This script does NOT inspect any other ZIP file.\n    - Only LUMIRE.zip is inspected.",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "0_lumiere_zip_inspection_report.json",
+        "0_lumiere_zip_inspection_report.txt"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "1_lumiere_dataset_structure_analysis.py": {
+      "filename": "1_lumiere_dataset_structure_analysis.py",
+      "path": "CODES/LUMIRE\\1_lumiere_dataset_structure_analysis.py",
+      "lines": 1726,
+      "docstring": "1_lumiere_dataset_structure_analysis.py\n\nPurpose:\n    Analyze the internal structure of the LUMIERE dataset ZIP\n    without extracting or reading NIfTI voxel data.\n\nPython:\n    Compatible with Python 3.6+\n\nDataset:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE.zip",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "CT1.nii.gz",
+        "FLAIR.nii.gz",
+        "LUMIERE_DATASET_STRUCTURE_ANALYSIS.md",
+        "T1.nii.gz",
+        "T2.nii.gz",
+        "complete_longitudinal_patients.txt",
+        "ct1_seg_mask.nii.gz",
+        "flair_seg_mask.nii.gz",
+        "lumiere_patient_timepoint_summary.csv",
+        "segmentation.nii.gz",
+        "segmentation_CT1_origspace.nii.gz",
+        "segmentation_FLAIR_origspace.nii.gz",
+        "segmentation_T1_origspace.nii.gz",
+        "segmentation_T2_origspace.nii.gz",
+        "t1_seg_mask.nii.gz",
+        "t2_seg_mask.nii.gz"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "2_lumiere_nifti_mask_validation.py": {
+      "filename": "2_lumiere_nifti_mask_validation.py",
+      "path": "CODES/LUMIRE\\2_lumiere_nifti_mask_validation.py",
+      "lines": 1701,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "CT1.nii.gz",
+        "FLAIR.nii.gz",
+        "LUMIERE_NIFTI_MASK_VALIDATION.md",
+        "T1.nii.gz",
+        "T2.nii.gz",
+        "ct1_seg_mask.nii.gz",
+        "flair_seg_mask.nii.gz",
+        "lumiere_nifti_mask_validation.csv",
+        "lumiere_validated_longitudinal_patients.csv",
+        "segmentation.nii.gz",
+        "segmentation_CT1_origspace.nii.gz",
+        "segmentation_FLAIR_origspace.nii.gz",
+        "segmentation_T1_origspace.nii.gz",
+        "segmentation_T2_origspace.nii.gz",
+        "t1_seg_mask.nii.gz",
+        "t2_seg_mask.nii.gz"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "3_lumiere_tumor_geometry_hbgd.py": {
+      "filename": "3_lumiere_tumor_geometry_hbgd.py",
+      "path": "CODES/LUMIRE\\3_lumiere_tumor_geometry_hbgd.py",
+      "lines": 1906,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "LUMIERE_TUMOR_GEOMETRY_HBGD_REPORT.md",
+        "lumiere_hbgd_growth_features.csv",
+        "lumiere_longitudinal_trajectories.csv",
+        "lumiere_nifti_mask_validation.csv",
+        "lumiere_tumor_geometry.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "4_lumiere_hbgd_forward_prediction.py": {
+      "filename": "4_lumiere_hbgd_forward_prediction.py",
+      "path": "CODES/LUMIRE\\4_lumiere_hbgd_forward_prediction.py",
+      "lines": 1765,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "LUMIERE_FORWARD_PREDICTION_REPORT.md",
+        "lumiere_forward_prediction_patient_summary.csv",
+        "lumiere_forward_prediction_results.csv",
+        "lumiere_hbgd_growth_features.csv",
+        "lumiere_longitudinal_trajectories.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Permutation testing"
+      ]
+    },
+    "5_lumiere_hbgd_robust_prediction.py": {
+      "filename": "5_lumiere_hbgd_robust_prediction.py",
+      "path": "CODES/LUMIRE\\5_lumiere_hbgd_robust_prediction.py",
+      "lines": 2160,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "LUMIERE_ROBUST_HBGD_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "lumiere_robust_hbgd_patient_summary.csv",
+        "lumiere_robust_hbgd_prediction_results.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Permutation testing"
+      ]
+    },
+    "6_lumiere_state_aware_hbgd.py": {
+      "filename": "6_lumiere_state_aware_hbgd.py",
+      "path": "CODES/LUMIRE\\6_lumiere_state_aware_hbgd.py",
+      "lines": 1975,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "LUMIERE_STATE_AWARE_HBGD_REPORT.md",
+        "lumiere_hbgd_growth_features.csv",
+        "lumiere_hbgd_state_transition_matrix.csv",
+        "lumiere_longitudinal_trajectories.csv",
+        "lumiere_state_aware_patient_summary.csv",
+        "lumiere_state_aware_results.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Permutation testing"
+      ]
+    },
+    "7_lumiere_hbgd_feature_ml.py": {
+      "filename": "7_lumiere_hbgd_feature_ml.py",
+      "path": "CODES/LUMIRE\\7_lumiere_hbgd_feature_ml.py",
+      "lines": 2305,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "LUMIERE_HBGD_FEATURE_ML_REPORT.md",
+        "lumiere_hbgd_feature_ml_results.csv",
+        "lumiere_hbgd_feature_ml_summary.csv",
+        "lumiere_longitudinal_trajectories.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "8_cross_cancer_hbgd_transfer.py": {
+      "filename": "8_cross_cancer_hbgd_transfer.py",
+      "path": "CODES/LUMIRE\\8_cross_cancer_hbgd_transfer.py",
+      "lines": 2039,
+      "docstring": "8_cross_cancer_hbgd_transfer.py\n\nCROSS-CANCER HBGD TRANSFER EXPERIMENT\n\nSource cancer:\n    Existing HBGD pipeline\n\nTarget cancer:\n    LUMIERE glioblastoma cohort\n\nObjective:\n    Test whether source-cancer HBGD growth-pattern information\n    can be transferred to LUMIERE and provide predictive value.\n\nIMPORTANT:\n    Source growth rates are NOT directly copied to GBM.\n\n    Instead:\n        1. Learn source-cancer growth-pattern normalization.\n        2. Transform LUMIERE HBGD features into the source\n           representation.\n        3. Compare GBM geometry-only against\n           geometry + transferred HBGD representation.\n\nAll outputs:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "17_hbgd_mathematical_features.csv",
+        "17_hbgd_state_parameters.csv",
+        "17_hbgd_volume_parameters.csv",
+        "LUMIERE_CROSS_CANCER_HBGD_TRANSFER_REPORT.md",
+        "lumiere_cross_cancer_transfer_results.csv",
+        "lumiere_cross_cancer_transfer_summary.csv",
+        "lumiere_hbgd_growth_features.csv",
+        "lumiere_longitudinal_trajectories.csv",
+        "source_cancer_hbgd_transfer_profile.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "9_cross_cancer_hbgd_growth_phenotype.py": {
+      "filename": "9_cross_cancer_hbgd_growth_phenotype.py",
+      "path": "CODES/LUMIRE\\9_cross_cancer_hbgd_growth_phenotype.py",
+      "lines": 2454,
+      "docstring": "9_cross_cancer_hbgd_growth_phenotype.py\n\nSTEP 9\nCross-Cancer HBGD Growth-Phenotype Alignment\n\nSOURCE:\n    Existing HBGD source-cancer pipeline\n\nTARGET:\n    LUMIERE glioblastoma longitudinal cohort\n\nOBJECTIVE:\n    Determine whether HBGD growth dynamics from the source\n    cancer and LUMIERE GBM can be represented in a comparable\n    growth-phenotype space.\n\nIMPORTANT:\n    This is NOT a prediction experiment.\n\n    It evaluates:\n        - growth-rate distributions\n        - volume-growth distributions\n        - temporal variability\n        - dynamic states\n        - trajectory behavior\n        - normalized growth\n        - cross-domain feature similarity\n\n    It does NOT claim that source-cancer growth rates are\n    biologically identical to GBM growth rates.\n\nOUTPUT:\n    D:\\\\VIT\\\\PROJECT\\\\NLP\\\\PATENT\\\\DATA\\\\LUMIRE\\\\\n\nPython:\n    Designed for Python 3.6 compatibility.",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "17_hbgd_mathematical_features.csv",
+        "17_hbgd_state_parameters.csv",
+        "17_hbgd_volume_parameters.csv",
+        "CROSS_CANCER_HBGD_GROWTH_PHENOTYPE_REPORT.md",
+        "cross_cancer_hbgd_feature_distances.csv",
+        "cross_cancer_hbgd_feature_statistics.csv",
+        "cross_cancer_hbgd_phenotype_vectors.csv",
+        "cross_cancer_hbgd_state_comparison.csv",
+        "lumiere_hbgd_growth_features.csv",
+        "lumiere_hbgd_growth_phenotypes.csv",
+        "lumiere_longitudinal_trajectories.csv",
+        "source_hbgd_growth_phenotypes.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "10_hbgd_statistical_alignment_transfer.py": {
+      "filename": "10_hbgd_statistical_alignment_transfer.py",
+      "path": "CODES/LUMIRE\\10_hbgd_statistical_alignment_transfer.py",
+      "lines": 2952,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "17_hbgd_mathematical_features.csv",
+        "17_hbgd_state_parameters.csv",
+        "17_hbgd_volume_parameters.csv",
+        "STEP10_HBGD_STATISTICAL_ALIGNMENT_TRANSFER_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step10_hbgd_alignment_statistics.csv",
+        "step10_hbgd_bootstrap_results.csv",
+        "step10_hbgd_permutation_results.csv",
+        "step10_hbgd_transfer_predictions.csv",
+        "step10_hbgd_transfer_profiles.csv",
+        "step10_hbgd_transfer_summary.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Bootstrap resampling",
+        "Permutation testing"
+      ]
+    },
+    "11_domain_adaptive_hbgd_transfer.py": {
+      "filename": "11_domain_adaptive_hbgd_transfer.py",
+      "path": "CODES/LUMIRE\\11_domain_adaptive_hbgd_transfer.py",
+      "lines": 2813,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "STEP11_DOMAIN_ADAPTIVE_HBGD_TRANSFER_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step11_domain_adaptation_parameters.csv",
+        "step11_domain_adaptive_transfer_predictions.csv",
+        "step11_domain_adaptive_transfer_summary.csv",
+        "step11_source_model_performance.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "12_hbgd_incremental_information_ablation.py": {
+      "filename": "12_hbgd_incremental_information_ablation.py",
+      "path": "CODES/LUMIRE\\12_hbgd_incremental_information_ablation.py",
+      "lines": 1957,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP12_HBGD_INCREMENTAL_INFORMATION_ABLATION_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step11_domain_adaptive_transfer_summary.csv",
+        "step12_hbgd_ablation_predictions.csv",
+        "step12_hbgd_ablation_summary.csv",
+        "step12_hbgd_feature_importance.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "13_hbgd_patient_level_robustness.py": {
+      "filename": "13_hbgd_patient_level_robustness.py",
+      "path": "CODES/LUMIRE\\13_hbgd_patient_level_robustness.py",
+      "lines": 2272,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP13_HBGD_PATIENT_LEVEL_ROBUSTNESS_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step13_hbgd_bootstrap_results.csv",
+        "step13_hbgd_permutation_results.csv",
+        "step13_hbgd_statistical_summary.csv",
+        "step13_patient_level_hbgd_results.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Bootstrap resampling",
+        "Permutation testing",
+        "Statistical hypothesis testing (t-test/Wilcoxon)"
+      ]
+    },
+    "14_hbgd_phenotype_stratified_analysis.py": {
+      "filename": "14_hbgd_phenotype_stratified_analysis.py",
+      "path": "CODES/LUMIRE\\14_hbgd_phenotype_stratified_analysis.py",
+      "lines": 1674,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP14_HBGD_PHENOTYPE_STRATIFIED_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step14_hbgd_phenotype_interval_results.csv",
+        "step14_hbgd_phenotype_patient_results.csv",
+        "step14_hbgd_phenotype_summary.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "15_exact_step12_phenotype_stratification.py": {
+      "filename": "15_exact_step12_phenotype_stratification.py",
+      "path": "CODES/LUMIRE\\15_exact_step12_phenotype_stratification.py",
+      "lines": 1673,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP15_EXACT_STEP12_PHENOTYPE_STRATIFICATION_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step12_hbgd_ablation_predictions.csv",
+        "step15_phenotype_model_comparison.csv",
+        "step15_phenotype_patient_results.csv",
+        "step15_step12_predictions_with_phenotype.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Permutation testing"
+      ]
+    },
+    "16_recover_step12_test_cohort.py": {
+      "filename": "16_recover_step12_test_cohort.py",
+      "path": "CODES/LUMIRE\\16_recover_step12_test_cohort.py",
+      "lines": 1258,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP16_EXACT_STEP12_TEST_COHORT_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step12_hbgd_ablation_predictions.csv",
+        "step13_patient_level_hbgd_results.csv",
+        "step16_exact_phenotype_model_comparison.csv",
+        "step16_exact_phenotype_patient_results.csv",
+        "step16_exact_step12_phenotype_predictions.csv",
+        "step16_exact_step12_test_cohort.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry"
+      ]
+    },
+    "17_patient_level_phenotype_robustness.py": {
+      "filename": "17_patient_level_phenotype_robustness.py",
+      "path": "CODES/LUMIRE\\17_patient_level_phenotype_robustness.py",
+      "lines": 1192,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP17_PATIENT_LEVEL_PHENOTYPE_ROBUSTNESS_REPORT.md",
+        "step16_exact_step12_phenotype_predictions.csv",
+        "step17_patient_level_phenotype_results.csv",
+        "step17_phenotype_bootstrap_results.csv",
+        "step17_phenotype_permutation_results.csv",
+        "step17_phenotype_robustness_summary.csv"
+      ],
+      "formulas": [
+        "Bootstrap resampling",
+        "Permutation testing"
+      ]
+    },
+    "18_hbgd_benefit_mechanism_analysis.py": {
+      "filename": "18_hbgd_benefit_mechanism_analysis.py",
+      "path": "CODES/LUMIRE\\18_hbgd_benefit_mechanism_analysis.py",
+      "lines": 1732,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP18_HBGD_BENEFIT_MECHANISM_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step16_exact_step12_phenotype_predictions.csv",
+        "step18_hbgd_benefit_by_history.csv",
+        "step18_hbgd_benefit_by_phenotype.csv",
+        "step18_hbgd_benefit_correlations.csv",
+        "step18_hbgd_benefit_patient_features.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "19_hbgd_representation_transfer.py": {
+      "filename": "19_hbgd_representation_transfer.py",
+      "path": "CODES/LUMIRE\\19_hbgd_representation_transfer.py",
+      "lines": 1815,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_state_parameters.csv",
+        "3_lumiere_longitudinal_trajectories.csv",
+        "476_lumiere_longitudinal_trajectories.csv",
+        "STEP19_HBGD_REPRESENTATION_TRANSFER_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step13_patient_level_hbgd_results.csv",
+        "step19_hbgd_representation_transfer_parameters.csv",
+        "step19_hbgd_representation_transfer_performance.csv",
+        "step19_hbgd_representation_transfer_predictions.csv",
+        "step3_lumiere_longitudinal_trajectories.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "19_source_transfer_audit.py": {
+      "filename": "19_source_transfer_audit.py",
+      "path": "CODES/LUMIRE\\19_source_transfer_audit.py",
+      "lines": 113,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_diameter_trajectories.csv",
+        "17_hbgd_growth_parameters.csv",
+        "17_hbgd_mathematical_features.csv",
+        "17_hbgd_state_parameters.csv",
+        "17_hbgd_volume_parameters.csv",
+        "21_individualized_hbgd_patient_performance.csv",
+        "21_individualized_hbgd_predictions.csv"
+      ],
+      "formulas": []
+    },
+    "20_hbgd_transfer_statistical_validation.py": {
+      "filename": "20_hbgd_transfer_statistical_validation.py",
+      "path": "CODES/LUMIRE\\20_hbgd_transfer_statistical_validation.py",
+      "lines": 1540,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP20_HBGD_TRANSFER_STATISTICAL_VALIDATION_REPORT.md",
+        "step19_hbgd_representation_transfer_predictions.csv",
+        "step20_hbgd_transfer_bootstrap_results.csv",
+        "step20_hbgd_transfer_patient_results.csv",
+        "step20_hbgd_transfer_permutation_results.csv",
+        "step20_hbgd_transfer_phenotype_results.csv",
+        "step20_hbgd_transfer_statistical_summary.csv"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Bootstrap resampling",
+        "Permutation testing",
+        "Statistical hypothesis testing (t-test/Wilcoxon)"
+      ]
+    },
+    "21_cross_cancer_hbgd_evidence_synthesis.py": {
+      "filename": "21_cross_cancer_hbgd_evidence_synthesis.py",
+      "path": "CODES/LUMIRE\\21_cross_cancer_hbgd_evidence_synthesis.py",
+      "lines": 1164,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP21_CROSS_CANCER_HBGD_EVIDENCE_SYNTHESIS_REPORT.md",
+        "cross_cancer_hbgd_feature_distances.csv",
+        "cross_cancer_hbgd_feature_statistics.csv",
+        "cross_cancer_hbgd_state_comparison.csv",
+        "step10_hbgd_alignment_statistics.csv",
+        "step10_hbgd_transfer_summary.csv",
+        "step11_domain_adaptive_transfer_summary.csv",
+        "step11_source_model_performance.csv",
+        "step12_hbgd_ablation_summary.csv",
+        "step13_hbgd_statistical_summary.csv",
+        "step13_patient_level_hbgd_results.csv",
+        "step16_exact_phenotype_model_comparison.csv",
+        "step17_phenotype_robustness_summary.csv",
+        "step18_hbgd_benefit_by_history.csv",
+        "step18_hbgd_benefit_by_phenotype.csv",
+        "step18_hbgd_benefit_correlations.csv",
+        "step19_hbgd_representation_transfer_parameters.csv",
+        "step19_hbgd_representation_transfer_performance.csv",
+        "step20_hbgd_transfer_patient_results.csv",
+        "step20_hbgd_transfer_phenotype_results.csv",
+        "step20_hbgd_transfer_statistical_summary.csv",
+        "step21_cross_cancer_hbgd_claim_matrix.csv",
+        "step21_cross_cancer_hbgd_evidence_table.csv",
+        "step21_cross_cancer_hbgd_numerical_evidence.csv",
+        "step21_cross_cancer_hbgd_statistical_evidence.csv",
+        "step8_cross_cancer_hbgd_transfer_predictions.csv",
+        "step8_cross_cancer_hbgd_transfer_summary.csv"
+      ],
+      "formulas": [
+        "Equivalent diameter / Spherical geometry",
+        "Bootstrap resampling",
+        "Permutation testing"
+      ]
+    },
+    "22_hbgd_transfer_split_robustness.py": {
+      "filename": "22_hbgd_transfer_split_robustness.py",
+      "path": "CODES/LUMIRE\\22_hbgd_transfer_split_robustness.py",
+      "lines": 1893,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_state_parameters.csv",
+        "STEP22_HBGD_TRANSFER_SPLIT_ROBUSTNESS_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step22_hbgd_transfer_patient_results.csv",
+        "step22_hbgd_transfer_robustness_summary.csv",
+        "step22_hbgd_transfer_split_results.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification",
+        "Permutation testing"
+      ]
+    },
+    "23_hbgd_repeated_split_statistics.py": {
+      "filename": "23_hbgd_repeated_split_statistics.py",
+      "path": "CODES/LUMIRE\\23_hbgd_repeated_split_statistics.py",
+      "lines": 1568,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP23_HBGD_REPEATED_SPLIT_STATISTICAL_AGGREGATION_REPORT.md",
+        "step22_hbgd_transfer_patient_results.csv",
+        "step22_hbgd_transfer_split_results.csv",
+        "step23_hbgd_repeated_split_bootstrap.csv",
+        "step23_hbgd_repeated_split_sensitivity.csv",
+        "step23_hbgd_repeated_split_sign_test.csv",
+        "step23_hbgd_repeated_split_statistical_summary.csv"
+      ],
+      "formulas": [
+        "Bootstrap resampling"
+      ]
+    },
+    "24_hbgd_transfer_responder_analysis.py": {
+      "filename": "24_hbgd_transfer_responder_analysis.py",
+      "path": "CODES/LUMIRE\\24_hbgd_transfer_responder_analysis.py",
+      "lines": 1460,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "STEP24_HBGD_TRANSFER_RESPONDER_ANALYSIS_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step22_hbgd_transfer_patient_results.csv",
+        "step24_hbgd_responder_case_features.csv",
+        "step24_hbgd_responder_correlations.csv",
+        "step24_hbgd_responder_group_comparison.csv",
+        "step24_hbgd_responder_patient_profiles.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model"
+      ]
+    },
+    "25_hbgd_temporal_holdout_validation.py": {
+      "filename": "25_hbgd_temporal_holdout_validation.py",
+      "path": "CODES/LUMIRE\\25_hbgd_temporal_holdout_validation.py",
+      "lines": 1846,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_state_parameters.csv",
+        "STEP25_HBGD_STRICT_TEMPORAL_HOLDOUT_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step25_hbgd_temporal_patient_results.csv",
+        "step25_hbgd_temporal_performance.csv",
+        "step25_hbgd_temporal_phenotype_results.csv",
+        "step25_hbgd_temporal_predictions.csv",
+        "step25_hbgd_temporal_summary.csv"
+      ],
+      "formulas": [
+        "Exponential/Logarithmic growth model",
+        "Equivalent diameter / Spherical geometry",
+        "Regression metrics (MAE, RMSE, R2)",
+        "Random Forest regression/classification"
+      ]
+    },
+    "26_hbgd_final_leakage_audit.py": {
+      "filename": "26_hbgd_final_leakage_audit.py",
+      "path": "CODES/LUMIRE\\26_hbgd_final_leakage_audit.py",
+      "lines": 1623,
+      "docstring": "",
+      "reads": [],
+      "writes": [],
+      "ext_files": [
+        "17_hbgd_state_parameters.csv",
+        "STEP26_HBGD_FINAL_LEAKAGE_AUDIT_REPORT.md",
+        "lumiere_longitudinal_trajectories.csv",
+        "step19_hbgd_representation_transfer_performance.csv",
+        "step20_hbgd_transfer_statistical_summary.csv",
+        "step22_hbgd_transfer_split_results.csv",
+        "step23_hbgd_repeated_split_statistical_summary.csv",
+        "step24_hbgd_responder_correlations.csv",
+        "step25_hbgd_temporal_patient_results.csv",
+        "step25_hbgd_temporal_performance.csv",
+        "step25_hbgd_temporal_predictions.csv",
+        "step25_hbgd_temporal_summary.csv",
+        "step26_hbgd_evidence_matrix.csv",
+        "step26_hbgd_leakage_audit.csv",
+        "step26_hbgd_provenance_table.csv"
+      ],
+      "formulas": [
+        "Bootstrap resampling"
+      ]
+    }
+  }
+}
