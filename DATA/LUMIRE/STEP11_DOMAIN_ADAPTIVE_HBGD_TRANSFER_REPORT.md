@@ -1,65 +1,64 @@
-# STEP 11 - DOMAIN-ADAPTIVE HBGD TRANSFER
+# Step 11 — Leakage-Safe Domain-Adaptive HBGD Transfer
 
 ## Objective
 
-Step 11 tests whether a growth-prediction model learned from the source cancer can be adapted to the LUMIERE glioblastoma domain without assuming identical growth-rate distributions.
+Evaluate source-cancer next-timepoint diameter prediction in the LUMIERE GBM cohort, then learn a target-domain residual correction using target training patients only.
 
-## Patient Split
+## Leakage safeguards
 
-| Partition | Patients |
-|---|---:|
-| Train | 47 |
-| Validation | 7 |
-| Test | 13 |
+- Every prediction feature is constructed from observations strictly before the target timepoint.
+- The target diameter is used only as the supervised label or evaluation outcome.
+- Source training and target inference use the same ordered feature schema and day-based time units.
+- Target patient IDs are split before evaluation; no patient contributes timepoints to multiple partitions.
+- The combined model uses patient-grouped out-of-fold adaptation corrections for its training rows.
+- Source generalization is estimated using a patient-grouped source holdout. The separate source training metrics are explicitly labelled as in-sample only.
 
-The target test patients were not used to fit the GBM-specific domain adaptation model.
+## Patient split
+
+| Partition | Patients | Prediction cases |
+|---|---:|---:|
+| Train | 47 | 255 |
+| Validation | 7 | 66 |
+| Test | 13 | 88 |
 
 ## Results
 
-| Model | Validation MAE (mm) | Test MAE (mm) | Test RMSE (mm) |
-|---|---:|---:|---:|
-| Direct_HBGD | 15.7307 | 15.8693 | 27.0294 |
-| Source_HBGD_Transfer | 8.9896 | 10.7697 | 15.9796 |
-| GBM_Geometry_Only | 7.5282 | 7.9925 | 11.0089 |
-| Domain_Adapted_HBGD | 7.3078 | 8.3593 | 11.8635 |
-| Geometry_Plus_Adapted_HBGD | 8.6511 | 9.5397 | 12.8673 |
+| Model | Validation MAE (mm) | Validation RMSE (mm) | Test MAE (mm) | Test RMSE (mm) |
+|---|---:|---:|---:|---:|
+| No_Change_Baseline | 7.4820 | 10.7220 | 9.0360 | 13.1131 |
+| Direct_HBGD_Historical_Rate | 15.7307 | 49.6088 | 15.8693 | 27.0294 |
+| Source_HBGD_Transfer | 8.1664 | 11.0336 | 9.0535 | 12.8447 |
+| Target_Morphology_History_Baseline | 7.5587 | 10.2690 | 7.8918 | 11.0956 |
+| Domain_Adapted_HBGD | 7.4392 | 9.7713 | 7.9403 | 11.2803 |
+| Morphology_Plus_Adapted_HBGD | 7.3653 | 10.0880 | 7.9726 | 11.2015 |
 
-## Domain Adaptation
+## Key comparisons
 
-The adaptation model learns a GBM-specific residual correction to the source-cancer prediction using only the GBM training patients.
+- Source-transfer test MAE: 9.0535 mm.
+- Domain-adapted HBGD test MAE: 7.9403 mm.
+- Relative MAE reduction from source transfer to domain-adapted HBGD: 12.30%.
+- Target morphology/history baseline test MAE: 7.8918 mm.
+- Morphology + adapted HBGD test MAE: 7.9726 mm.
+- Relative MAE reduction from target baseline to combined model: -1.02%. Positive means the combined model is better; negative means it is worse.
 
-Mean validation correction: 3.0152 mm
+## Source cohort holdout
 
-Mean test correction: 2.1549 mm
+- Source cases: 49 across 12 source patients.
+- Patient-grouped source holdout MAE: 7.8891 mm; RMSE: 10.1113 mm.
+- In-sample source training MAE/RMSE are provided for debugging only and must not be interpreted as generalization performance.
 
-## Comparison Against Geometry Baseline
+## Interpretation
 
-Geometry-only test MAE: 7.9925 mm
+This run evaluates transfer of a source-trained prediction model plus a target-domain residual correction. It is not, by itself, proof that a biological growth parameter transfers unchanged between cancer types. Any claimed benefit must be judged against the held-out target baselines and patient-level variability.
 
-Geometry + adapted HBGD test MAE: 9.5397 mm
+## Limitations and checks
 
-Difference: -1.5472 mm
+- The target cohort has a limited number of held-out patients; confidence intervals or repeated patient-level splits are recommended.
+- Equivalent diameter and source observed diameter may be produced by different measurement pipelines.
+- The conversion of week to seven days must be confirmed from the target dataset documentation.
+- Results are next-observed-timepoint predictions; they do not establish long-horizon forecasting or clinical utility.
+- Review step11_target_patient_performance.csv; pooled metrics can conceal patient-level failures.
 
-Relative change: -19.36%
+## Final conclusion
 
-The geometry + adapted HBGD model did not outperform the geometry-only baseline on the held-out test cohort. Therefore, this experiment does not establish predictive benefit from the current domain-adaptive HBGD representation.
-
-## Scientific Interpretation
-
-This experiment is intentionally more conservative than direct cross-cancer rate transfer. The source model provides a transferable growth prior, while the GBM training cohort learns a target-specific correction.
-
-A successful result would support the hypothesis that source-cancer growth dynamics can be adapted to another cancer domain. A negative result would indicate that the current HBGD representation or adaptation strategy is insufficient.
-
-## Limitations
-
-The source cohort is substantially smaller than an ideal multi-cancer training cohort, and the LUMIERE cohort contains only 67 patients with longitudinal phenotype trajectories.
-
-The current experiment uses equivalent tumor diameter derived from segmentation volume for LUMIERE rather than an identical measurement process across cancer datasets.
-
-The seven-days-per-week conversion of LUMIERE week identifiers remains a dataset-temporal assumption and should be verified against the official documentation.
-
-The held-out test cohort contains 13 patients, so performance estimates remain preliminary.
-
-## Final Conclusion
-
-Step 11 evaluates domain adaptation as a mechanism for cross-cancer HBGD transfer. The primary endpoint is held-out GBM prediction performance relative to a geometry-only baseline.
+Interpret the regenerated metrics only after confirming input schemas, time units, and the patient split. Claim cross-cancer predictive benefit only if the corrected held-out target results support it. Distinguish predictive-model adaptation from direct biological parameter transfer.
