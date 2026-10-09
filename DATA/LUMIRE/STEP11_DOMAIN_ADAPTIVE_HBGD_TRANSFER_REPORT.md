@@ -29,17 +29,17 @@ Evaluate source-cancer next-timepoint diameter prediction in the LUMIERE GBM coh
 | Direct_HBGD_Historical_Rate | 15.7307 | 49.6088 | 15.8693 | 27.0294 |
 | Source_HBGD_Transfer | 8.1664 | 11.0336 | 9.0535 | 12.8447 |
 | Target_Morphology_History_Baseline | 7.5587 | 10.2690 | 7.8918 | 11.0956 |
-| Domain_Adapted_HBGD | 7.4392 | 9.7713 | 7.9403 | 11.2803 |
-| Morphology_Plus_Adapted_HBGD | 7.3653 | 10.0880 | 7.9726 | 11.2015 |
+| Domain_Adapted_HBGD | 7.4242 | 9.7591 | 7.9313 | 11.2750 |
+| Morphology_Plus_Adapted_HBGD | 7.3982 | 10.1075 | 7.9406 | 11.2265 |
 
 ## Key comparisons
 
 - Source-transfer test MAE: 9.0535 mm.
-- Domain-adapted HBGD test MAE: 7.9403 mm.
-- Relative MAE reduction from source transfer to domain-adapted HBGD: 12.30%.
+- Domain-adapted HBGD test MAE: 7.9313 mm.
+- Relative MAE reduction from source transfer to domain-adapted HBGD: 12.40%.
 - Target morphology/history baseline test MAE: 7.8918 mm.
-- Morphology + adapted HBGD test MAE: 7.9726 mm.
-- Relative MAE reduction from target baseline to combined model: -1.02%. Positive means the combined model is better; negative means it is worse.
+- Morphology + adapted HBGD test MAE: 7.9406 mm.
+- Relative MAE reduction from target baseline to combined model: -0.62%. Positive means the combined model is better; negative means it is worse.
 
 ## Source cohort holdout
 

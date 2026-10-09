@@ -1,8 +1,8 @@
 parameter,value
-mean_validation_correction_mm,2.6848999388200925
-std_validation_correction_mm,6.4111179046661
-mean_test_correction_mm,1.6992180285246234
-std_test_correction_mm,6.232296863601048
+mean_validation_correction_mm,2.667723201157204
+std_validation_correction_mm,6.40071118268087
+mean_test_correction_mm,1.705701938255391
+std_test_correction_mm,6.230088750380992
 source_feature_count,9
 source_features_use_target_diameter,NO
 target_test_patients_used_in_fit,NO

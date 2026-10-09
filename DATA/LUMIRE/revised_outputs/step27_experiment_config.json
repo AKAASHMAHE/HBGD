@@ -1,0 +1,16 @@
+{
+  "experiment_name": "Step 27 Fair Patient-Grouped Cross-Validation & Biological Transfer Audit",
+  "random_seed": 42,
+  "n_repeats": 5,
+  "n_splits": 5,
+  "n_total_folds": 25,
+  "development_patients_count": 54,
+  "test_patients_count_untouched": 13,
+  "development_cases_count": 321,
+  "estimated_source_biological_parameter_r_day": {
+    "mean_growth_rate_per_day": -0.0011366497615692014,
+    "median_growth_rate_per_day": -0.00041000137957505927,
+    "std_growth_rate_per_day": 0.0030862836532511055
+  },
+  "days_per_week": 7.0
+}
